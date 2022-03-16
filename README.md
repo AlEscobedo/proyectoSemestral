@@ -1,2 +1,2 @@
-# proyectoSemestral
+# ProyectoSemestral
 Proyecto Semestral Programacion Web
