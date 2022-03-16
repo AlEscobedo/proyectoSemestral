@@ -1,2 +1,2 @@
 # proyectoSemestral
-Proyecto Semestral Desarrollo de Software de Escritorio
+Proyecto Semestral Programacion Web
