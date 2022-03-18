@@ -91,7 +91,7 @@ header{
     height:  500px;
     position: relative;
     top: 80px;
-    background-image: url(../imagenes/Portada_Juego.jpg);
+    background-image: url(../imagenes/menuPrincipal/Portada_Juego.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
