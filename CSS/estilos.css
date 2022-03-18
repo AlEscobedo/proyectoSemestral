@@ -145,6 +145,20 @@ header{
     margin: auto;
 }
 
+.contenedor-footer footer .logo-footer{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.contenedor-footer footer .logo-footer img{
+    width: 50px;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .contenedor-footer footer .redes-footer{
     display: flex;
     justify-content: center;
