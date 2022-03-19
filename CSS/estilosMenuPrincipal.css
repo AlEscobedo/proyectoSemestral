@@ -305,3 +305,37 @@ header{
     box-shadow: 1px 1px 22px -5px rgb(255, 165, 0);
 }
 
+
+
+
+.categorias-juegos{
+    height: 1200px;
+    margin-left: 50px;
+    margin-right: 50px;
+
+}
+.centro{
+    position: relative;
+    margin-top: 100px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 40px;
+    width: 400px;
+    border-radius: 20%;    
+}
+
+img{
+    transition: all 0.2s linear;
+    filter: blur(4px);
+    border-radius: 8%;
+}
+img:hover{
+    position: relative;
+    filter: none; 
+    width: 450px;  
+    margin-top: 90px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 80px;
+
+}
