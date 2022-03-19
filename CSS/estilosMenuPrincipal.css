@@ -208,3 +208,25 @@ header{
     justify-content: center;
     align-items: center;
 }
+
+.contenedor-name-categoria{
+    max-width: 1200px;
+    padding: 20px;
+    padding-bottom: 40px;
+    margin: auto;
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.categoria{
+    width: 300px;
+    position: relative;
+    margin: 20px;
+}
+
+.icon-categoria{
+    width: 100%;
+    height: 220px;
+}
