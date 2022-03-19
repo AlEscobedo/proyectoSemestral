@@ -247,6 +247,8 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+    z-index: 1;
 }
 
 .texto-categoria{
@@ -256,6 +258,7 @@ header{
     display: flex;
     justify-content: center;
     position: absolute;
+    align-items: center;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -268,7 +271,7 @@ header{
     color: rgb(199, 199, 199);
     background: rgb(59, 59, 59);
     padding: 20px;
-    *margin-top: -220px;
+    margin-top: -220px;
 }
 
 .info-categoria p{
@@ -288,5 +291,17 @@ header{
 .info-categoria input{
     margin-top: 20px;
     padding: 10px 40px;
-    background: orange;
+    background: rgb(255, 165, 0);
+    color: rgb(0, 0, 0);
+    font-weight: 800;
+    font-size: 14px;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    transition: box-shadow 300ms;
 }
+
+.info-categoria input:hover{
+    box-shadow: 1px 1px 22px -5px rgb(255, 165, 0);
+}
+
