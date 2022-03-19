@@ -7,10 +7,10 @@ body {
 }
 .login-box{
     width: 320px;
-    height: 420px;
+    height: 945px;
     background: black;
     color: white;
-    top: 50%;
+    top: 104%;
     left: 50%;
     position: absolute;
     transform: translate(-50%, -50%);
@@ -74,4 +74,8 @@ body {
 } 
 .login-box a:hover{
     color: white;
+}
+
+.sel-box {
+    padding: 0 0 20px;
 }
