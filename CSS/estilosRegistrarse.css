@@ -7,10 +7,10 @@ body {
 }
 .login-box{
     width: 400px;
-    height: 945px;
+    height: 900px;
     background: black;
     color: white;
-    top: 104%;
+    top: 88%;
     left: 50%;
     position: absolute;
     transform: translate(-50%, -50%);
