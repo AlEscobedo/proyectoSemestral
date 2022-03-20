@@ -95,7 +95,7 @@ body {
 }
 .login-box{
     width: 400px;
-    height: 900px;
+    height: 950px;
     background: black;
     color: white;
     top: 70%;
@@ -113,7 +113,7 @@ body {
     left: calc(50% - 50px);
 }
 .login-box h1{
-    margin: 0;
+    
     padding: 0 0 20px;
     text-align: center;
     font-size: 22px;
@@ -137,7 +137,7 @@ body {
     outline: none;
     height: 40px;
     color: white;
-    font-size: 16px;
+    font-size: 16px;    
 }
 
 .login-box input[type="submit"]{
@@ -148,6 +148,7 @@ body {
     color: rgb(0, 0, 0);
     font-size: 18px;
     border-radius: 20px;
+    margin-top: 25px;
 }
 .login-box input:hover[type="submit"]{
     color: rgb(255, 255, 255);
@@ -172,4 +173,5 @@ body {
 
 .sel-box {
     padding: 0 0 20px;
+    margin-top: 10px;
 }
