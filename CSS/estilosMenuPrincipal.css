@@ -305,15 +305,12 @@ header{
     box-shadow: 1px 1px 22px -5px rgb(255, 165, 0);
 }
 
-
-
-
 .categorias-juegos{
     height: 1200px;
     margin-left: 50px;
     margin-right: 50px;
-
 }
+
 .centro{
     position: relative;
     margin-top: 100px;
@@ -324,18 +321,62 @@ header{
     border-radius: 20%;    
 }
 
-img{
-    transition: all 0.2s linear;
-    filter: blur(4px);
-    border-radius: 8%;
+.c1 .icon-categoria{
+    background: url(../imagenes/menuPrincipal/dbd_freddyD.jpg);
+    background-size: cover;
 }
-img:hover{
-    position: relative;
-    filter: none; 
-    width: 450px;  
-    margin-top: 90px;
-    margin-left: 40px;
-    margin-right: 40px;
-    margin-bottom: 80px;
 
+.c1:hover .icon-categoria{
+    background: url(../imagenes/menuPrincipal/dbd_freddy.jpg);
+    background-size: cover;
+}
+
+.c2 .icon-categoria{
+    background: url(../imagenes/menuPrincipal/monsterhunterD.jpg);
+    background-size: cover;
+}
+
+.c2:hover .icon-categoria{
+    background: url(../imagenes/menuPrincipal/monsterhunter.jpg);
+    background-size: cover;
+}
+
+.c3 .icon-categoria{
+    background: url(../imagenes/menuPrincipal/CarrerasD.jpg);
+    background-size: cover;
+}
+
+.c3:hover .icon-categoria{
+    background: url(../imagenes/menuPrincipal/Carreras.jpg);
+    background-size: cover;
+}
+
+.c4 .icon-categoria{
+    background: url(../imagenes/menuPrincipal/daysgoneD.jpg);
+    background-size: cover;
+}
+
+.c4:hover .icon-categoria{
+    background: url(../imagenes/menuPrincipal/daysgone.jpg);
+    background-size: cover;
+}
+
+.c5 .icon-categoria{
+    background: url(../imagenes/menuPrincipal/f2playD.jpg);
+    background-size: cover;
+}
+
+.c5:hover .icon-categoria{
+    background: url(../imagenes/menuPrincipal/f2play.jpg);
+    background-size: cover;
+}
+
+.c6 .icon-categoria{
+    background: url(../imagenes/menuPrincipal/minecraftD.jpg);
+    background-size: cover;
+}
+
+.c6:hover .icon-categoria{
+    background: url(../imagenes/menuPrincipal/minecraft.jpg);
+    background-size: cover;
 }
