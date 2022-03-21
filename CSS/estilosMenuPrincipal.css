@@ -331,7 +331,7 @@ header{
 
 .c1 .icon-categoria{
     background: url(../imagenes/menuPrincipal/dbd_freddyD.jpg);
-    background-size: cover;
+    background-size: cover;    
 }
 
 .c1:hover .icon-categoria{
