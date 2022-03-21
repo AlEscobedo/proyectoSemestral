@@ -141,12 +141,12 @@ body{
 .typewriter{
     margin-top: 10px;  
     margin-bottom: 30px;
-    margin-left: 70px;
-    margin-right: 70px;
+    margin-left: 80px;
+    margin-right: 80px;
 }
 .typewriter h1 {
     font-size: 40px;    
-    
+    user-select: none;
     color: #fff;
     font-family: monospace;
     overflow: hidden;
