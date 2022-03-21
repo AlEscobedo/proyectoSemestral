@@ -136,21 +136,45 @@ header{
 }
 
 body{
-    background-color: hsl(0, 0%, 0%);
+    background-color: black;
 }
-
-.slidershow h1{
-    font-size: 40px;
+.typewriter{
+    margin-top: 10px;  
+    margin-bottom: 30px;
+    margin-left: 70px;
+    margin-right: 70px;
+}
+.typewriter h1 {
+    font-size: 40px;    
+    
     color: #fff;
-    text-align: center;
-    margin-bottom: 20px;
-    font-family: 'Courier New', Courier, monospace;
-}
+    font-family: monospace;
+    overflow: hidden;
+    border-right: .15em solid orange;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    animation: 
+      typing 3.5s steps(30, end),
+      blink-caret .5s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange }
+  }
 
 .slidershow{
     width: 700px;
     height: 400px;
-    overflow: hidden;    
+    overflow: hidden;               
 }
 .middle{
     position: relative;
