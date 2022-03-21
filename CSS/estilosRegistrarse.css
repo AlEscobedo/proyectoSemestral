@@ -143,7 +143,7 @@ body {
     color: rgb(0, 0, 0);
     font-size: 18px;
     border-radius: 20px;
-    margin-top: 25px;
+    margin-top: 5px;
 }
 .login-box input:hover[type="submit"]{
     color: rgb(255, 255, 255);
@@ -169,6 +169,26 @@ body {
 .sel-box {
     padding: 0 0 20px;
     margin-top: 10px;
+}
+
+.checkbox label input[type="checkbox"]{    
+    height: 15px; 
+    width: 15px;    
+    margin: 0;
+    
+}
+
+.checkbox h1{    
+    font-size: 15px;
+    font-weight: 500;   
+    text-align: left;
+    padding-left: 20px;
+    margin-top: -22px;
+}
+.checkbox{
+    align-items: center;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 .contenedor-footer{
