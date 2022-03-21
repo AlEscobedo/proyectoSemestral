@@ -28,12 +28,6 @@ header{
     justify-content: center;
     align-items: center;
 }
-.logo h1{
-    color: rgb(255, 255, 255);
-}
-.logo h1 b{
-    color: rgb(255, 165, 0);
-}
 
 .Usuario{
     height: 80px;
@@ -92,15 +86,16 @@ body {
     padding: 0;
     background: url(../imagenes/Registrarse/Fondo.jpg);
     background-size: cover;
+
 }
 .login-box{
     width: 400px;
     height: 950px;
     background: black;
     color: white;
-    top: 70%;
+    margin-top: 35%;
     left: 50%;
-    position: absolute;
+    position: relative;
     transform: translate(-50%, -50%);
     box-sizing: border-box;
     padding: 70px 30px;
@@ -174,4 +169,70 @@ body {
 .sel-box {
     padding: 0 0 20px;
     margin-top: 10px;
+}
+
+.contenedor-footer{
+    width: 100%;
+    padding: 40px 0;
+    background: rgb(32, 32, 32);
+}
+.contenedor-footer footer{
+    max-width: 1200px;
+    margin: auto;
+}
+.contenedor-footer footer .logo-footer{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.contenedor-footer footer .logo-footer img{
+    width: 50px;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contenedor-footer footer .redes-footer{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.contenedor-footer footer .redes-footer img{
+    width: 40px;
+    margin: 20px;
+    background: rgb(63, 63, 63);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    color: rgb(255, 255, 255);
+}
+.contenedor-footer footer .redes-footer img:hover{
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    color: rgb(255, 255, 255);
+}
+.contenedor-footer footer hr{
+
+    margin-top: 20px;
+    border: none;
+    height: 2px;
+    background: rgb(128, 128, 128);
+}
+.contenedor-footer footer h4{
+    text-align: center;
+    margin-top: 40px;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+}
+.contenedor-footer footer .logo-footer{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.contenedor-footer footer .logo-footer img{
+    width: 50px;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
