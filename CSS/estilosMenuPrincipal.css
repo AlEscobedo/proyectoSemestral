@@ -165,13 +165,32 @@ header{
     align-items: center;
 }
 
-.contenedor-footer footer .redes-footer{
+/**/
+.contenedor-footer footer .contenedor-redes .redes-footer{
     display: flex;
     justify-content: center;
-    margin-top: 20px;
 }
 
-.contenedor-footer footer .redes-footer img{
+.contenedor-footer footer .contenedor-imgRedes .redes-img{
+    display: flex;
+    justify-content: center;
+}
+/**/
+
+/**/
+.contenedor-redes{
+    display: flex;
+    justify-content: center;
+}
+
+.contenedor-imgRedes{
+    display: flex;
+    justify-content: center;
+}
+/**/
+
+/**/
+.contenedor-footer footer .contenedor-redes .redes-footer img{
     width: 40px;
     margin: 20px;
     background: rgb(63, 63, 63);
@@ -181,13 +200,21 @@ header{
     border-radius: 100%;
     color: rgb(255, 255, 255);
 }
-.contenedor-footer footer .redes-footer img:hover{
+.contenedor-footer footer .contenedor-imgRedes .redes-img img{
+    width: 40px;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/**/
+
+.contenedor-footer footer .contenedor-redes .redes-footer img:hover{
     background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
     color: rgb(255, 255, 255);
 }
 
 .contenedor-footer footer hr{
-
     margin-top: 20px;
     border: none;
     height: 2px;
