@@ -401,3 +401,35 @@ background-color: #3d3d3d;
     justify-content: center;
     align-items: center;
 }
+
+.container-fluid{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.carousel{
+    margin-top: 50px;
+    background-color: black;
+    height: 450px;
+    width: 100%;
+}
+.card{
+    margin-top: 30px;
+    background-color: black;
+    color: white;
+    border: 3px orange solid;
+}
+.button{
+    background-color: orange;
+    color: white;
+}
+.btn-primary {
+    color: white;
+    background-color: black;
+    border-color: orange;
+}
+.btn-primary:hover {
+    color: black;
+    background-color: orange;
+    border-color: white;
+    font-weight: 550;
+}
