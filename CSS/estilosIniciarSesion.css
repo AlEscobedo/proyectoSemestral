@@ -6,11 +6,12 @@
 /****** BOX ******/
 .box {
     width: 100%;
-    height:  69vh;
+    height:  85vh;
     position: relative;
     top: auto;
     bottom: auto;
     margin: auto;
+    margin-top: -50px;
     background-image: url(../imagenes/iniciarSesion/fondo.jpg);
     background-position: center;
     background-size: cover;
@@ -120,7 +121,6 @@
 /****** INICIA FOOTER ******/
 .footer-all{
     width: 100%;
-    padding: 40px 0;
     background: rgb(32, 32, 32);
 }
 
