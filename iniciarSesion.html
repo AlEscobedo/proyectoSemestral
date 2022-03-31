@@ -7,61 +7,98 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel='shorcut icon' type='image/x-icon' href='imagenes/menuPrincipal/iconoPag.png'>
     <title>Iniciar Sesión</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="CSS/estilosIniciarSesion.css">
 </head>
 
-<body>
-    <header>
-        <div class="header-contenido">
-            <div class="logo">
-                <a href="index.html">
-                    <h1><img src="imagenes/menuPrincipal/logoPag.png" width="170"></b></h1>
+<body class="color_background">
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">
+                    <img src="imagenes/menuPrincipal/logoPag.png" width="100">
                 </a>
             </div>
-            <div class="Usuario">
-                <nav>
-                    <ul>
-                        <li class="Usuario-select"><a href="iniciarSesion.html">Iniciar Sesion</a></li>
-                        <li class="Usuario-select"><a href="index.html">Volver</a></li>
-                    </ul>
-                </nav>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="registrarse.html"><span class="glyphicon glyphicon-user"></span> Registrarse</a></li>
+                    <li><a href="index.html"><span class="glyphicon glyphicon-arrow-left"></span> Volver</a></li>
+                </ul>
             </div>
         </div>
-    </header>
+    </nav>
 
-    <div class="contenedor-box">
-        <div class="login-box">
-            <img class="avatar" src="imagenes/menuPrincipal/iconoPag.png" alt="Logo de EstimHUB">
-            <h1>Iniciar Sesión</h1>
-            <form>
-                <label for="username">Nombre Usuario</label>
-                <input type="text" placeholder="Usuario">                
-            </form>
-            <label for="password">Contraseña</label>
-            <input type="password" placeholder="Contraseña">
 
-            <a href="index.html"><input type="submit" value="Iniciar Sesion Usuario"></a>
-            <a href="index.html"><input type="submit" value="Iniciar Sesion Administrador"></a>
-            
-            <a href="recuperarContrasena.html">Olvidaste la Contraseña?</a><br>
-            <a href="registrarse.html">No tienes una cuenta?</a>
-            </form>
+
+    <!-- BOX -->
+    <div class="container-fluid box">
+        <div class="row login-box">
+            <div class="col">
+                <img class="avatar" src="imagenes/menuPrincipal/iconoPag.png" alt="Logo de EstimHUB">
+                <h1>Iniciar Sesión</h1>
+                <form>
+                    <label for="username">Nombre Usuario</label>
+                    <input type="text" placeholder="Usuario">
+                </form>
+                <label for="password">Contraseña</label>
+                <input type="password" placeholder="Contraseña">
+
+                <a href="index.html"><input type="submit" value="Iniciar Sesion Usuario"></a>
+                <a href="index.html"><input type="submit" value="Iniciar Sesion Administrador"></a>
+
+                <a href="recuperarContrasena.html">Olvidaste la Contraseña?</a><br>
+                <a href="registrarse.html">No tienes una cuenta?</a>
+                </form>
+            </div>
         </div>
     </div>
-    <div class="contenedor-footer">
+
+
+
+    <!-- FOOTER -->
+    <div class="container footer-all">
         <footer>
-            <div class="logo-footer">
-                <img src="imagenes/menuPrincipal/iconoPag.png">
+            <div class="row logo-footer">
+                <img src="imagenes/menuPrincipal/iconoPagOk.png" alt="">
             </div>
-            <div class="redes-footer">
-                <a href="#"><img src="imagenes/menuPrincipal/instagram-logo.png" alt="insta"></a>
-                <a href="#"><img src="imagenes/menuPrincipal/instagram-logo.png" alt="insta"></a>
-                <a href="#"><img src="imagenes/menuPrincipal/instagram-logo.png" alt="insta"></a>
+            <div class="contenedor-imgRedes">
+                <div class="redes-img i1">
+                    <a href="#"><img src="imagenes/menuPrincipal/erick.png" alt=""></a>
+                </div>
+                <div class="redes-img i2">
+                    <a href="#"><img src="imagenes/menuPrincipal/jano.png" alt=""></a>
+                </div>
+                <div class="redes-img i3">
+                    <a href="#"><img src="imagenes/menuPrincipal/nico.png" alt=""></a>
+                </div>
             </div>
+
+            <div class="contenedor-redes">
+                <div class="redes-footer">
+                    <a href="#"><img src="imagenes/menuPrincipal/instagram-logo.png" alt="insta"></a>
+                </div>
+                <div class="redes-footer">
+                    <a href="#"><img src="imagenes/menuPrincipal/instagram-logo.png" alt="insta"></a>
+                </div>
+                <div class="redes-footer">
+                    <a href="#"><img src="imagenes/menuPrincipal/instagram-logo.png" alt="insta"></a>
+                </div>
+            </div>
+
             <hr>
             <h4>© 2022 DuocUC - Todos los Derechos Reservados</h4>
 
         </footer>
+        <!-- FIN DE LA PARTE DE ABAJO -->
     </div>
 </body>
 
