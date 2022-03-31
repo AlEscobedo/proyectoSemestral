@@ -49,7 +49,10 @@
 
 
 /* INICIA CATEGORIAS */
-.contenedor-categoria{
+.color-fondo{
+    background-color: rgb(44, 44, 44);
+}
+.categoria-all{
     max-width: 1200px;
     padding: 20px;
     padding-bottom: 40px;
@@ -59,8 +62,6 @@
     flex-wrap: wrap;
     justify-content: center;
 }
-
-
 .categoria{
     width: 300px;
     position: relative;
@@ -68,7 +69,6 @@
     transition: all 300ms;
     border-radius: 20px;
 }
-
 .icon-categoria{
     width: 100%;
     height: 220px;
@@ -81,7 +81,6 @@
     transition: all 400ms cubic-bezier(0.5,0,0,1);
     border-radius: 20px;
 }
-
 .texto-categoria{
     user-select: none;
     width: 100%;
@@ -96,7 +95,6 @@
     transform: translate(-50%, -50%);
     color: rgb(255, 255, 255);
 }
-
 .info-categoria{
     user-select: none;
     width: 100%;
@@ -108,7 +106,6 @@
     transition: all 400ms cubic-bezier(0.5,0,0,1);
     border-radius: 20px;
 }
-
 .info-categoria p{
     font-size: 14px;
     margin-top: 14px;
@@ -122,7 +119,6 @@
     line-clamp: 5;
     overflow: hidden;
 }
-
 .info-categoria input{
     margin-top: 20px;
     padding: 10px 40px;
@@ -135,17 +131,14 @@
     border-radius: 10px;
     transition: box-shadow 300ms;
 }
-
 .info-categoria input:hover{
     box-shadow: 1px 1px 22px -5px rgb(255, 165, 0);
 }
-
 .categorias-juegos{
     height: 1200px;
     margin-left: 50px;
     margin-right: 50px;
 }
-
 .centro{
     position: relative;
     margin-top: 100px;
@@ -155,67 +148,54 @@
     width: 400px;
     border-radius: 20%;    
 }
-
 .c1 .icon-categoria{
     background: url(../imagenes/menuPrincipal/dbd_freddyD.jpg);
     background-size: cover;    
 }
-
 .c1:hover .icon-categoria{
     background: url(../imagenes/menuPrincipal/dbd_freddy.jpg);
     background-size: cover;
 }
-
 .c2 .icon-categoria{
     background: url(../imagenes/menuPrincipal/monsterhunterD.jpg);
     background-size: cover;
 }
-
 .c2:hover .icon-categoria{
     background: url(../imagenes/menuPrincipal/monsterhunter.jpg);
     background-size: cover;
 }
-
 .c3 .icon-categoria{
     background: url(../imagenes/menuPrincipal/CarrerasD.jpg);
     background-size: cover;
 }
-
 .c3:hover .icon-categoria{
     background: url(../imagenes/menuPrincipal/Carreras.jpg);
     background-size: cover;
 }
-
 .c4 .icon-categoria{
     background: url(../imagenes/menuPrincipal/daysgoneD.jpg);
     background-size: cover;
 }
-
 .c4:hover .icon-categoria{
     background: url(../imagenes/menuPrincipal/daysgone.jpg);
     background-size: cover;
 }
-
 .c5 .icon-categoria{
     background: url(../imagenes/menuPrincipal/f2playD.jpg);
     background-size: cover;
 }
-
 .c5:hover .icon-categoria{
     background: url(../imagenes/menuPrincipal/f2play.jpg);
     background-size: cover;
 }
-
 .c6 .icon-categoria{
     background: url(../imagenes/menuPrincipal/minecraftD.jpg);
     background-size: cover;
 }
-
 .c6:hover .icon-categoria{
     background: url(../imagenes/menuPrincipal/minecraft.jpg);
     background-size: cover;
 }
-
 .categoria:hover{
     box-shadow: 1px 1px 20px -10px rgb(0, 0, 0);
 }
@@ -223,12 +203,10 @@
     margin-top: 0;   
     border-radius: 0px 0px 20px 20px;
 }
-
 .categoria:hover .icon-categoria{
     margin-top: -110px;
     border-radius: 20px 20px 0px 0px ;
 }
-
 .categoria:hover .texto-categoria{
     color: rgba(0, 0, 0, 0);
     transition: 300ms;
@@ -237,24 +215,24 @@
 
 
 /****** INICIA FOOTER ******/
-.contenedor-footer{
+.footer-all{
     width: 100%;
     padding: 40px 0;
     background: rgb(32, 32, 32);
 }
 
-.contenedor-footer footer{
+.footer-all footer{
     max-width: 1200px;
     margin: auto;
 }
 
-.contenedor-footer footer .logo-footer{
+.footer-all footer .logo-footer{
     display: flex;
     justify-content: center;
     margin-top: 20px;
 }
 
-.contenedor-footer footer .logo-footer img{
+.footer-all footer .logo-footer img{
     width: 50px;
     margin: 20px;
     display: flex;
@@ -263,12 +241,12 @@
 }
 
 /**/
-.contenedor-footer footer .contenedor-redes .redes-footer{
+.footer-all footer .contenedor-redes .redes-footer{
     display: flex;
     justify-content: center;
 }
 
-.contenedor-footer footer .contenedor-imgRedes .redes-img{
+.footer-all footer .contenedor-imgRedes .redes-img{
     display: flex;
     justify-content: center;
 }
@@ -287,7 +265,7 @@
 /**/
 
 /**/
-.contenedor-footer footer .contenedor-redes .redes-footer img{
+.footer-all footer .contenedor-redes .redes-footer img{
     width: 40px;
     margin: 20px;
     background: rgb(63, 63, 63);
@@ -297,7 +275,7 @@
     border-radius: 100%;
     color: rgb(255, 255, 255);
 }
-.contenedor-footer footer .contenedor-imgRedes .redes-img img{
+.footer-all footer .contenedor-imgRedes .redes-img img{
     width: 40px;
     margin: 20px;
     display: flex;
@@ -306,32 +284,32 @@
 }
 /**/
 
-.contenedor-footer footer .contenedor-redes .redes-footer img:hover{
+.footer-all footer .contenedor-redes .redes-footer img:hover{
     background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
     color: rgb(255, 255, 255);
 }
 
-.contenedor-footer footer hr{
+.footer-all footer hr{
     margin-top: 20px;
     border: none;
     height: 2px;
     background: rgb(128, 128, 128);
 }
 
-.contenedor-footer footer h4{
+.footer-all footer h4{
     text-align: center;
     margin-top: 40px;
     color: rgb(255, 255, 255);
     font-weight: 500;
 }
 
-.contenedor-footer footer .logo-footer{
+.footer-all footer .logo-footer{
     display: flex;
     justify-content: center;
     margin-top: 20px;
 }
 
-.contenedor-footer footer .logo-footer img{
+.footer-all footer .logo-footer img{
     width: 50px;
     margin: 20px;
     display: flex;
