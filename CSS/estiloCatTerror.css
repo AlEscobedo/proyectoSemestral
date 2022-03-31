@@ -5,7 +5,9 @@
     text-decoration: none;
     font-family: sans-serif;
 }
-
+body{
+    background-color:rgb(80, 79, 79);
+}
 header{
     position: fixed;
     top: 0;
@@ -135,9 +137,7 @@ header{
     font-weight: 300px;       
 }
 
-body{
-    background-color:rgb(35, 35, 35);
-}
+
 .typewriter{
     margin-top: 10px;  
     margin-bottom: 30px;
@@ -195,7 +195,7 @@ body{
 .bar{
     width: 50px;
     height: 10px;    
-    border: 2px solid#fff;
+    border: 2px solid #fff;
     margin: 6px;
     cursor: pointer;
     transition: 0.4s;
@@ -238,12 +238,68 @@ input[name="r"]{
 #r5:checked ~ .s1{
     margin-left: -80%;
 }
+.all{
 
+    margin-left: 4%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.juegoFNAF{    
+    display: flex;    
+    background-color: black;
+    width: 90%;    
+    align-items: flex-start;
+    display: inline-flex; 
+    border-radius: 20px;   
+}
+.juegoFNAF img{        
+    width: 100%;
+    height: auto;
+    margin-left: -10px; 
+    border-radius: 20px;  
+}
+.juegoFNAF h1{
+    color: #fff;
+    display: block;
+    text-align: left;
+    margin-top: 20px;
+}
+.juegoFNAF p{
+    color: #fff;
+    display: block;
+    text-align: left;
+    margin-top: 20px;
+}
+.modal-header{
+    background-color: rgb(70, 70, 70);
+    border: none;    
+}
+.modal-body{
+    background-color: black;
+    border: none;
+}
+.modal-body p{
+    color: rgb(255, 255, 255);
+}
+.modal-header h1{
+    color: rgb(255, 255, 255);
+}
+.modal-footer{
+    background-color: rgb(70, 70, 70);
+    border: none;
+}
+.btn-close{
+    color: white;
+    background-color: white;
+    border-radius: 50%;
+    border: none;
+}
 
-
-
-
-
+.botonModal{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 100%;    
+}
 
 
 .contenedor-footer{
