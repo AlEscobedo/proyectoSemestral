@@ -49,7 +49,8 @@
 
 
 /* INICIA CATEGORIAS */
-.contenedor-categoria{
+.categoria-all{
+    background-color: rgb(46, 46, 46);
     max-width: 1200px;
     padding: 20px;
     padding-bottom: 40px;
@@ -237,24 +238,24 @@
 
 
 /****** INICIA FOOTER ******/
-.contenedor-footer{
+.footer-all{
     width: 100%;
     padding: 40px 0;
     background: rgb(32, 32, 32);
 }
 
-.contenedor-footer footer{
+.footer-all footer{
     max-width: 1200px;
     margin: auto;
 }
 
-.contenedor-footer footer .logo-footer{
+.footer-all footer .logo-footer{
     display: flex;
     justify-content: center;
     margin-top: 20px;
 }
 
-.contenedor-footer footer .logo-footer img{
+.footer-all footer .logo-footer img{
     width: 50px;
     margin: 20px;
     display: flex;
@@ -263,12 +264,12 @@
 }
 
 /**/
-.contenedor-footer footer .contenedor-redes .redes-footer{
+.footer-all footer .contenedor-redes .redes-footer{
     display: flex;
     justify-content: center;
 }
 
-.contenedor-footer footer .contenedor-imgRedes .redes-img{
+.footer-all footer .contenedor-imgRedes .redes-img{
     display: flex;
     justify-content: center;
 }
@@ -287,7 +288,7 @@
 /**/
 
 /**/
-.contenedor-footer footer .contenedor-redes .redes-footer img{
+.footer-all footer .contenedor-redes .redes-footer img{
     width: 40px;
     margin: 20px;
     background: rgb(63, 63, 63);
@@ -297,7 +298,7 @@
     border-radius: 100%;
     color: rgb(255, 255, 255);
 }
-.contenedor-footer footer .contenedor-imgRedes .redes-img img{
+.footer-all footer .contenedor-imgRedes .redes-img img{
     width: 40px;
     margin: 20px;
     display: flex;
@@ -306,32 +307,32 @@
 }
 /**/
 
-.contenedor-footer footer .contenedor-redes .redes-footer img:hover{
+.footer-all footer .contenedor-redes .redes-footer img:hover{
     background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
     color: rgb(255, 255, 255);
 }
 
-.contenedor-footer footer hr{
+.footer-all footer hr{
     margin-top: 20px;
     border: none;
     height: 2px;
-    background: rgb(128, 128, 128);
+    background: rgb(63, 63, 63);
 }
 
-.contenedor-footer footer h4{
+.footer-all footer h4{
     text-align: center;
     margin-top: 40px;
     color: rgb(255, 255, 255);
     font-weight: 500;
 }
 
-.contenedor-footer footer .logo-footer{
+.footer-all footer .logo-footer{
     display: flex;
     justify-content: center;
     margin-top: 20px;
 }
 
-.contenedor-footer footer .logo-footer img{
+.footer-all footer .logo-footer img{
     width: 50px;
     margin: 20px;
     display: flex;
