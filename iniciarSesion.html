@@ -6,71 +6,63 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel='shorcut icon' type='image/x-icon' href='imagenes/menuPrincipal/iconoPag.png'>
-    <title>IniciarSesion</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Iniciar Sesión</title>
     <link rel="stylesheet" href="CSS/estilosIniciarSesion.css">
 </head>
 
 <body>
-    <div class="container-flex">
-        <div class="container-flex header">
-            <div class="header-contenido">
-                <div class="logo">
-                    <a href="index.html">
-                        <h1><img src="imagenes/menuPrincipal/logoPag.png" width="170"></b></h1>
-                    </a>
-                </div>
-                <div class="Usuario">
-                    <nav>
-                        <ul>
-                            <li class="Usuario-select"><a href="iniciarSesion.html">Iniciar Sesion</a></li>
-                            <li class="Usuario-select"><a href="registrarse.html">Registrarse</a></li>
-                        </ul>
-                    </nav>
-                </div>
+    <header>
+        <div class="header-contenido">
+            <div class="logo">
+                <a href="index.html">
+                    <h1><img src="imagenes/menuPrincipal/logoPag.png" width="170"></b></h1>
+                </a>
+            </div>
+            <div class="Usuario">
+                <nav>
+                    <ul>
+                        <li class="Usuario-select"><a href="iniciarSesion.html">Iniciar Sesion</a></li>
+                        <li class="Usuario-select"><a href="index.html">Volver</a></li>
+                    </ul>
+                </nav>
             </div>
         </div>
-    </div>
+    </header>
 
+    <div class="contenedor-box">
+        <div class="login-box">
+            <img class="avatar" src="imagenes/menuPrincipal/iconoPag.png" alt="Logo de EstimHUB">
+            <h1>Iniciar Sesión</h1>
+            <form>
+                <label for="username">Nombre Usuario</label>
+                <input type="text" placeholder="Usuario">                
+            </form>
+            <label for="password">Contraseña</label>
+            <input type="password" placeholder="Contraseña">
 
-    <div class="container box">
-        <div class="col">
-            <div class="row">
-                <img class="inicioSesion" src="imagenes/menuPrincipal/iconoPag.png" alt="Logo de EstimHUB">
-            </div>
-            <div class="row">
-                <h1 class="titulo">Iniciar Sesion</h1>
-            </div>
-            <div class="col">
-                <div class="row text">
-                    <label for="username">Nombre de Usuario</label>
-                </div>
-                <div class="row casilla">
-                    <input type="text" placeholder="Usuario">
-                </div>
-                <div class="row text">
-                    <label for="password">Ingrese su Contraseña</label>
-                </div>
-                <div class="row casilla">
-                    <input type="password" placeholder="Contraseña">
-                </div>
-            </div>
-            <div class="row boton">
-                <a href="index.html"><input type="submit" value="Iniciar Sesion Usuario"></a>
-            </div>
-            <div class="row boton">
-                <a href="index.html"><input type="submit" value="Iniciar Sesion Administrador"></a>
-            </div>
-            <div class="separador"></div>
-            <div class="row pLink">
-                <a href="recuperarContrasena.html">Olvidaste la contraseña?</a>
-                <a href="registrarse.html">No tienes una cuenta?</a>
-            </div>
-
+            <a href="index.html"><input type="submit" value="Iniciar Sesion Usuario"></a>
+            <a href="index.html"><input type="submit" value="Iniciar Sesion Administrador"></a>
+            
+            <a href="recuperarContrasena.html">Olvidaste la Contraseña?</a><br>
+            <a href="registrarse.html">No tienes una cuenta?</a>
+            </form>
         </div>
     </div>
+    <div class="contenedor-footer">
+        <footer>
+            <div class="logo-footer">
+                <img src="imagenes/menuPrincipal/iconoPag.png">
+            </div>
+            <div class="redes-footer">
+                <a href="#"><img src="imagenes/menuPrincipal/instagram-logo.png" alt="insta"></a>
+                <a href="#"><img src="imagenes/menuPrincipal/instagram-logo.png" alt="insta"></a>
+                <a href="#"><img src="imagenes/menuPrincipal/instagram-logo.png" alt="insta"></a>
+            </div>
+            <hr>
+            <h4>© 2022 DuocUC - Todos los Derechos Reservados</h4>
 
+        </footer>
+    </div>
 </body>
 
 </html>
