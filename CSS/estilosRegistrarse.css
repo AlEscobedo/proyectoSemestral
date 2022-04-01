@@ -1,223 +1,153 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    font-family: sans-serif;
-}
-
-header{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 80px;
-    background: rgb(32, 32, 32);
-    box-shadow: 0 4px 25px -22px rgb(0, 0, 0);
-    z-index: 2;
-}
-.header-contenido{
-    max-width: 1200px;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-}
-.logo{
-    height: 80px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.Usuario{
-    height: 80px;
-}
-
-.Usuario nav{
-    height: 100%;
-}
-
-.Usuario nav ul{
-    height: 100%;
-    display: flex;
-    list-style: none;
-}
-
-.Usuario nav ul li{
-    height: 100%;
-    margin: 0px 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-}
-
-.Usuario-select:before{
-    content: '';
-    width: 100%;
-    height: 4px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transition: color 300ms;
-}
-
-.Usuario-select:hover:before{
-    content: '';
-    width: 100%;
-    height: 4px;
-    background: rgb(255, 165, 0);
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-.Usuario nav ul a{
-    color: rgb(255, 255, 255);
-    transition: color 300ms;
-}
-
-.Usuario nav ul a:hover{
-    color: rgb(255, 165, 0);
-}
-
 body {
-    margin: 0;
-    padding: 0;
-    background: url(../imagenes/Registrarse/Fondo.jpg);
-    background-size: cover;
-
-}
-.login-box{
-    width: 400px;
-    height: 950px;
-    background: black;
-    color: white;
-    margin-top: 35%;
-    left: 50%;
-    position: relative;
-    transform: translate(-50%, -50%);
-    box-sizing: border-box;
-    padding: 70px 30px;
-}
-.login-box .avatar{
-    width: 100px;
-    height: 100px;
-    position: absolute;
-    top: -50px;
-    left: calc(50% - 50px);
-}
-.login-box h1{
-    
-    padding: 0 0 20px;
-    text-align: center;
-    font-size: 22px;
-}
-.login-box label{
-    margin: 0;
-    padding: 0;
-    font-weight: bold;
-    display: block;
+    background-color: rgb(40, 40, 40);
 }
 
-.login-box input{
+/****** BOX ******/
+.fondo-registrarse{
     width: 100%;
-    margin-bottom: 20px;
+    height:  100%;
+    position: relative;
+    margin: auto;
+    background-image: url(../imagenes/Registrarse/Fondo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
-.login-box input[type="text"],
-.login-box input[type="password"]{
-    border: none;
-    border-bottom: 1px solid white;
-    background: transparent;
-    outline: none;
-    height: 40px;
-    color: white;
-    font-size: 16px;    
+.fondo-registrarse:before{
+    content: " ";
+    width: 100%;
+    height: 100%;
+    background: rgba(34, 34, 34, 0.767);
+    position: absolute;
+    top: 0;
+    left: 0;
 }
-
-.login-box input[type="submit"]{
-    border: none;
-    outline: none;
-    height: 40px;
-    background: orange;
-    color: rgb(0, 0, 0);
-    font-size: 18px;
-    border-radius: 20px;
-    margin-top: 5px;
+.panel-login {
+	border-color: rgb(255, 165, 0);
+	box-shadow: 0px 2px 3px 0px rgb(255, 165, 0);
+    background-color: rgb(37, 37, 37);
 }
-.login-box input:hover[type="submit"]{
-    color: rgb(255, 255, 255);
-
+.panel-login>.panel-heading {
+	background-color: rgb(37, 37, 37);
+	text-align:center;
 }
-
-.login-box a{
-    text-decoration: none;
-    font-size: 15px;
-    line-height: 20px;
-    color: darkgray;
-} 
-.login-box a:hover{
-    color: white;
+.panel-login>.panel-heading h2{
+	color: rgb(255, 165, 0);
+	font-weight: bold;
+	font-size: 15px;
+	-webkit-transition: all 0.1s linear;
+	-moz-transition: all 0.1s linear;
+	transition: all 0.1s linear;
 }
 
-.sel-box select {
-    background: orange;
-    border-radius: 5px;
-
+.panel-login>.panel-heading hr{
+	margin-top: 10px;
+	margin-bottom: 0px;
+	clear: both;
+	border: 0;
+	height: 1px;
+	background-image: -webkit-linear-gradient(left,rgba(255, 255, 255, 0),rgba(255, 255, 255, 0.15),rgba(255, 255, 255, 0));
+	background-image: -moz-linear-gradient(left,rgba(255, 255, 255, 0),rgba(255, 255, 255, 0.15),rgba(255, 255, 255, 0));
+	background-image: -ms-linear-gradient(left,rgba(255, 255, 255, 0),rgba(255, 255, 255, 0.15),rgba(255, 255, 255, 0));
+	background-image: -o-linear-gradient(left,rgba(255, 255, 255, 0),rgba(255, 255, 255, 0.15),rgba(255, 255, 255, 0));
+}
+.panel-login input[type="text"],.panel-login input[type="email"],.panel-login input[type="password"] {
+	height: 45px;
+	border: 1px solid rgb(255, 165, 0);
+	font-size: 16px;
+	-webkit-transition: all 0.1s linear;
+	-moz-transition: all 0.1s linear;
+	transition: all 0.1s linear;
+}
+.panel-login input:hover,
+.panel-login input:focus {
+	outline:none;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+	border-color: rgb(32, 32, 32);
+}
+.forgot-password {
+	text-decoration: underline;
+	color: rgb(255, 0, 0);
+}
+.forgot-password:hover,
+.forgot-password:focus {
+	text-decoration: underline;
+	color: #666;
 }
 
-.sel-box {
-    padding: 0 0 20px;
-    margin-top: 10px;
+.btn-register {
+	background-color: orange;
+	outline: none;
+	color: rgb(0, 0, 0);
+	font-size: 14px;
+	height: auto;
+	font-weight: normal;
+	padding: 14px 0;
+	text-transform: uppercase;
+	border-color: rgb(255, 255, 255);
+}
+.btn-register:hover,
+.btn-register:focus {
+	color: orange;
+	background-color: #000000;
+	border-color: #ffffff;
 }
 
-.checkbox label input[type="checkbox"]{    
-    height: 15px; 
-    width: 15px;    
-    margin: 0;
-    
-}
 
-.checkbox h1{    
-    font-size: 15px;
-    font-weight: 500;   
-    text-align: left;
-    padding-left: 20px;
-    margin-top: -22px;
-}
-.checkbox{
-    align-items: center;
-    margin-left: 5px;
-    margin-right: 5px;
-}
 
-.contenedor-footer{
+/****** INICIA FOOTER ******/
+.footer-all{
     width: 100%;
     padding: 40px 0;
     background: rgb(32, 32, 32);
 }
-.contenedor-footer footer{
+
+.footer-all footer{
     max-width: 1200px;
     margin: auto;
 }
-.contenedor-footer footer .logo-footer{
+
+.footer-all footer .logo-footer{
     display: flex;
     justify-content: center;
     margin-top: 20px;
 }
-.contenedor-footer footer .logo-footer img{
+
+.footer-all footer .logo-footer img{
     width: 50px;
     margin: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.contenedor-footer footer .redes-footer{
+
+/**/
+.footer-all footer .contenedor-redes .redes-footer{
     display: flex;
     justify-content: center;
-    margin-top: 20px;
 }
-.contenedor-footer footer .redes-footer img{
+
+.footer-all footer .contenedor-imgRedes .redes-img{
+    display: flex;
+    justify-content: center;
+}
+/**/
+
+/**/
+.contenedor-redes{
+    display: flex;
+    justify-content: center;
+}
+
+.contenedor-imgRedes{
+    display: flex;
+    justify-content: center;
+}
+/**/
+
+/**/
+.footer-all footer .contenedor-redes .redes-footer img{
     width: 40px;
     margin: 20px;
     background: rgb(63, 63, 63);
@@ -227,29 +157,41 @@ body {
     border-radius: 100%;
     color: rgb(255, 255, 255);
 }
-.contenedor-footer footer .redes-footer img:hover{
+.footer-all footer .contenedor-imgRedes .redes-img img{
+    width: 40px;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/**/
+
+.footer-all footer .contenedor-redes .redes-footer img:hover{
     background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
     color: rgb(255, 255, 255);
 }
-.contenedor-footer footer hr{
 
+.footer-all footer hr{
     margin-top: 20px;
     border: none;
     height: 2px;
-    background: rgb(128, 128, 128);
+    background: rgb(63, 63, 63);
 }
-.contenedor-footer footer h4{
+
+.footer-all footer h4{
     text-align: center;
     margin-top: 40px;
     color: rgb(255, 255, 255);
     font-weight: 500;
 }
-.contenedor-footer footer .logo-footer{
+
+.footer-all footer .logo-footer{
     display: flex;
     justify-content: center;
     margin-top: 20px;
 }
-.contenedor-footer footer .logo-footer img{
+
+.footer-all footer .logo-footer img{
     width: 50px;
     margin: 20px;
     display: flex;
