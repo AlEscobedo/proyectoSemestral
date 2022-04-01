@@ -53,80 +53,27 @@ p{
 
 
 
-
-
-
-.contenedor-footer{
-    width: 100%;
-    padding: 60px 0;
-    background: rgb(32, 32, 32);
-}
-
-.contenedor-footer footer{
-    max-width: 1200px;
-    margin: auto;
-}
-
-.contenedor-footer footer .logo-footer{
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-}
-
-.contenedor-footer footer .logo-footer img{
-    width: 50px;
-    margin: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.contenedor-footer footer .redes-footer{
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-}
-
-.contenedor-footer footer .redes-footer img{
+/****** INICIA FOOTER ******/
+.tamaño{
     width: 40px;
-    margin: 20px;
-    background: rgb(63, 63, 63);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    height: auto;
+    margin: 1%;
+}
+.color-texto{
+    color: rgb(255, 255, 255);
+}
+.btn-footer{
+    color: rgb(255, 255, 255);
     border-radius: 100%;
-    color: rgb(255, 255, 255);
+    border-color: rgb(255, 255, 255);
+    margin: 1%;
 }
-.contenedor-footer footer .redes-footer img:hover{
-    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
-    color: rgb(255, 255, 255);
+.margin-botton{
+    margin-bottom: 4px
 }
-
-.contenedor-footer footer hr{
-
-    margin-top: 20px;
-    border: none;
-    height: 2px;
-    background: rgb(128, 128, 128);
+.padding-up{
+    padding: 20px;
 }
-
-.contenedor-footer footer h4{
-    text-align: center;
-    margin-top: 40px;
-    color: rgb(255, 255, 255);
-    font-weight: 500;
-}
-
-.contenedor-footer footer .logo-footer{
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-}
-
-.contenedor-footer footer .logo-footer img{
-    width: 50px;
-    margin: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.padding-down{
+    padding: 40px;
 }

@@ -97,104 +97,26 @@ body {
 
 
 /****** INICIA FOOTER ******/
-.footer-all{
-    width: 100%;
-    padding: 40px 0;
-    background: rgb(32, 32, 32);
-}
-
-.footer-all footer{
-    max-width: 1200px;
-    margin: auto;
-}
-
-.footer-all footer .logo-footer{
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-}
-
-.footer-all footer .logo-footer img{
-    width: 50px;
-    margin: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-/**/
-.footer-all footer .contenedor-redes .redes-footer{
-    display: flex;
-    justify-content: center;
-}
-
-.footer-all footer .contenedor-imgRedes .redes-img{
-    display: flex;
-    justify-content: center;
-}
-/**/
-
-/**/
-.contenedor-redes{
-    display: flex;
-    justify-content: center;
-}
-
-.contenedor-imgRedes{
-    display: flex;
-    justify-content: center;
-}
-/**/
-
-/**/
-.footer-all footer .contenedor-redes .redes-footer img{
+.tamaño{
     width: 40px;
-    margin: 20px;
-    background: rgb(63, 63, 63);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    height: auto;
+    margin: 1%;
+}
+.color-texto{
+    color: rgb(255, 255, 255);
+}
+.btn-footer{
+    color: rgb(255, 255, 255);
     border-radius: 100%;
-    color: rgb(255, 255, 255);
+    border-color: rgb(255, 255, 255);
+    margin: 1%;
 }
-.footer-all footer .contenedor-imgRedes .redes-img img{
-    width: 40px;
-    margin: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.margin-botton{
+    margin-bottom: 4px
 }
-/**/
-
-.footer-all footer .contenedor-redes .redes-footer img:hover{
-    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
-    color: rgb(255, 255, 255);
+.padding-up{
+    padding: 20px;
 }
-
-.footer-all footer hr{
-    margin-top: 20px;
-    border: none;
-    height: 2px;
-    background: rgb(63, 63, 63);
-}
-
-.footer-all footer h4{
-    text-align: center;
-    margin-top: 40px;
-    color: rgb(255, 255, 255);
-    font-weight: 500;
-}
-
-.footer-all footer .logo-footer{
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-}
-
-.footer-all footer .logo-footer img{
-    width: 50px;
-    margin: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.padding-down{
+    padding: 40px;
 }
