@@ -1,0 +1,162 @@
+<html lang="en">
+
+<head>
+    <title>videojuegos menos queridos</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel='shorcut icon' type='image/x-icon' href='imagenes/menuPrincipal/iconoPagFondo.jpg'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <!--aqui se ingresa los links-->
+    <link rel='stylesheet' type='text/css' media='screen' href='CSS/estiloAdminVMQ.css'>
+
+    
+</head>
+
+<body>
+
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Logo</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <!--TAMBIEN EXISTE LA POSIBILIDAD DE CAMBIAR ESTO POR BARRAS HACIA
+                    ABAJO-->
+                    <li class="active"><a href="index.html">Inicio</a></li>
+                    <li><a href="#">Nuevos videojuegos</a></li>
+                    <li><a href="#">Modificar o eliminar videojuegos</a></li>
+                    <li><a href="#">Categoria favorita</a></li>
+                    <li><a href="#">Videojuego mas querido</a></li>
+                    <li><a href="#">Videojuego menos querido</a></li>
+                    
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Admin</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid text-center">
+        
+            <div class="col-sm-2 sidenav">
+                <div class="well linksTiempo">
+                <p><a href="#">Semana Pasada</a></p>
+                </div>
+                <div class="well linksTiempo">
+                <p><a href="#">Mes Pasado</a></p>
+                </div>
+                <div class="well linksTiempo">
+                <p><a href="#">Año Pasado</a></p>
+                </div>  
+            </div>
+            <div class="col-sm-7 text-left" class="datosCentrales">
+                <div class="row tituloysubtitulo">
+                <h1>Analytics de Videojuegos Menos Queridos</h1>
+                <p>Todos estos datos fueron recopilados desde todas las categorias
+                    <hr>
+                </div>
+
+                    <!--DESDE ACA COMIENZA EL CODIGO DEL GRAFICO-->
+
+                <div class="container grafico">
+
+                    <div class="row">
+
+                        <div id="piechart"></div>
+
+                        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+                        <script type="text/javascript">
+                            // Load google charts
+                            google.charts.load('current', { 'packages': ['corechart'] });
+                            google.charts.setOnLoadCallback(drawChart);
+
+                            // Draw the chart and set the chart values
+                            function drawChart() {
+                                var data = google.visualization.arrayToDataTable([
+                                    ['Task', 'Hours per Day'],
+                                    ['Rocket League', 8],
+                                    ['FIFA 2020', 2],
+                                    ['UNDERTALE', 4],
+                                    ['GTA IV', 2],
+                                    ['Star trek online', 8]
+                                ]);
+                                
+                                // Optional; add a title and set the width and height of the chart
+                                var options = { 'title': 'Videojuegos Menos Queridos', 'width': 550, 'height': 400 };
+
+                                // Display the chart inside the <div> element with id="piechart"
+                                var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+                                chart.draw(data, options);
+                            }
+                        </script>
+                    </div>
+                </div>
+
+                <!--ACA TERMINA EL CODIGO DEL GRAFICO-->
+
+            </div>
+            
+            <div class="container col-sm-3 datosJuegos">
+                
+                <div class="row">
+                    <p>Dentro de la semana los videojuegos que menos quiso el publico :</p>
+                </div>
+                <div class="row">
+                    <p>33.3% = Rocket League</p>
+                </div>
+                <div class="row">
+                    <p>16.7% = Undertale</p>
+                </div>
+                <div class="row">
+                    <p>8.3% = FIFA 2020</p>
+                </div>
+                <div class="row">
+                    <p>8.3% = GTA 4</p>
+                </div>
+                <div class="row">
+                    <p>33.3% = Statrek online</p>
+                </div>
+                </div>
+            
+        
+    </div>
+
+    <div class="contenedor-footer">
+        <footer>
+            <div class="logo-footer">
+                <img src="imagenes/menuPrincipal/iconoPag.png" alt="">
+            </div>
+            <div class="redes-footer">
+                <a href="#"><img src="imagenes/menuPrincipal/instagram-logo.png" alt="insta"></a>
+                <a href="#"><img src="imagenes/menuPrincipal/instagram-logo.png" alt="insta"></a>
+                <a href="#"><img src="imagenes/menuPrincipal/instagram-logo.png" alt="insta"></a>
+            </div>
+
+            <h4>© 2022 DuocUC - Todos los Derechos Reservados</h4>
+
+        </footer>
+        
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
