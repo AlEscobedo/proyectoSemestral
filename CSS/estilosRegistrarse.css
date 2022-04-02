@@ -1,75 +1,84 @@
 body {
-    background-color: rgb(40, 40, 40);
+	background-color: rgb(40, 40, 40);
 }
 
+
+
 /****** BOX ******/
-.fondo-registrarse{
-    width: 100%;
-    height:  100%;
-    position: relative;
-    margin: auto;
-    background-image: url(../imagenes/Registrarse/Fondo.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
+.fondo-registrarse {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	margin: auto;
+	background-image: url(../imagenes/Registrarse/Fondo.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin-top: -20px;
 }
-.fondo-registrarse:before{
-    content: " ";
-    width: 100%;
-    height: 100%;
-    background: rgba(34, 34, 34, 0.767);
-    position: absolute;
-    top: 0;
-    left: 0;
+
+.fondo-registrarse:before {
+	content: " ";
+	width: 100%;
+	height: 100%;
+	background: rgba(34, 34, 34, 0.767);
+	position: absolute;
+	top: 0;
+	left: 0;
 }
+
 .panel-login {
 	border-color: rgb(255, 165, 0);
 	box-shadow: 0px 2px 3px 0px rgb(255, 165, 0);
-    background-color: rgb(37, 37, 37);
-}
-.panel-login>.panel-heading {
 	background-color: rgb(37, 37, 37);
-	text-align:center;
-}
-.panel-login>.panel-heading h2{
-	color: rgb(255, 165, 0);
-	font-weight: bold;
-	font-size: 15px;
-	-webkit-transition: all 0.1s linear;
-	-moz-transition: all 0.1s linear;
-	transition: all 0.1s linear;
+	margin-top: 40px;
+	margin-bottom: 40px;
 }
 
-.panel-login>.panel-heading hr{
+.panel-login>.panel-heading {
+	background-color: rgb(37, 37, 37);
+	text-align: center;
+}
+
+.panel-login>.panel-heading h2 {
+	color: rgb(255, 165, 0);
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.panel-login>.panel-heading hr {
 	margin-top: 10px;
 	margin-bottom: 0px;
 	clear: both;
 	border: 0;
 	height: 1px;
-	background-image: -webkit-linear-gradient(left,rgba(255, 255, 255, 0),rgba(255, 255, 255, 0.15),rgba(255, 255, 255, 0));
-	background-image: -moz-linear-gradient(left,rgba(255, 255, 255, 0),rgba(255, 255, 255, 0.15),rgba(255, 255, 255, 0));
-	background-image: -ms-linear-gradient(left,rgba(255, 255, 255, 0),rgba(255, 255, 255, 0.15),rgba(255, 255, 255, 0));
-	background-image: -o-linear-gradient(left,rgba(255, 255, 255, 0),rgba(255, 255, 255, 0.15),rgba(255, 255, 255, 0));
+	background-image: -webkit-linear-gradient(left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+	background-image: -moz-linear-gradient(left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+	background-image: -ms-linear-gradient(left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+	background-image: -o-linear-gradient(left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
 }
-.panel-login input[type="text"],.panel-login input[type="email"],.panel-login input[type="password"] {
-	height: 45px;
-	border: 1px solid rgb(255, 165, 0);
-	font-size: 16px;
-	-webkit-transition: all 0.1s linear;
-	-moz-transition: all 0.1s linear;
-	transition: all 0.1s linear;
+/*.panel-login input[type="date"]{
+	background-color: transparent;   NO LOGRO QUE EL ICONO DE DATE SEA COLOR BLANCO
+	color: white;
+}*/
+.panel-login input[type="text"],
+.panel-login input[type="email"],
+.panel-login input[type="password"] {
+	background-color: transparent;
 }
 .panel-login input:hover,
 .panel-login input:focus {
-	outline:none;
+	outline: none;
 	-webkit-box-shadow: none;
 	-moz-box-shadow: none;
 	box-shadow: none;
 	border-color: rgb(32, 32, 32);
 }
+
 .forgot-password {
 	text-decoration: underline;
 	color: rgb(255, 0, 0);
 }
+
 .forgot-password:hover,
 .forgot-password:focus {
 	text-decoration: underline;
@@ -77,7 +86,7 @@ body {
 }
 
 .btn-register {
-	background-color: orange;
+	background-color: rgb(255, 165, 0);
 	outline: none;
 	color: rgb(0, 0, 0);
 	font-size: 14px;
@@ -85,8 +94,9 @@ body {
 	font-weight: normal;
 	padding: 14px 0;
 	text-transform: uppercase;
-	border-color: rgb(255, 255, 255);
+	border-color: rgb(0, 0, 0);
 }
+
 .btn-register:hover,
 .btn-register:focus {
 	color: orange;
@@ -97,26 +107,31 @@ body {
 
 
 /****** INICIA FOOTER ******/
-.tamaño{
-    width: 40px;
-    height: auto;
-    margin: 1%;
+.tamaño {
+	width: 40px;
+	height: auto;
+	margin: 1%;
 }
-.color-texto{
-    color: rgb(255, 255, 255);
+
+.color-texto {
+	color: rgb(255, 255, 255);
 }
-.btn-footer{
-    color: rgb(255, 255, 255);
-    border-radius: 100%;
-    border-color: rgb(255, 255, 255);
-    margin: 1%;
+
+.btn-footer {
+	color: rgb(255, 255, 255);
+	border-radius: 100%;
+	border-color: rgb(255, 255, 255);
+	margin: 1%;
 }
-.margin-botton{
-    margin-bottom: 4px
+
+.margin-botton {
+	margin-bottom: 4px
 }
-.padding-up{
-    padding: 20px;
+
+.padding-up {
+	padding: 20px;
 }
-.padding-down{
-    padding: 40px;
+
+.padding-down {
+	padding: 40px;
 }
