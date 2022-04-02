@@ -5,67 +5,109 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel='shorcut icon' type='image/x-icon' href='imagenes/menuPrincipal/iconoPag.png'>
+    <link rel='shorcut icon' type='image/x-icon' href='imagenes/menuPrincipal/iconoPagOk.png'>
     <title>Recuperar Contraseña</title>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
     <script src="https://kit.fontawesome.com/1bb0c0c4bd.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="CSS/estilosRecuperarContra.css">
+    <link rel='stylesheet' href="CSS/estilosRecuperarContra.css">
 </head>
 
 <body>
-    <header>
-        <div class="header-contenido">
-            <div class="logo">
-                <a href="index.html">
-                    <h1><img src="imagenes/menuPrincipal/logoPag.png" width="170"></b></h1>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">
+                    <img src="imagenes/menuPrincipal/logoPag.png" width="100">
                 </a>
             </div>
-            <div class="Usuario">
-                <nav>
-                    <ul>
-                        <li class="Usuario-select"><a href="iniciarSesion.html">Iniciar Sesion</a></li>
-                        <li class="Usuario-select"><a href="index.html">Volver</a></li>
-                    </ul>
-                </nav>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="iniciarSesion.html"><span class="glyphicon glyphicon-log-in"></span> Iniciar sesion</a>
+                    <li><a href="index.html"><span class="glyphicon glyphicon-arrow-left"></span> Volver</a></li>
+                    </li>
+                </ul>
             </div>
         </div>
-    </header>
+    </nav>
 
-    <div class="contenedor-box">
-        <div class="login-box">
-            <img class="avatar" src="imagenes/menuPrincipal/iconoPag.png" alt="Logo de EstimHUB">
-            <h1>Recuperar Contraseña</h1>
-            <form>
-                <label for="username">Correo Electronico</label>
-                <input type="text" placeholder="Correo">
-                <div class="sel-box">
-                    <select>
-                        <option selected="true">Seleccione una Pregunta</option>
-                        <option>
-                            Opcion 1
-                        </option>
 
-                        <option>
-                            Opcion 2
-                        </option>
 
-                        <option>
-                            Opcion 3
-                        </option>
-                    </select>
+    <!-- BOX -->
+    <div class="container-fluid fondo-recuperar">
+        <div class="row">
+            <div class="col-sm-6 col-sm-offset-3">
+                <div class="panel panel-login">
+                    <div class="panel-heading">
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <div class="row">
+                                    <img src="imagenes/menuPrincipal/iconoPag.png" width="100" alt="">
+                                </div>
+                                <h2>Recuperar Contraseña</h2>
+                            </div>
+                        </div>
+                        <hr>
+                    </div>
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <form id="register-form" action="index.html" method="post"
+                                    role="form" style="display: block;">
+                                    
+                                    <!-- FORMULARIO INICIO SESION -->
+
+                                    <div class="form-group">
+                                        <input type="email" name="email" id="email" tabindex="2" class="form-control"
+                                            placeholder="Correo">
+                                    </div>
+
+                                    <div class="form-group">
+                                            <select name="preguntasecreta" id="preguntasecreta" tabindex="1"
+                                            class="form-control" placeholder="Pregunta secreta" value="">
+                                                <option selected="true">Seleccione una Pregunta</option>
+                                                <option>
+                                                    Primera Mascota
+                                                </option>
+                        
+                                                <option>
+                                                    Personaje Favorito
+                                                </option>
+                        
+                                                <option>
+                                                    Actividad Favorita
+                                                </option>
+                                            </select>
+                                        <input type="text" name="pregunta secreta" id="pregunta secreta" tabindex="1"
+                                            class="form-control" placeholder="Pregunta secreta" value="">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <div class="row">
+                                            <div class="col-sm-8 col-sm-offset-2">
+                                                <a href="index.html"><input type="button" class="form-control btn btn-register"
+                                                    value="Recuperar Contraseña"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </form>
-            <label for="password">Respuesta Secreta</label>
-            <input type="text" placeholder="Respuesta">
-
-            <input type="submit" value="Recuperar">
-
-            <a href="registrarse.html">No tienes una cuenta?</a>
-            </form>
+            </div>
         </div>
     </div>
 
 
-    
+
     <!-- FOOTER -->
     <div class="container-fluid">
         <hr>

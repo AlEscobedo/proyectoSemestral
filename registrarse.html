@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='shorcut icon' type='image/x-icon' href='imagenes/menuPrincipal/iconoPagOk.png'>
     <title>Registrarse</title>
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
@@ -58,9 +59,10 @@
                     <div class="panel-body">
                         <div class="row">
                             <div class="col-lg-12">
-                                <form id="register-form" action="http://phpoll.com/register/process" method="post"
+                                <form id="register-form" action="index.html" method="post"
                                     role="form" style="display: block;">
-
+                                    
+                                    <!-- FORMULARIO INICIO SESION -->
                                     <div class="form-group">
                                         <input type="text" name="Nombre" id="Nombre" tabindex="1" class="form-control"
                                             placeholder="Nombre" value="">
@@ -72,8 +74,8 @@
                                     </div>
 
                                     <div class="form-group">
-                                        <input type="email" name="email" id="email" tabindex="2"
-                                            class="form-control" placeholder="Correo">
+                                        <input type="email" name="email" id="email" tabindex="2" class="form-control"
+                                            placeholder="Correo">
                                     </div>
                                     <div class="form-group">
                                         <input type="text" name="direccion" id="direccion" tabindex="2"
@@ -87,6 +89,21 @@
                                     </div>
 
                                     <div class="form-group">
+                                            <select name="preguntasecreta" id="preguntasecreta" tabindex="1"
+                                            class="form-control" placeholder="Pregunta secreta" value="">
+                                                <option selected="true">Seleccione una Pregunta</option>
+                                                <option>
+                                                    Primera Mascota
+                                                </option>
+                        
+                                                <option>
+                                                    Personaje Favorito
+                                                </option>
+                        
+                                                <option>
+                                                    Actividad Favorita
+                                                </option>
+                                            </select>
                                         <input type="text" name="pregunta secreta" id="pregunta secreta" tabindex="1"
                                             class="form-control" placeholder="Pregunta secreta" value="">
                                     </div>
@@ -104,9 +121,8 @@
                                     <div class="form-group">
                                         <div class="row">
                                             <div class="col-sm-6 col-sm-offset-3">
-                                                <input type="submit" name="register-submit" id="register-submit"
-                                                    tabindex="4" class="form-control btn btn-register"
-                                                    value="Crear cuenta">
+                                                <a href="index.html"><input type="button" class="form-control btn btn-register"
+                                                    value="Crear cuenta"></a>
                                             </div>
                                         </div>
                                     </div>
