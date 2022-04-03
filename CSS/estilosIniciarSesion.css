@@ -1,9 +1,18 @@
-
+*{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 body{
   background-color: rgb(40, 40, 40);
 }
-
-.all {
+.top{
+  background-color: rgb(36, 36, 36);
+  border-bottom: solid rgb(105, 105, 105);
+}
+.bottom{
+  background-color: rgb(36, 36, 36);
+  border-top: solid rgb(105, 105, 105);
+}
+.all{
     border: 3px solid hsl(39, 100%, 50%);
     background-color: #000000;
     color: #ffffff;
@@ -31,7 +40,7 @@ body{
   }
   
   /* Set a style for all buttons */
-  button {
+.ingresar {
     background-color: hsl(39, 100%, 50%);
     color: #ffffff;
     border-color: solid #000000;
