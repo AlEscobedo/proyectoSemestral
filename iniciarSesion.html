@@ -7,131 +7,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel='shorcut icon' type='image/x-icon' href='imagenes/menuPrincipal/iconoPagOk.png'>
     <title>Iniciar Sesión</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <script src="https://kit.fontawesome.com/1bb0c0c4bd.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="CSS/estilosIniciarSesion.css">
 </head>
 
 <body>
+    <div class="separador"></div>
+    <div class="container all">
 
-    <!-- NAVBAR -->
-    <nav class="navbar navbar-inverse">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="index.html">
-                    <img src="imagenes/menuPrincipal/logoPag.png" width="100">
-                </a>
-            </div>
-            <div class="collapse navbar-collapse" id="myNavbar">
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="registrarse.html"><span class="glyphicon glyphicon-user"></span> Registrarse</a></li>
-                    <li><a href="index.html"><span class="glyphicon glyphicon-arrow-left"></span> Volver</a></li>
-                </ul>
+        <div class="row">
+            <div class="imgcontainer">
+                <img src="imagenes/menuPrincipal/iconoPagFondo.jpg" alt="Avatar" class="avatar">
             </div>
         </div>
-    </nav>
-    <!-- INICIO DE SESION -->
-    <div class="container-fluid fondoIniciarSesion">
         <div class="row">
-            <div class="col-sm-4 col-sm-offset-4">
+            <div class="container">
+                <label for="uname"><b>Nombre de Usuario</b></label>
+                <input type="text" placeholder="Usuario" name="uname" required>
 
-                <!--Header Box-->
-                <div class="panel panel-login">
-                    <div class="panel-heading">
-                        <div class="row">
-                            <div class="col-xs-12">
-                                <div class="row">
-                                    <img src="imagenes/menuPrincipal/iconoPag.png" width="100" alt="">
-                                </div>
-                                <h1>Iniciar sesión</h1>
-                                <hr>
-                            </div>
-                        </div>
+                <label for="psw"><b>Contraseña</b></label>
+                <input type="password" placeholder="Contraseña" name="psw" required>
 
-                    </div>
-
-                    <div class="panel-body">
-                        <div class="row">
-                            <div class="col-lg-12">
-                                <form id="login-form" action="http://phpoll.com/login/process" method="post" role="form"
-                                    style="display: block;">
-                                    
-                                    <!-- FORMULARIO INICIO SESION -->
-                                    <div class="form-group">
-                                        <input type="text" name="username" id="username" tabindex="1"
-                                            class="form-control" placeholder="Usuario" value="">
-                                    </div>
-                                    <div class="form-group">
-                                        <input type="password" name="password" id="password" tabindex="2"
-                                            class="form-control" placeholder="Contraseña">
-                                    </div>
-                                    <div class="form-group">
-                                        <div class="row">
-                                            <div class="col-sm-8 col-sm-offset-2">
-                                                <input type="submit" name="login-submit" id="login-submit" tabindex="4"
-                                                    class="form-control btn btn-login" value="Iniciar sesión U">
-                                                <input type="submit" name="login-submit" id="login-submit" tabindex="4"
-                                                    class="form-control btn btn-login" value="Iniciar sesión A">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <div class="row">
-                                            <div class="col-lg-12">
-                                                <div class="text-center">
-                                                    <a href="recuperarContrasena.html" tabindex="5"
-                                                        class="forgot-password">¿Has olvidado tu contraseña?</a><br>
-                                                    <a href="registrarse.html" tabindex="5" class="forgot-password">¿No
-                                                        tienes una cuenta?</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
+                <button type="submit">Ingresar</button>
+                <div class="row contenedor">
+                <div class="row"><span class="psw">Olvidaste la <a href="recuperarContrasena.html">Contraseña?</a></span></div>
+                <div class="row"><span class="psw">¿No tienes una cuenta?<a href="recuperarContrasena.html"> Registrate</a></span></div>
                 </div>
             </div>
         </div>
-    </div>
-
-
-
-    <!-- FOOTER -->
-    <div class="container-fluid">
-        <hr>
-
-        <footer class="text-center">
-            <img class="text-center tamaño" src="imagenes/menuPrincipal/iconoPagOk.png" alt="">
-            <!-- Grid container -->
-            <div class="container padding-up">
-
-                <!-- Section: Social media -->
-                <section class="margin-botton">
-                    <!-- Instagram -->
-                    <a class="btn btn-footer" href="https://www.instagram.com/enojano.shop/" role="button"><i
-                            class="fab fa-instagram"></i></a>
-                    <!-- Github -->
-                    <a class="btn btn-footer" href="https://github.com/AlEscobedo/proyectoSemestral" role="button"><i
-                            class="fab fa-github"></i></a>
-                </section>
-                <!-- Section: Social media -->
-
-            </div>
-            <!-- Copyright -->
-            <div class="text-center padding-down" style="background-color: rgba(0, 0, 0, 0.2);">
-                <H5 class="color-texto">© 2022 DuocUC - Todos los Derechos Reservados</H5>
-            </div>
-            <!-- Copyright -->
-        </footer>
     </div>
 
 </body>
