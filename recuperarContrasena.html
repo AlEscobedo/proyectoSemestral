@@ -22,7 +22,7 @@
             <div class="container-fluid">
 
                 <!-- IMAGEN DEL NAVBAR -->
-                <a class="navbar-brand" href="#"><img src="imagenes/menuPrincipal/logoPag.png" width="100"></a>
+                <a class="navbar-brand" href="index.html"><img src="imagenes/menuPrincipal/logoPag.png" width="100"></a>
 
                 <!-- BOTON EN MODO TOYCHIQUITO -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -40,8 +40,8 @@
                                     Sesion</a>
                             </li>
                             <li class="nav-item">
-                                <a href="index.html" class="nav-link"><i
-                                        class="fa-solid fa-right-to-bracket"></i> Volver</a>
+                                <a href="index.html" class="nav-link"><i class="fa-solid fa-right-to-bracket"></i>
+                                    Volver</a>
                             </li>
                         </ul>
                     </form>
@@ -51,49 +51,52 @@
     </div>
 
 
-    <div class="separador"></div>
-    <div class="container all">
 
-        <div class="row">
-            <div class="imgcontainer">
-                <img src="imagenes/menuPrincipal/iconoPagFondo.jpg" alt="Avatar" class="avatar">
-            </div>
-        </div>
-        <div class="row">
-            <div class="container">
-                <label for="uname"><b>Correo Electronico</b></label>
-                <input type="text" placeholder="Correo Electronico" name="uname" required>
-
-                <div class="form-group">
-                    <label for="uname"><b>Pregunta Secreta</b></label>
-                    <select name="preguntasecreta" id="preguntasecreta" tabindex="1" class="form-control"
-                        placeholder="Pregunta Secreta" value="">
-                        <option selected="true">Seleccione una Pregunta</option>
-                        <option>
-                            Primera Mascota
-                        </option>
-                        <option>
-                            Personaje Favorito
-                        </option>
-                        <option>
-                            Actividad Favorita
-                        </option>
-                    </select>
-                    <input type="text" placeholder="Respuesta Secreta" name="uname" required>
+    <!-- CONTENEDOR DE FONDO -->
+    <div class="container-fluid fondo-inicio">
+        <!-- CONTENEDOR DE BOX -->
+        <div class="container all ">
+            <!-- IMAGEN DE BOX -->
+            <div class="row">
+                <div class="imgcontainer">
+                    <img src="imagenes/menuPrincipal/iconoPagFondo.jpg" alt="Avatar" class="avatar">
                 </div>
+            </div>
+            <!-- FORMULARIO -->
+            <div class="row">
+                <div class="container">
+                    <label for="uname"><b>Correo Electronico</b></label>
+                    <input type="text" placeholder="Correo Electronico" name="uname" required>
 
-                
-                <button class="ingresar" type="submit">Recuperar Contraseña</button>
-                <div class="row contenedor">
+                    <div class="form-group">
+                        <label for="uname"><b>Pregunta Secreta</b></label>
+                        <select name="preguntasecreta" id="preguntasecreta" tabindex="1" class="form-control"
+                            placeholder="Pregunta Secreta" value="">
+                            <option selected="true">Seleccione una Pregunta</option>
+                            <option>
+                                Primera Mascota
+                            </option>
+                            <option>
+                                Personaje Favorito
+                            </option>
+                            <option>
+                                Actividad Favorita
+                            </option>
+                        </select>
+                        <input type="text" placeholder="Respuesta Secreta" name="uname" required>
+                    </div>
 
-                    <div class="row"><span class="psw"><a href="registrarse.html">
-                                ¿No tienes una cuenta? Registrate</a></span></div>
+                    <!-- BOTON DE RECUPERAR -->
+                    <button class="ingresar" type="submit">Recuperar Contraseña</button>
+                    <div class="row contenedor">
+                        <!-- CONTENEDOR REDIRECCION TEXTO -->
+                        <div class="row"><span class="psw"><a href="registrarse.html">
+                                    ¿No tienes una cuenta? Registrate</a></span></div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-
-    <div class="separador"></div>
 
 
 
@@ -119,7 +122,7 @@
             </div>
             <!-- Copyright -->
             <div class="text-center padding-down" style="background-color: rgba(0, 0, 0, 0.2);">
-                <H5 class="color-texto">© 2022 DuocUC - Todos los Derechos Reservados</H5>
+                <h6 class="text-footer">© 2022 DuocUC - Todos los Derechos Reservados</h6>
             </div>
             <!-- Copyright -->
         </footer>
