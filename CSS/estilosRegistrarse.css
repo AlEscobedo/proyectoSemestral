@@ -5,7 +5,7 @@ body {
 
 
 /****** BOX ******/
-.fondo-registrarse {
+/* .fondo-registrarse {
 	width: 100%;
 	height: 100%;
 	position: relative;
@@ -14,7 +14,7 @@ body {
 	background-size: cover;
 	background-repeat: no-repeat;
 	margin-top: -20px;
-}
+} */
 
 .fondo-registrarse:before {
 	content: " ";

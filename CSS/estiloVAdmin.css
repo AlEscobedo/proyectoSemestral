@@ -1,13 +1,6 @@
 body{
     background-color: rgb(40, 40, 40);
 }
-.derecha{
-    align-items: flex-end;
-}
-
-
-
-
 /****** INICIA FOOTER ******/
 .tamaño{
     width: 40px;
