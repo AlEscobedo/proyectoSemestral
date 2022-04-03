@@ -1,5 +1,6 @@
+
 body{
-    background-color: #808080;
+  background-color: rgb(40, 40, 40);
 }
 
 .all {
@@ -83,3 +84,27 @@ body{
       margin-top: 10px;
       margin-bottom: 10px;
   }
+/****** INICIA FOOTER ******/
+.tamaño{
+  width: 40px;
+  height: auto;
+  margin: 1%;
+}
+.color-texto{
+  color: rgb(255, 255, 255);
+}
+.btn-footer{
+  color: rgb(255, 255, 255);
+  border-radius: 100%;
+  border-color: rgb(255, 255, 255);
+  margin: 1%;
+}
+.margin-botton{
+  margin-bottom: 4px
+}
+.padding-up{
+  padding: 20px;
+}
+.padding-down{
+  padding: 40px;
+}
