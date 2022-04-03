@@ -45,16 +45,21 @@ body{
     z-index: 1; 
 }
 .contenedor-info-terror h1{
-    font-size: 60px;
-    font-weight: 500;
     color: rgb(255, 255, 255);
-    margin-bottom: 20px;
-    
 }
 .contenedor-info-terror p{
     color: rgb(255, 255, 255);
+    margin-top: 10px;
     font-size: 20px;
-    font-weight: 300px;       
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    box-orient: vertical;
+    -webkit-line-clamp: 10;
+    line-clamp: 10;
+    overflow: hidden;
 }
 .img-juego{
     width: 100%;
