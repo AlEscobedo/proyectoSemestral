@@ -291,3 +291,8 @@ background-color: #3d3d3d;
 .padding-down{
     padding: 40px;
 }
+.titulo{
+    color: white;
+    font-size: 400%;
+    text-align: center;
+}
