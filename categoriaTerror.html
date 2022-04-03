@@ -51,8 +51,8 @@
         </div>
 
 
-
-        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
                     aria-current="true" aria-label="Slide 1"></button>
@@ -71,7 +71,10 @@
                                     <h5 class="card-title">Five Nights At Freddy's</h5>
                                     <p class="card-text">¡Nuevo trabajo!<br>
                                         ¿Tu curriculum podrá soportarlo? </p>
-                                    <a href="#" class="btn btn-primary">¡Comprar Ahora!</a>
+                                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                        data-bs-target="#myModal1">
+                                        ¡Comprar Ahora!
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -82,7 +85,10 @@
                                     <h5 class="card-title">Phasmophobia</h5>
                                     <p class="card-text">Con Phasmophobia, ¡Ahora puedes ser un GhostBuster real!(¡Como
                                         en la película!)</p>
-                                    <a href="#" class="btn btn-primary">¡Comprar Ahora!</a>
+                                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                        data-bs-target="#myModal2">
+                                        ¡Comprar Ahora!
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -93,7 +99,10 @@
                                     <h5 class="card-title">Dead By Daylight</h5>
                                     <p class="card-text">¿Serás de los que se esconden, de los que trabajan, de los que
                                         trolean al asesino o de los que fallan las pruebas de habilidad?</p>
-                                    <a href="#" class="btn btn-primary">¡Comprar Ahora!</a>
+                                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                        data-bs-target="#myModal3">
+                                        ¡Comprar Ahora!
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -183,75 +192,213 @@
             </button>
         </div>
 
+
+
+<!--Titulo-->
+<div class="row titulo">
+<h1 class="display-1">Catalogo de Juegos</h1></div>
+        <!--Tarjeta VideoJuego FNAF-->
         <div class="container all">
-            <div class="col">
-                <div class="row juegoFNAF">
-                    <div class="col">
-                        <img src="imagenes/categoriaTerror/terror1.jpg" alt="FNAF">
+            <div class="card mb-3" style="max-width: 1000px;">
+                <div class="row no-gutters">
+                  <div class="col-md-4">
+                    <img src="imagenes/categoriaTerror/terror1.jpg" class="card-img" alt="fnaf">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Five Nights at Freddy's</h5>
+                      <p class="card-text">Como guardia de seguridad debes sobrevivir a toda la noche y cuidar de
+                        que los muñecos no escapen del restaurante.
+                        Muchos guardias de seguridad han caído ya en tu puesto.
+                        <p>¿Estarás a la altura?</p></p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                        data-bs-target="#myModal1">
+                        Ver Más
+                    </button>
                     </div>
-                    <div class="col">
-                        <h1>Five Nights at Freddy's</h1>
-                        <p>Como guardia de seguridad debes sobrevivir a toda la noche y cuidar de que los muñecos no
-                            escapen
-                            del restaurante y siembren el caos y el terror allá por donde vayan. Para ello tendrás a tu
-                            disposición una serie de herramientas.</p>
-                        <p>Muchos guardias de seguridad han caído ya en tu puesto, ¿estarás a la altura?</p>
-                        <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#myModal">
-                            Ver Más
-                        </button>
-                        <div class="modal" id="myModal">
-                            <div class="modal-dialog modal-dialog-scrollable">
-                                <div class="modal-content">
+                  </div>
+                </div>
+              </div>
 
-                                    <!-- Modal Header -->
-                                    <div class="modal-header">
-                                        <h1>Five Nights at Freddy's</h1>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                                    </div>
+            <div class="modal" id="myModal1">
+                <div class="modal-dialog modal-dialog-scrollable">
+                    <div class="modal-content">
 
-                                    <!-- Modal body -->
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                            <h1>Five Nights at Freddy's</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
 
-                                    <div class="modal-body">
-                                        <img src="imagenes/categoriaTerror/terror1.jpg" alt="">
-                                        <h1>¿De qué trata?</h1>
-                                        <h5>Atrincherate en tu garita y controla las cámaras de seguridad, así podrás
-                                            ver
-                                            que
-                                            muñecos se han despertado y en qué parte del restaurante están. Encender las
-                                            luces puede ahuyentarlos y a algunos solo les podrás parar cerrando las
-                                            puertas
-                                            a cal y canto. Pero ten cuidado, tienes una energía limitada para cada noche
-                                            y
-                                            no podrás mantener todas tus defensas encendidas todo rato o se gastará y
-                                            estarás expuesto a cualquier muñeco con sangrientas intenciones.</h5>
-                                        <div class="row">
-                                            <p>Valor Juego: 3 Lukitas manito</p>
-                                            <div class="col">
-                                            </div>
-                                            <div class="col">
-                                                <div class="row botonModal"><button type="button" class="btn btn-dark"
-                                                        data-bs-dismiss="#">Agregar al Carrito</button></div>
-                                                <div class="row botonModal"><button type="button"
-                                                        class="btn btn-warning" data-bs-dismiss="#">Comprar</button>
-                                                </div>
-                                            </div>
+                        <!-- Modal body -->
 
-                                        </div>
-                                    </div>
-
-                                    <!-- Modal footer -->
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-dark"
-                                            data-bs-dismiss="modal">Close</button>
-                                    </div>
-
+                        <div class="modal-body">
+                            <img src="imagenes/categoriaTerror/terror1.jpg" alt="">
+                            <h1>¿De qué trata?</h1>
+                            <h5>Atrincherate en tu garita y controla las cámaras de seguridad, así podrás
+                                ver
+                                que
+                                muñecos se han despertado y en qué parte del restaurante están. Encender las
+                                luces puede ahuyentarlos y a algunos solo les podrás parar cerrando las
+                                puertas
+                                a cal y canto. Pero ten cuidado, tienes una energía limitada para cada noche
+                                y
+                                no podrás mantener todas tus defensas encendidas todo rato o se gastará y
+                                estarás expuesto a cualquier muñeco con sangrientas intenciones. </h5>
+                            <div class="row">
+                                <p>Valor Juego: 3 Lukitas manito</p>
+                                <div class="col">
                                 </div>
+                                <div class="col">
+                                    <div class="row botonModal"><button type="button" class="btn btn-dark"
+                                            data-bs-dismiss="#">Agregar al Carrito</button></div>
+                                    <div class="row botonModal"><button type="button" class="btn btn-warning"
+                                            data-bs-dismiss="#">Comprar</button>
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
+
+                        <!-- Modal footer -->
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+                        </div>
+
                     </div>
                 </div>
             </div>
         </div>
+        <!--Tarjeta VideoJuego PHASMO-->
+        <div class="container all">
+            <div class="card mb-3" style="max-width: 1000px;">
+                <div class="row no-gutters">
+                  <div class="col-md-4">
+                    <img src="imagenes/categoriaTerror/terror2.jpg" class="card-img" alt="phasmophobia">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Phasmophobia</h5>
+                      <p class="card-text">
+                        Un particular ticket hacia el inquietante mundo de los seres y demonios que se manifiestan en el mundo de los vivos
+                        <p>¿Estás listo para cazar unos fantasmas?</p>
+                      </p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                        data-bs-target="#myModal2">
+                        Ver Más
+                    </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            <div class="modal" id="myModal2">
+                <div class="modal-dialog modal-dialog-scrollable">
+                    <div class="modal-content">
+
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                            <h1>Phasmophobia</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+
+                        <!-- Modal body -->
+
+                        <div class="modal-body">
+                            <img src="imagenes/categoriaTerror/terror2.jpg" alt="">
+                            <h1>¿De qué trata?</h1>
+                            <h5>
+                                Phasmophobia en un juego de terror y supervivencia en primera persona, pero también una especie de simulador de fenómenos paranormales. </h5>
+                            <div class="row">
+                                <p>Valor Juego: 6 Lukitas manito</p>
+                                <div class="col">
+                                </div>
+                                <div class="col">
+                                    <div class="row botonModal"><button type="button" class="btn btn-dark"
+                                            data-bs-dismiss="#">Agregar al Carrito</button></div>
+                                    <div class="row botonModal"><button type="button" class="btn btn-warning"
+                                            data-bs-dismiss="#">Comprar</button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- Modal footer -->
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Tarjeta VideoJuego DBD-->
+        <div class="container all">
+            <div class="card mb-3" style="max-width: 1000px;">
+                <div class="row no-gutters">
+                  <div class="col-md-4">
+                    <img src="imagenes/categoriaTerror/terror3.jpg" class="card-img" alt="dbd">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Dead by Daylight</h5>
+                      <p class="card-text">
+                        Juega como superviviente e intenta escapar de el asesino para evitar ser capturado y asesinado.
+                        <p>¿Tienes lo necesario para escapar?</p>
+                      </p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                        data-bs-target="#myModal3">
+                        Ver Más
+                    </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            <div class="modal" id="myModal3">
+                <div class="modal-dialog modal-dialog-scrollable">
+                    <div class="modal-content">
+
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                            <h1>Dead by Daylight</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+
+                        <!-- Modal body -->
+
+                        <div class="modal-body">
+                            <img src="imagenes/categoriaTerror/terror3.jpg" alt="">
+                            <h1>¿De qué trata?</h1>
+                            <h5>
+                                Es un videojuego multijugador en línea de 1 contra 4, en el que cuatro jugadores toman el papel de supervivientes y uno el de asesino. Tanto los objetivos del videojuego como la perspectiva de los dos tipos de jugadores son distintos, los supervivientes se concentran en escapar mientras que el asesino debe darles caza para sacrificarlos al Ente.
+                            <div class="row">
+                                <p>Valor Juego: 8 Lukitas manito</p>
+                                <div class="col">
+                                </div>
+                                <div class="col">
+                                    <div class="row botonModal"><button type="button" class="btn btn-dark"
+                                            data-bs-dismiss="#">Agregar al Carrito</button></div>
+                                            <div class="row botonModal"><button type="button" class="btn btn-warning"
+                                            data-bs-dismiss="#">Comprar</button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- Modal footer -->
+                        <div class="modal-footer">
+                            
+                            <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
 
 
 
@@ -270,8 +417,8 @@
                         <a class="btn btn-footer" href="https://www.instagram.com/enojano.shop/" role="button"><i
                                 class="fab fa-instagram"></i></a>
                         <!-- Github -->
-                        <a class="btn btn-footer" href="https://github.com/AlEscobedo/proyectoSemestral" role="button"><i
-                                class="fab fa-github"></i></a>
+                        <a class="btn btn-footer" href="https://github.com/AlEscobedo/proyectoSemestral"
+                            role="button"><i class="fab fa-github"></i></a>
                     </section>
                     <!-- Section: Social media -->
 
