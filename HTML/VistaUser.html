@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- ICONO DE PESTANIA -->
-    <link rel='shorcut icon' type='image/x-icon' href='imagenes/menuPrincipal/iconoPagOk.png'>
+    <link rel='shorcut icon' type='image/x-icon' href='/imagenes/menuPrincipal/iconoPagOk.png'>
     <!-- TITULO DE PAG -->
     <title>ESTIMHUB Usuario</title>
     <!-- BOOTSTRAP -->
@@ -15,7 +15,7 @@
     <!-- ICONOS DE FONTAWSOME -->
     <script src="https://kit.fontawesome.com/1bb0c0c4bd.js" crossorigin="anonymous"></script>
     <!-- CONEXION A CSS -->
-    <link rel="stylesheet" href="CSS/estilosVistaUser.css">
+    <link rel="stylesheet" href="/CSS/estilosVistaUser.css">
 </head>
 
 <body>
@@ -24,7 +24,7 @@
         <div class="container-fluid">
 
             <!-- IMAGEN DEL NAVBAR -->
-            <a class="navbar-brand" href="#"><img src="imagenes/menuPrincipal/logoPag.png" width="100"></a>
+            <a class="navbar-brand" href="#"><img src="/imagenes/menuPrincipal/logoPag.png" width="100"></a>
             <p class="bienvenida">Bienvenido VicRos86!</p>
 
             <!-- BOTON EN MODO TOYCHIQUITO -->
@@ -36,7 +36,76 @@
             <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
                 <form class="d-flex input-group w-auto">
                     <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#modalCarrito" data-bs-toggle="modal"
+                                data-bs-target="#modalCarrito"><i class="fa-solid fa-cart-shopping"></i> Mi carrito</a>
+                            <div class="modal" id="modalCarrito">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
 
+                                        <!-- Modal Header -->
+                                        <div class="modal-header">
+                                            <h1>Carrito de VicRos86</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                        </div>
+
+                                        <!-- Modal body -->
+
+                                        <div class="modal-body">
+                                            <img src="imagenes/categoriaTerror/terror1.jpg" alt="">
+                                            <h1>¿Qué productos llevo?</h1>
+                                            <div class="row carritoSeccion">
+                                                <div class="col"><img src="/imagenes/categoriaTerror/terror2.jpg"
+                                                        alt=""></div>
+                                                <div class="col">
+                                                    <h1>Phasmophobia</h1>
+                                                    <p> Juego de terror</p>
+                                                </div>
+                                                <div class="col">
+                                                    <p> Precio: $6.000</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="row carritoSeccion">
+                                                <div class="col"><img src="/imagenes/categoriaTerror/terror3.jpg"
+                                                        alt=""></div>
+                                                <div class="col">
+                                                    <h1>Dead By Daylight</h1>
+                                                    <p> Juego de terror</p>
+                                                </div>
+                                                <div class="col">
+                                                    <p> Precio: $8.000</p>
+                                                </div>
+                                            </div>
+                                            <hr class="colorhr">
+                                            <div class="row">
+                                                <p>Total: 14 Lukitas manito</p>
+                                                <div class="col">
+                                                </div>
+
+                                                <div class="col">
+                                                    <div class="row botonModal"><button type="button"
+                                                            class="btn btn-dark" data-bs-dismiss="#">Cancelar
+                                                            Compra</button></div>
+                                                    <div class="row botonModal"><button type="button"
+                                                            class="btn btn-warning" data-bs-dismiss="#">Comprar</button>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                        <!-- Modal footer -->
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-dark"
+                                                data-bs-dismiss="modal">Cerrar</button>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </li>
                         <li class="nav-item">
                             <a href="index.html" class="nav-link"><i class="fa-solid fa-right-to-bracket"></i> Cerrar
                                 Sesion</a>
@@ -52,7 +121,7 @@
     <div class="contenedor-cover">
         <div class="contenedor-info-cover">
             <h1>Categorias</h1>
-            <p>Todos los juegos que nececita un verdadero gamer ¿que esperas a comprarlos?.</p>
+            <p>Todos los juegos que necesita un verdadero gamer ¿Qué esperas a comprarlos?</p>
         </div>
     </div>
     </div>
