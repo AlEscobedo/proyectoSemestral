@@ -97,64 +97,6 @@
 
 
 
-
-.linksTiempo1{
-    margin-top: 2%;
-    margin-right: 10%;
-    margin-left: 10%;
-    border-radius: 5px;
-    background-color: #524d4d;
-    border-top: 3px solid #524d4d;
-    border-right: 3px solid #524d4d;
-    border-bottom: 3px solid #524d4d;
-    border-left: 3px solid #524d4d;
-}
-
-.linksTiempo1 p{
-    margin-top: 5%;
-    font-size: 16px;
-    text-align: center;
-}
-
-.linksTiempo2{
-    margin-top: 15%;
-    margin-right: 10%;
-    margin-left: 10%;
-    border-radius: 5px;
-    background-color: #524d4d;
-    border-top: 3px solid #524d4d;
-    border-right: 3px solid #524d4d;
-    border-bottom: 3px solid #524d4d;
-    border-left: 3px solid #524d4d;
-}
-
-.linksTiempo2 p{
-    margin-top: 5%;
-    font-size: 16px;
-    text-align: center;
-}
-
-.linksTiempo3{
-    margin-top: 15%;
-    margin-right: 10%;
-    margin-left: 10%;
-    border-radius: 5px;
-    background-color: #272424;
-    border-top: 3px solid #524d4d;
-    border-right: 3px solid #524d4d;
-    border-bottom: 3px solid #524d4d;
-    border-left: 3px solid #524d4d;
-}
-
-.linksTiempo3 p{
-    margin-top: 5%;
-    font-size: 16px;
-    text-align: center;
-}
-
-/*termina el sector de links*/
-
-
 .container-all{
 
     width: 100%;
@@ -166,23 +108,21 @@
 }
 
 
-/* imagenes y el centro*/
 
-.fondo{
-    background-image: url(../imagenes/categoriaAccion/fondoAdmin.jpg);
-}
-.fondo2{
-    background-image: url(../imagenes/categoriaFTP/ftp.jpg);
 
-}.fondo3{
-    background-image: url(../imagenes/categoriaMundoAbierto/mundo4.jpg);
 
-}.fondo4{
-    background-image: url(../imagenes/categoriaTerror/fondoAdminTerror.jpg);
+.juegos img{
+    float: left;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    position: relative;
+    margin: 0 0 0 -10;
+    max-width: 180px;
+    
 }
 
 .juegos{
-    
+    background-color: black;
     margin-top: 5px;
     border-radius: 5px;
     border-top: 3px solid black;
@@ -192,11 +132,9 @@
 }
 
 .juegos p{
-    text-align: center;
     font-size: 22px;
     font-weight: 300;
-    margin-top: 7%;
-    margin-bottom: 7%;
+    margin-top: 14%;
     color: #fff;
     
 }

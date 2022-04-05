@@ -96,62 +96,6 @@
 
 
 
-
-
-.linksTiempo1{
-    margin-top: 2%;
-    margin-right: 10%;
-    margin-left: 10%;
-    border-radius: 5px;
-    background-color: #524d4d;
-    border-top: 3px solid #524d4d;
-    border-right: 3px solid #524d4d;
-    border-bottom: 3px solid #524d4d;
-    border-left: 3px solid #524d4d;
-}
-
-.linksTiempo1 p{
-    margin-top: 5%;
-    font-size: 16px;
-    text-align: center;
-}
-
-.linksTiempo2{
-    margin-top: 15%;
-    margin-right: 10%;
-    margin-left: 10%;
-    border-radius: 5px;
-    background-color: #524d4d;
-    border-top: 3px solid #524d4d;
-    border-right: 3px solid #524d4d;
-    border-bottom: 3px solid #524d4d;
-    border-left: 3px solid #524d4d;
-}
-
-.linksTiempo2 p{
-    margin-top: 5%;
-    font-size: 16px;
-    text-align: center;
-}
-
-.linksTiempo3{
-    margin-top: 15%;
-    margin-right: 10%;
-    margin-left: 10%;
-    border-radius: 5px;
-    background-color: #272424;
-    border-top: 3px solid #524d4d;
-    border-right: 3px solid #524d4d;
-    border-bottom: 3px solid #524d4d;
-    border-left: 3px solid #524d4d;
-}
-
-.linksTiempo3 p{
-    margin-top: 5%;
-    font-size: 16px;
-    text-align: center;
-}
-
 .container-all{
 
     width: 100%;
@@ -173,6 +117,7 @@
     position: relative;
     margin: 0 0 0 -10;
     max-width: 180px;
+    
 }
 
 .juegos{
