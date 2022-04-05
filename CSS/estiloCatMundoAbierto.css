@@ -11,7 +11,7 @@ body{
 
 
 
-.contenedor-mundoabierto{
+.contenedor-mundoAbierto{
     width: 100%;
     height:  500px;
     position: relative;
@@ -23,7 +23,7 @@ body{
     margin-bottom: 100px;
 }
 
-.contenedor-mundoabierto:before{
+.contenedor-mundoAbierto:before{
     content: " ";
     width: 100%;
     height: 100%;
@@ -32,7 +32,7 @@ body{
     top: 0;
     left: 0;    
 }
-.contenedor-info-mundoabierto{
+.contenedor-info-mundoAbierto{
     width: 100%;
     height: 500px;
     margin: auto;
@@ -44,10 +44,10 @@ body{
     position: relative;
     z-index: 1; 
 }
-.contenedor-info-mundoabierto h1{
+.contenedor-info-mundoAbierto h1{
     color: rgb(255, 255, 255);
 }
-.contenedor-info-mundoabierto p{
+.contenedor-info-mundoAbierto p{
     color: rgb(255, 255, 255);
     margin-top: 10px;
     font-size: 20px;
