@@ -24,15 +24,21 @@ body{
     border: solid orange;
 }
 .modal-header{
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(40, 40, 40);
     border: solid;    
 }
 .modal-body{
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(65, 65, 65);
+}
+.modal-body button{
+    font-weight: bold;
 }
 .modal-footer{
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(40, 40, 40);
     border: solid; 
+}
+.modal-footer button{
+    font-weight: bold;
 }
 .modal_color{
 background-color: #3d3d3d;
@@ -74,6 +80,8 @@ background-color: #3d3d3d;
     margin-top: 5px;
     margin-bottom: 20px;
     margin-left: 10px;
+    border: solid white;
+    border-width: 1px;
 }
 .btn::before{
     background-color: orange;
@@ -83,7 +91,6 @@ background-color: #3d3d3d;
     margin-top: 5px;
     margin-bottom: 5px;
     width: 100%; 
-    font-weight: bold;
 }
 /****** TITULO *******/
 .contenedor-cover{
