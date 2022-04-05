@@ -16,6 +16,72 @@ body{
 .btn h1:hover{
     color: rgba(255, 255, 255, 0.692);
 }
+.centrarTexto{
+    text-align: center;
+}
+.caja{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.file-select {
+    position: relative;
+    display: inline-block;
+    width: 90%;
+  }
+
+  .file-select::before {
+    background-color: #1a1a1a;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    content: 'Seleccionar';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0; 
+    border-radius: 15px;   
+  }
+  
+  .file-select input[type="file"] {
+    opacity: 0;
+    width: 100px;
+    height: 32px;
+    display: inline-block;
+  }
+  
+  #src-file1::before {
+    content: 'Seleccionar Archivo';
+  }
+.margenImg{
+    margin-top: 40px;
+}
+.separador{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.caja input{
+    background-color: #3d3d3d;
+    border: solid white;
+    border-width: 1px;
+    width: 80%;
+    margin-left: 13px;
+    font-weight: bold;  
+    color: white; 
+}
+::placeholder{
+    color: white;
+    opacity: 0.7;
+}
+.estiloInput{
+    background-color: transparent;
+    color: white;    
+}
+.perfilEstim{
+    width: 5px;
+    border-radius: 50px;    
+}
 
 .modal-title{
     color: white;
