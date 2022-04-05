@@ -1,161 +1,97 @@
-*{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-  }
-  body{
-    background-color: rgb(40, 40, 40);
-  }
-  .top{
-    background-color: rgb(36, 36, 36);
-    border-bottom: solid rgb(105, 105, 105);
-  }
-  .bottom{
-    background-color: rgb(36, 36, 36);
-    border-top: solid rgb(105, 105, 105);
-  }
-  .all{
-      border: 3px solid hsl(39, 100%, 50%);
-      background-color: #000000;
-      color: #ffffff;
-      width: 100%;
-      max-width: 400px;
-      height: auto;
-      margin: auto;
-      border-radius: 20px;
-    }
-  .separador{
-      margin-top: 100px;
-  }
-    
-    /* Full-width inputs */
-    input[type=text], 
-    input[type=password] {
-      width: 100%;
-      padding: 12px 20px;
-      margin: 8px 0;
-      display: inline-block;
-      border: 1px solid orange;
-      box-sizing: border-box;
-      background-color: transparent;
-      color: white;
-    }
-    
-    /* Set a style for all buttons */
-  .ingresar {
-      background-color: hsl(39, 100%, 50%);
-      color: #ffffff;
-      border-color: solid #000000;
-      padding: 14px 20px;
-      margin: 8px 0;
-      border: none;
-      cursor: pointer;
-      width: 100%;
-      transition: all 0.2s;
-    }
-    .psw a {
-        color: white;
-        text-decoration: none;
-        transition: all 0.2s;
-    }
-    .psw a:hover{
-      font-weight: bold;
-    }
-    
-    /* Add a hover effect for buttons */
-    button:hover {
-      font-weight: bold;
-      color: white;
-      background-color: transparent;
-      border: solid orange;
-    }
-    
-   
-    /* Center the avatar image inside this container */
-    .imgcontainer {
-      text-align: center;
-      margin: 24px 0 12px 0;
-    }
-    
-    /* Avatar image */
-    img.avatar {
-      width: 30%;
-      height: auto;
-      border-radius: 5px;
-    }
-    
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 
+body {
+  background-color: rgb(40, 40, 40);
+}
 
+.bottom {
+  background-color: rgb(36, 36, 36);
+  border-top: solid rgb(105, 105, 105);
+}
 
+.titulo h2 {
+  text-align: center;
+  color: rgb(255, 165, 0);
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
 
+.juegos img {
+  float: left;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  position: relative;
+  max-width: 200px;
+}
 
-.titulo h2{
-    text-align: center;
-    color: rgb(255, 165, 0);
-    margin-top: 15px;
-    margin-bottom: 15px;
+.juegos {
+  background-color: rgb(73, 73, 73);
+  margin-top: 5px;
+  border-radius: 5px;
+  border: solid orange;
+  border-width: 1px;
+}
+
+.juegos p {
+  font-size: 22px;
+  font-weight: 300;
+  margin-top: 14%;
+  color: #fff;
+}
+
+.datosJuegos h5 {
+  color: rgb(255, 165, 0);
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.datosJuegos {
+  margin-top: 2%;
+  background-color: rgb(50, 50, 50);
+  border: solid orange;
+  border-width: 1px;
+}
+
+.datosJuegos p {
+  color: rgb(255, 255, 255);
+}
+
+hr {
+  color: rgb(255, 255, 255);
 }
 
 
 
-.container-all{
-
-    width: 100%;
-    max-width: 1000px;
-    margin: auto;
-    margin: 0;
-    padding: 0;
-    
+/****** INICIA FOOTER ******/
+.tamaño {
+  width: 40px;
+  height: auto;
+  margin: 1%;
 }
 
-
-
-
-
-.juegos img{
-    float: left;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    position: relative;
-    margin: 0 0 0 -10;
-    max-width: 180px;
-    
+.text-footer {
+  color: rgb(255, 255, 255);
+  font-size: small;
 }
 
-.juegos{
-    background-color: black;
-    margin-top: 5px;
-    border-radius: 5px;
-    border-top: 3px solid black;
-    border-right: 3px solid black;
-    border-bottom: 3px solid black;
-    border-left: 3px solid black;
+.btn-footer {
+  color: rgb(255, 255, 255);
+  border-radius: 100%;
+  border-color: rgb(255, 255, 255);
+  margin: 1%;
 }
 
-.juegos p{
-    font-size: 22px;
-    font-weight: 300;
-    margin-top: 14%;
-    color: #fff;
-    
+.margin-botton {
+  margin-bottom: 4px
 }
 
-.datosJuegos h5{
-    color: rgb(7, 3, 3);
-    font-size: 20px;
-    text-align: center;
-    font-weight: bold;
-    
+.padding-up {
+  padding: 20px;
 }
 
-
-.datosJuegos{
-    
-    margin-top: 2%;
-    border-top: 3px solid black;
-    border-right: 3px solid black;
-    border-bottom: 3px solid black;
-    border-left: 3px solid black;
-}
-
-.datosJuegos p{
-    color: #fff;
+.padding-down {
+  padding: 40px;
 }

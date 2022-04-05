@@ -17,135 +17,130 @@
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <link rel='stylesheet' type='text/css' media='screen' href="../../CSS/CSS_ADMIN/estiloAdminCatFav.css">
-    
+
 </head>
 
 <body>
-    <!--aqui comienza el nav-->
-    <div class="container-flex top">
-        <!-- NAVBAR -->
-        <nav class="navbar navbar-expand-sm bg-grey navbar-dark ">
-            <div class="container-fluid">
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark ">
+        <div class="container-fluid">
 
-                <!-- IMAGEN DEL NAVBAR -->
-                <a class="navbar-brand" href="#"><img src="../../imagenes/menuPrincipal/logoPag.png" width="100"></a>
+            <!-- IMAGEN DEL NAVBAR -->
+            <a class="navbar-brand" href="#"><img src="/imagenes/menuPrincipal/logoPag.png" width="100"></a>
 
-                <!-- BOTON EN MODO TOYCHIQUITO -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#collapsibleNavbar">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                
+            <!-- BOTON EN MODO TOYCHIQUITO -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-                <!---->
-
-
-
-                <!-- LINKS/TEXTO -->
-                <div class="collapse navbar-collapse justify-content-center" id="collapsibleNavbar">
-                    <form class="d-flex input-group w-auto">
-                        <ul class="navbar-nav">
-                            
-                            <li class="nav-item">
-                                <a class="nav-link" href="#"><i
-                                        class="fa-solid fa-arrow-up-right-from-square"></i> Agregar Juegos</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#" class="nav-link"><i
-                                        class="fa-solid fa-arrow-up-right-from-square"></i> Modificar o Eliminar Juegos</a>
-                            </li>
-                            
-                            <li class="nav-item">
-                                <a class="nav-link" href="#"><i
-                                        class="fa-solid fa-arrow-up-right-from-square"></i> Categoria Favorita</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="adminJMasQ.html" class="nav-link"><i
-                                        class="fa-solid fa-arrow-up-right-from-square"></i> Juego Mas Querido</a>
-                            </li>
-                            
-                            <li class="nav-item">
-                                <a class="nav-link" href="adminJmenosQ.html"><i
-                                        class="fa-solid fa-arrow-up-right-from-square"></i> Juego Menos Querido</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#" class="nav-link"><i
-                                        class="fa-solid fa-arrow-up-right-from-square"></i> Agregar Categoria</a>
-                            </li>
-                            
-                            <li class="nav-item ">
-                                <a class="nav-link" href="#"><i 
-                                class="fa-solid fa-right-from-bracket"></i> Cerrar Sesion</a></li>
-                            
-                        </ul>
-                    </form>
-                </div>
+            <!-- LINKS/TEXTO -->
+            <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+                <form class="d-flex input-group w-auto">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="/HTML/HTML_ADMIN/Admin_index.html" class="nav-link"><i
+                                    class="fa-solid fa-backward"></i>
+                                Volver Menu Admin</a>
+                        </li>
+                    </ul>
+                </form>
             </div>
-        </nav>
-    </div>
+        </div>
+    </nav>
 
     <!--aqui termina el nav-->
 
-        <div class="container-fluid titulo">
-            <div class="row">
-                <h2>Categorias de Juegos mas queridos de la Semana</h2>
-            </div>
+    <div class="container-fluid titulo">
+        <div class="row">
+            <h2>Categorias de Juegos mas queridos de la Semana</h2>
         </div>
-        
+    </div>
+
 
     <div class="container-fluid">
-       
+
         <div class="row">
-            <div class="col-sm-12 col-md-3">
-            
+            <div class="col-sm-12 col-md-1">
+
             </div>
-            <div class="col-sm-12 col-md-6">
-            <div class="container-all">
-                <div class="row juegos fondo">
-                    
-                    <div class="col">
-                    <p>Acción 15%</p>
-                </div>
-                </div>
+            <div class="col-sm-12 col-md-7">
+                <div class="container-all">
+                    <div class="row juegos fondo">
 
-                <div class="row juegos fondo2">
-                    
-                    <div class="col">
-                    <p>Free to Play 25%</p>
-                </div>
-                </div>
+                        <div class="col">
+                            <p>Acción 15%</p>
+                        </div>
+                    </div>
 
-                <div class="row juegos fondo3">
-                    
-                    <div class="col">
-                    <p>Mundo Abierto 35%</p>
-                </div>
-                </div>
+                    <div class="row juegos fondo2">
 
-                <div class="row juegos fondo4">
-                    
-                    <div class="col">
-                    <p>Terror 25%</p>
-                </div>
-                </div>
+                        <div class="col">
+                            <p>Free to Play 25%</p>
+                        </div>
+                    </div>
 
-            
-            </div>
+                    <div class="row juegos fondo3">
+
+                        <div class="col">
+                            <p>Mundo Abierto 35%</p>
+                        </div>
+                    </div>
+
+                    <div class="row juegos fondo4">
+
+                        <div class="col">
+                            <p>Terror 25%</p>
+                        </div>
+                    </div>
+
+
+                </div>
             </div>
             <div class="col-sm-12 col-md-3">
                 <div class="container datosJuegos">
-                <div class="row">
-                    <h5>cómo se calculan los porcentajes?:</h5>
+                    <div class="row">
+                        <h5>cómo se calculan los porcentajes?:</h5>
+                    </div>
+                    <div class="row linksCat">
+                        <p>Los porcentajes de las categorias fueron calculados, a base de los videojuegos
+                            y en que categoria se encontrara este mismo al momento de ser calificado por el publico</p>
+                    </div>
+
                 </div>
-                <div class="row linksCat">
-                    <p>Los porcentajes de las categorias fueron calculados, a base de los videojuegos 
-                        y en que categoria se encontrara este mismo al momento de ser calificado por el publico</p>
-                </div>
-                
-            </div>
             </div>
 
         </div>
+    </div>
+
+
+    
+    <!-- FOOTER -->
+    <div class="container-fluid">
+        <hr>
+
+        <footer class="text-center">
+            <img class="text-center tamaño" src="/imagenes/menuPrincipal/iconoPagOk.png" alt="">
+            <!-- Grid container -->
+            <div class="container padding-up">
+
+                <!-- Section: Social media -->
+                <section class="margin-botton">
+                    <!-- Instagram -->
+                    <a class="btn btn-footer" href="https://www.instagram.com/enojano.shop/" role="button"><i
+                            class="fab fa-instagram"></i></a>
+                    <!-- Github -->
+                    <a class="btn btn-footer" href="https://github.com/AlEscobedo/proyectoSemestral" role="button"><i
+                            class="fab fa-github"></i></a>
+                </section>
+                <!-- Section: Social media -->
+
+            </div>
+            <!-- Copyright -->
+            <div class="text-center padding-down" style="background-color: rgba(0, 0, 0, 0.2);">
+                <h6 class="text-footer">© 2022 DuocUC - Todos los Derechos Reservados</h6>
+            </div>
+            <!-- Copyright -->
+        </footer>
     </div>
 
 </body>
