@@ -11,19 +11,19 @@ body{
 
 
 
-.contenedor-accion{
+.contenedor-terror{
     width: 100%;
     height:  500px;
     position: relative;
     top: 80px;
-    background-image: url(../imagenes/categoriaaccion/fondoaccion.jpg);
+    background-image: url(../imagenes/categoriaterror/fondoterror.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     margin-bottom: 100px;
 }
 
-.contenedor-accion:before{
+.contenedor-terror:before{
     content: " ";
     width: 100%;
     height: 100%;
@@ -32,7 +32,7 @@ body{
     top: 0;
     left: 0;    
 }
-.contenedor-info-accion{
+.contenedor-info-terror{
     width: 100%;
     height: 500px;
     margin: auto;
@@ -44,10 +44,10 @@ body{
     position: relative;
     z-index: 1; 
 }
-.contenedor-info-accion h1{
+.contenedor-info-terror h1{
     color: rgb(255, 255, 255);
 }
-.contenedor-info-accion p{
+.contenedor-info-terror p{
     color: rgb(255, 255, 255);
     margin-top: 10px;
     font-size: 20px;
