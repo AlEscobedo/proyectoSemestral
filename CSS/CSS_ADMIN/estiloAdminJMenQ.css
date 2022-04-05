@@ -63,6 +63,28 @@ hr {
   color: rgb(255, 255, 255);
 }
 
+/* imagenes y el centro*/
+
+.fondo{
+  background-image: url(/imagenes/categoriaFTP/ftp1.jpg);
+}
+.fondo2{
+  background-image: url(/imagenes/categoriaFTP/ftp5.jpg);
+
+}.fondo3{
+  background-image: url(/imagenes/categoriaSupervivencia/super1.jpg);
+
+}.fondo4{
+  background-image: url(/imagenes/categoriaMundoAbierto/mundo1.jpg);
+}
+.juegos p{
+  text-align: center;
+  font-size: 22px;
+  font-weight: 300;
+  margin-top: 7%;
+  margin-bottom: 7%;
+  color: #fff;
+}
 
 
 /****** INICIA FOOTER ******/

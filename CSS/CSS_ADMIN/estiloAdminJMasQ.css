@@ -18,27 +18,34 @@ body {
   margin-bottom: 15px;
 }
 
-.juegos img {
-  float: left;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  position: relative;
-  max-width: 200px;
-}
 
-.juegos {
-  background-color: rgb(73, 73, 73);
+/* imagenes y el centro*/
+
+.fondo{
+  background-image: url(/imagenes/categoriaTerror/terror2.jpg);
+}
+.fondo2{
+  background-image: url(/imagenes/categoriaFTP/ftp3.jpg);
+
+}.fondo3{
+  background-image: url(/imagenes/categoriaAccion/accion5.jpg);
+
+}.fondo4{
+  background-image: url(/imagenes/categoriaAccion/accion1.jpg);
+}
+.juegos p{
+  text-align: center;
+  font-size: 22px;
+  font-weight: 300;
+  margin-top: 7%;
+  margin-bottom: 7%;
+  color: #fff;
+}
+.juegos{
   margin-top: 5px;
   border-radius: 5px;
   border: solid orange;
   border-width: 1px;
-}
-
-.juegos p {
-  font-size: 22px;
-  font-weight: 300;
-  margin-top: 14%;
-  color: #fff;
 }
 
 .datosJuegos h5 {
