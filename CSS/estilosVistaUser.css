@@ -16,19 +16,23 @@ body{
 .btn h1:hover{
     color: rgba(255, 255, 255, 0.692);
 }
+
+.modal-title{
+    color: white;
+}
 .modal-content{
     border: solid orange;
 }
 .modal-header{
     background-color: rgb(0, 0, 0);
-    border: none;    
+    border: solid;    
 }
 .modal-body{
     background-color: rgb(0, 0, 0);
 }
 .modal-footer{
     background-color: rgb(0, 0, 0);
-    border: none;
+    border: solid; 
 }
 .modal_color{
 background-color: #3d3d3d;
@@ -41,13 +45,19 @@ background-color: #3d3d3d;
     margin-top: 20px;
     margin-bottom: 20px;
 }
-.modal-body h5{
-    color: orange;
-    font-size: 20px;
+.carritoSeccion{
+    border: solid rgba(255, 255, 255, 0.274);
+    margin-bottom: 4px;
+}
+.colorhr{
+    color: white;
+}
+.modal-body img{
+    width: 10%;
 }
 .modal-body h1{
     color: rgb(255, 255, 255);
-    font-size: 40px;
+    font-size: 20px;
 }
 .modal-header h1{
     color: rgb(255, 255, 255);     
