@@ -16,7 +16,7 @@ body{
     height:  500px;
     position: relative;
     top: 80px;
-    background-image: url(../imagenes/categoriasupervivencia/fondosupervivencia.jpg);
+    background-image: url(/imagenes/categoriaSupervivencia/supervivencia.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
