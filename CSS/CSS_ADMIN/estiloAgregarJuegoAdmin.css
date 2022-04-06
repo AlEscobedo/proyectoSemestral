@@ -8,6 +8,10 @@
 body{
     background-color: rgb(40, 40, 40);
 }
+.centrar{
+    margin-left: 100px;
+
+}
 
 input[type=text],
 input[type=number],
