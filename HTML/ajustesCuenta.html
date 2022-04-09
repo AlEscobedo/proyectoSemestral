@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ICONO DE PESTANIA -->
+    <link rel='shorcut icon' type='image/x-icon' href='/imagenes/menuPrincipal/iconoPagOk.png'>
+    <!-- TITULO DE PAG -->
+    <title>Ajustes de Cuenta</title>
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- ICONOS DE FONTAWSOME -->
+    <script src="https://kit.fontawesome.com/1bb0c0c4bd.js" crossorigin="anonymous"></script>
+    <!-- CONEXION A CSS -->
+    <link rel="stylesheet" href="/CSS/estilosAjustesCuenta.css">
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark ">
+        <div class="container-fluid">
+
+            <!-- IMAGEN DEL NAVBAR -->
+            <a class="navbar-brand" href="#"><img src="/imagenes/menuPrincipal/logoPag.png" width="100"></a>
+            <p class="bienvenida">Bienvenido VicRos86!</p>
+
+            <!-- BOTON EN MODO TOYCHIQUITO -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- LINKS/TEXTO -->
+            <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+                <form class="d-flex input-group w-auto">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="VistaUser.html" class="nav-link"><i class="fa-solid fa-right-to-bracket"></i>
+                                Volver</a>
+                        </li>
+                    </ul>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- EL TITULO DE LA PAGINA -->
+    <div class="container-flex contenedor-cover">
+        <div class="container contenedor-info-cover">
+            <h1>Ajustes de Cuenta</h1>
+            <p>¡Hola VicRos86!</p>
+            <p>Aquí puedes administrar los ajustes de tu cuenta</p>
+            <p>¡Adelante y toquetea tus ajustes!</p>
+        </div>
+    </div>
+
+    <!-- AJUSTES PERFIL -->
+    <!-- CONTENEDOR DE FONDO -->
+    <div class="separador"></div>
+    <div class="container-fluid fondo-inicio">
+        <!-- CONTENEDOR DE BOX -->
+        <div class="container all ">
+            <!-- IMAGEN DE BOX -->
+            <div class="imgcontainer">
+                <img src="/imagenes/admin/vr.jpg" alt="Avatar" class="avatar">
+            </div>
+
+            <!-- FORMULARIO -->
+            <div class="row">
+                <div class="container">
+                    <label for="uname"><b>Nombre</b></label>
+                    <div class="row">
+                        <div class="col">                            
+                            <h3>Victor Rosendo</h3>
+                        </div>
+                    </div>
+
+                    <label for="uname"><b>Usuario</b></label>
+                    <div class="row">
+                        <div class="col-10 col-sm-10 col-md-10">
+                            <input type="text" placeholder="VicRos86" name="uname" required>
+                        </div>
+                        <div class="col-2 col-sm-2 col-md-2">
+                            <i class="fa-solid fa-pen edit"></i>
+                        </div>
+                    </div>
+                    <label for="uname"><b>Dirección</b></label>
+                    <div class="row">
+                        <div class="col-10 col-sm-10 col-md-10">
+                            <input type="text" placeholder="Olimpo 1234" name="uname" required>
+                        </div>
+                        <div class="col-2 col-sm-2 col-md-2">
+                            <i class="fa-solid fa-pen edit"></i>
+                        </div>
+                    </div>
+
+
+                    <label for="uname"><b>Correo Electrónico</b></label>
+
+                    <div class="row">
+                        <div class="col-10 col-sm-10 col-md-10">
+                            <input type="text" placeholder="v.rosendo@profesor.duoc.cl" name="uname" required>
+                        </div>
+                        <div class="col-2 col-sm-2 col-md-2">
+                            <i class="fa-solid fa-pen edit"></i>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="uname"><b>Fecha de Nacimiento</b></label>
+                        <div class="row">
+                            <div class="col-10 col-sm-10 col-md-10">
+                                <input type="date" name="fecha" id="fecha" value="0000-00-00" min="1922-01-01"
+                                    max="2022-00-00" tabindex="2" class="form-control"
+                                    placeholder="Fecha de Nacimiento">
+                            </div>
+                            <div class="col-2 col-sm-2 col-md-2">
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- BOTON DE REGISTRARSE -->
+                    <button class="ingresar" type="submit">Guardar Cambios</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- FOOTER -->
+    <div class="container-fluid">
+        <hr>
+        <footer class="text-center">
+            <img class="text-center tamaño" src="imagenes/menuPrincipal/iconoPagOk.png" alt="">
+            <!-- Grid container -->
+            <div class="container padding-up">
+
+                <!-- Section: Social media -->
+                <section class="margin-botton">
+                    <!-- Instagram -->
+                    <a class="btn btn-footer" href="https://www.instagram.com/enojano.shop/" role="button"><i
+                            class="fab fa-instagram"></i></a>
+                    <!-- Github -->
+                    <a class="btn btn-footer" href="https://github.com/AlEscobedo/proyectoSemestral" role="button"><i
+                            class="fab fa-github"></i></a>
+                </section>
+                <!-- Section: Social media -->
+
+            </div>
+            <!-- Copyright -->
+            <div class="text-center padding-down" style="background-color: rgba(0, 0, 0, 0.2);">
+                <h6 class="text-footer">© 2022 DuocUC - Todos los Derechos Reservados</h6>
+            </div>
+            <!-- Copyright -->
+        </footer>
+    </div>
+
+</body>
+
+</html>
