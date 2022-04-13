@@ -22,7 +22,8 @@
             <div class="container-fluid">
 
                 <!-- IMAGEN DEL NAVBAR -->
-                <a class="navbar-brand" href="index.html"><img src="/imagenes/menuPrincipal/logoPag.png" width="100"></a>
+                <a class="navbar-brand" href="index.html"><img src="/imagenes/menuPrincipal/logoPag.png"
+                        width="100"></a>
 
                 <!-- BOTON EN MODO TOYCHIQUITO -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -63,15 +64,16 @@
             <!-- FORMULARIO -->
             <div class="row">
                 <div class="container">
-                    <label for="uname"><b>Nombre de Usuario</b></label>
-                    <input type="text" placeholder="Usuario" name="uname" required>
+                    <form action="VistaUser.html">
+                        <label for="uname"><b>Nombre de Usuario</b></label>
+                        <input type="text" placeholder="Usuario" name="usuario" required>
 
-                    <label for="psw"><b>Contraseña</b></label>
-                    <input type="password" placeholder="Contraseña" name="psw" required>
+                        <label for="psw"><b>Contraseña</b></label>
+                        <input type="password" placeholder="Contraseña" name="psw" required>
 
-                    <!-- BOTON DE INGRESAR -->
-                    <a href="HTML_ADMIN/Admin_index.html"><button class="ingresar" type="submit">Ingresar Administrador</button></a>
-                    <a href="VistaUser.html"><button class="ingresar" type="submit">Ingresar Usuario</button></a>
+                        <!-- BOTON DE INGRESAR -->
+                        <button class="ingresar" type="submit">Ingresar</button>
+                    </form>                    
                     <!-- CONTENEDOR REDIRECCION TEXTO -->
                     <div class="row contenedor">
                         <div class="row"><span class="psw"> <a href="recuperarContrasena.html">Olvidaste la
@@ -79,6 +81,7 @@
                         <div class="row"><span class="psw"><a href="registrarse.html">
                                     ¿No tienes una cuenta? Registrate</a></span></div>
                     </div>
+
                 </div>
             </div>
         </div>

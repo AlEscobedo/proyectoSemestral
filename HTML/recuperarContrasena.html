@@ -22,7 +22,8 @@
             <div class="container-fluid">
 
                 <!-- IMAGEN DEL NAVBAR -->
-                <a class="navbar-brand" href="index.html"><img src="/imagenes/menuPrincipal/logoPag.png" width="100"></a>
+                <a class="navbar-brand" href="index.html"><img src="/imagenes/menuPrincipal/logoPag.png"
+                        width="100"></a>
 
                 <!-- BOTON EN MODO TOYCHIQUITO -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -65,29 +66,31 @@
             <!-- FORMULARIO -->
             <div class="row">
                 <div class="container">
-                    <label for="uname"><b>Correo Electrónico</b></label>
-                    <input type="text" placeholder="Correo Electrónico" name="uname" required>
+                    <form action="iniciarSesion.html">
+                        <label for="uname"><b>Correo Electrónico</b></label>
+                        <input type="text" placeholder="Correo Electrónico" name="uname" required>
 
-                    <div class="form-group">
-                        <label for="uname"><b>Pregunta Secreta</b></label>
-                        <select name="preguntasecreta" id="preguntasecreta" tabindex="1" class="form-control"
-                            placeholder="Pregunta Secreta" value="">
-                            <option selected="true">Seleccione una Pregunta</option>
-                            <option>
-                                Primera Mascota
-                            </option>
-                            <option>
-                                Personaje Favorito
-                            </option>
-                            <option>
-                                Actividad Favorita
-                            </option>
-                        </select>
-                        <input type="text" placeholder="Respuesta Secreta" name="uname" required>
-                    </div>
+                        <div class="form-group">
+                            <label for="uname"><b>Pregunta Secreta</b></label>
+                            <select name="preguntasecreta" id="preguntasecreta" tabindex="1" class="form-control"
+                                placeholder="Pregunta Secreta" value="">
+                                <option selected="true">Seleccione una Pregunta</option>
+                                <option>
+                                    Primera Mascota
+                                </option>
+                                <option>
+                                    Personaje Favorito
+                                </option>
+                                <option>
+                                    Actividad Favorita
+                                </option>
+                            </select>
+                            <input type="text" placeholder="Respuesta Secreta" name="uname" required>
+                        </div>
 
-                    <!-- BOTON DE RECUPERAR -->
-                    <button class="ingresar" type="submit">Recuperar Contraseña</button>
+                        <!-- BOTON DE RECUPERAR -->
+                        <button class="ingresar" type="submit">Recuperar Contraseña</button>
+                    </form>
                     <div class="row contenedor">
                         <!-- CONTENEDOR REDIRECCION TEXTO -->
                         <div class="row"><span class="psw"><a href="registrarse.html">

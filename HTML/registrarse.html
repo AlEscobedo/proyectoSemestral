@@ -22,7 +22,8 @@
             <div class="container-fluid">
 
                 <!-- IMAGEN DEL NAVBAR -->
-                <a class="navbar-brand" href="index.html"><img src="/imagenes/menuPrincipal/logoPag.png" width="100"></a>
+                <a class="navbar-brand" href="index.html"><img src="/imagenes/menuPrincipal/logoPag.png"
+                        width="100"></a>
 
                 <!-- BOTON EN MODO TOYCHIQUITO -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -64,51 +65,51 @@
             <!-- FORMULARIO -->
             <div class="row">
                 <div class="container">
-                    <label for="uname"><b>Nombre</b></label>
-                    <input type="text" placeholder="Nombre" name="uname" required>
+                    <form action="VistaUser.html">
+                        <label for="uname"><b>Nombre</b></label>
+                        <input type="text" placeholder="Nombre" name="uname" required>
 
-                    <label for="uname"><b>Usuario</b></label>
-                    <input type="text" placeholder="Usuario" name="uname" required>
+                        <label for="uname"><b>Usuario</b></label>
+                        <input type="text" placeholder="Usuario" name="uname" required>
 
-                    <label for="uname"><b>Dirección</b></label>
-                    <input type="text" placeholder="Dirección" name="uname" required>
+                        <label for="uname"><b>Dirección</b></label>
+                        <input type="text" placeholder="Dirección" name="uname" required>
 
-                    <label for="uname"><b>Correo Electrónico</b></label>
-                    <input type="text" placeholder="Correo Electrónico" name="uname" required>
+                        <label for="uname"><b>Correo Electrónico</b></label>
+                        <input type="text" placeholder="Correo Electrónico" name="uname" required>
 
-                    <div class="form-group">
-                        <label for="uname"><b>Fecha de Nacimiento</b></label>
-                        <input type="date" name="fecha" id="fecha" value="0000-00-00" min="1922-01-01" max="2022-00-00"
-                            tabindex="2" class="form-control" placeholder="Fecha de Nacimiento">
-                    </div>
+                        <div class="form-group">
+                            <label for="uname"><b>Fecha de Nacimiento</b></label>
+                            <input type="date" name="fecha" id="fecha" value="0000-00-00" min="1922-01-01"
+                                max="2022-00-00" tabindex="2" class="form-control" placeholder="Fecha de Nacimiento" required>
+                        </div>
 
-                    <div class="form-group">
-                        <label for="uname"><b>Pregunta Secreta</b></label>
-                        <select name="preguntasecreta" id="preguntasecreta" tabindex="1" class="form-control"
-                            placeholder="Pregunta Secreta" value="">
-                            <option selected="true">Seleccione una Pregunta</option>
-                            <option>
-                                Primera Mascota
-                            </option>
-                            <option>
-                                Personaje Favorito
-                            </option>
-                            <option>
-                                Actividad Favorita
-                            </option>
-                        </select>
-                        <input type="text" placeholder="Respuesta Secreta" name="uname" required>
-                    </div>
+                        <div class="form-group" required>
+                            <label for="preguntasecreta"><b>Pregunta Secreta</b></label>
+                            <select name="preguntasecreta" id="preguntasecreta" tabindex="1" class="form-control"
+                                placeholder="Pregunta Secreta" value="" required>                                
+                                <option value="1">
+                                    Primera Mascota
+                                </option>
+                                <option value="2">
+                                    Personaje Favorito
+                                </option>
+                                <option value="3">
+                                    Actividad Favorita
+                                </option>
+                            </select>
+                            <input type="text" placeholder="Respuesta Secreta" name="uname" required>
+                        </div>
 
-                    <label for="psw"><b>Contraseña</b></label>
-                    <input type="password" placeholder="Contraseña" name="psw" required>
+                        <label for="psw"><b>Contraseña</b></label>
+                        <input type="password" placeholder="Contraseña" name="psw" required>
 
-                    <label for="psw"><b>Repetir Contraseña</b></label>
-                    <input type="password" placeholder="Repetir Contraseña" name="psw" required>
+                        <label for="psw"><b>Repetir Contraseña</b></label>
+                        <input type="password" placeholder="Repetir Contraseña" name="psw" required>
 
-                    <!-- BOTON DE REGISTRARSE -->
-                    <button class="ingresar" type="submit">Registrarse</button>
-
+                        <!-- BOTON DE REGISTRARSE -->
+                        <button class="ingresar" type="submit">Registrarse</button>
+                    </form>
                 </div>
             </div>
         </div>
