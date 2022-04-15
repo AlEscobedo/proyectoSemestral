@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+.navbar-brand{
+    padding-left: 10px;
+}
+.body{
+    background-color: rgb(40,40,40);
+}
+.tituloCarroCompras{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+    color:white
+}
+.card{
+    margin-top: 10px;
+    background-color: rgb(70,70,70);
+    color: white;
+    border: 3px orange solid;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.boton-eliminar{
+    color: #fff;
+    background-color: orange;
+    border-color: black solid 3px;
+}
+.boton-eliminar:hover{
+    color: black;
+    background-color: orange;
+    border-color:white;
+    font-weight: 550;
+}
+
+.boton-comprar{
+    color: #fff;
+    background-color: orange;
+    border-color: black solid 3px;
+}
+.boton-comprar:hover{
+    color: black;
+    background-color: orange;
+    border-color:white;
+    font-weight: 550;
+}
+.boton-comprar{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.tamaño{
+    width: 40px;
+    height: auto;
+    margin: 1%;
+}
+.text-footer {
+    color: rgb(255, 255, 255);
+    font-size: small;
+  }
+.btn-footer{
+    color: rgb(255, 255, 255);
+    border-radius: 100%;
+    border-color: rgb(255, 255, 255);
+    margin: 1%;
+}
+.margin-botton{
+    margin-bottom: 4px
+}
+.padding-up{
+    padding: 20px;
+}
+.padding-down{
+    padding: 40px;
+}
+.titulo{
+    color: white;
+    font-size: 400%;
+    text-align: center;
+}
+.color-footer{
+    background-color: #222222;
+}
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    width: 100%;
+    padding-right: 0;
+    padding-left: 0;
+    margin-right: auto;
+    margin-left: auto;
+}
