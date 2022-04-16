@@ -28,20 +28,27 @@
 
 .boton-eliminar{
     color: #fff;
-    background-color: orange;
-    border-color: black solid 3px;
+    font-weight: bold;
     height: 40px;
+    outline: none;
+}
+.boton-eliminar:focus{
+    outline: none;
+    box-shadow: none;
 }
 .boton-eliminar:hover{
-    color: black;
+    color: black; 
     background-color: orange;
     border-color:white;
     font-weight: 550;
+    outline: none;
 }
 .boton-eliminar{
     margin-top: 30px;
     margin-bottom: 30px;
 }
+
+
 
 .boton-comprar{
     color: #fff;
@@ -54,10 +61,15 @@
     border-color:white;
     font-weight: 550;
 }
+.boton-comprar:focus{
+    outline: none;
+    box-shadow: none;
+}
 .boton-comprar{
     margin-top: 30px;
     margin-bottom: 30px;
 }
+
 .tamaño{
     width: 40px;
     height: auto;
@@ -123,6 +135,7 @@
     text-align: center;
 }
 
+
 .datosJuego{
     font-size: x-large;
     margin-top: 25px;
@@ -131,4 +144,9 @@
     color: orange;
     margin-top: 10px;
     margin-bottom: 20px;
+}
+
+.text-reset:focus{
+    outline: none;
+    box-shadow: none;
 }
