@@ -64,22 +64,31 @@
             <!-- FORMULARIO -->
             <div class="row">
                 <div class="container">
-                    <form action="VistaUser.html">
-                        <label for="uname"><b>Nombre de Usuario</b></label>
-                        <input type="text" placeholder="Usuario" name="usuario" required>
 
+
+                    <!-- El method lo agregamos despues, ya que no deja ir a la pagina correspondiente-->
+                    <form action="VistaUser.html" enctype="application/x-www-form-urlencoded" name="iniciarSesion">
+
+                        <!-- Input Nombre de Usuario -->
+                        <label for="usuario"><b>Nombre de Usuario</b></label>
+                        <input name="usuario" type="text" placeholder="Usuario" required>
+
+                        <!-- Input Contraseña -->
                         <label for="psw"><b>Contraseña</b></label>
-                        <input type="password" placeholder="Contraseña" name="psw" required>
+                        <input name="psw" type="password" placeholder="Contraseña" required>
 
                         <!-- BOTON DE INGRESAR -->
-                        <button class="ingresar" type="submit">Ingresar</button>
-                    </form>                    
+                        <input type="submit" class="ingresar" value="Ingresar">
+                    </form>
+
+
+
                     <!-- CONTENEDOR REDIRECCION TEXTO -->
                     <div class="row contenedor">
-                        <div class="row"><span class="psw"> <a href="recuperarContrasena.html">Olvidaste la
+                        <div class="row"><span class="psw">Olvidaste la<a href="recuperarContrasena.html">
                                     Contraseña?</a></span></div>
-                        <div class="row"><span class="psw"><a href="registrarse.html">
-                                    ¿No tienes una cuenta? Registrate</a></span></div>
+                        <div class="row"><span class="psw">¿No tienes una cuenta? <a href="registrarse.html">
+                                    Registrate</a></span></div>
                     </div>
 
                 </div>

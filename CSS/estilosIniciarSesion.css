@@ -71,16 +71,19 @@ input[type=password] {
 }
 
 /* ESTILO DE BOTON */
-.ingresar {
+input[type=submit]{
   background-color: hsl(39, 100%, 50%);
   color: #ffffff;
-  border-color: solid #000000;
   padding: 14px 20px;
   margin: 8px 0;
   border: none;
-  cursor: pointer;
   width: 100%;
   transition: all 0.2s;
+}
+input[type=submit]:hover{
+  background-color: hsl(0, 0%, 0%);
+  border: solid orange;
+  font-weight: bold;
 }
 
 /* CONTRASENIA */
