@@ -45,9 +45,11 @@ body {
 
 
 /* BOX */
-.form-group {
+
+.form-group optgroup{
   margin-top: 15px;
   margin-bottom: 15px;
+  background-color: orange;
 }
 
 .form-group input {
@@ -90,7 +92,8 @@ body {
 
 /* Full-width inputs */
 input[type=text],
-input[type=password] {
+input[type=password],
+input[type=email] {
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;

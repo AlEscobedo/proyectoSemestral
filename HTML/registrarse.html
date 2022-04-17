@@ -65,51 +65,53 @@
             <!-- FORMULARIO -->
             <div class="row">
                 <div class="container">
-                    <form action="VistaUser.html">
-                        <label for="uname"><b>Nombre</b></label>
-                        <input type="text" placeholder="Nombre" name="uname" required>
 
-                        <label for="uname"><b>Usuario</b></label>
-                        <input type="text" placeholder="Usuario" name="uname" required>
+                    <!-- El method lo agregamos despues, ya que no deja ir a la pagina correspondiente-->
+                    <form name="registrarUsuario" action="VistaUser.html" enctype="application/x-www-form-urlencoded">
+                        <label for="nombre"><b>Nombre Completo</b></label>
+                        <input type="text" placeholder="Ej: Juanito Perez" name="nombre" required>
 
-                        <label for="uname"><b>Dirección</b></label>
-                        <input type="text" placeholder="Dirección" name="uname" required>
+                        <label for="usuario"><b>Usuario</b></label>
+                        <input type="text" placeholder="Ej: VicRos86" name="usuario" required>
 
-                        <label for="uname"><b>Correo Electrónico</b></label>
-                        <input type="text" placeholder="Correo Electrónico" name="uname" required>
+                        <label for="direccion"><b>Dirección</b></label>
+                        <input type="text" placeholder="Ej: Av.Pajaritos 877" name="direccion" required>
+
+                        <label for="email"><b>Correo Electrónico</b></label>
+                        <input type="email" placeholder="Ej:jean_doe@gmail.com" name="email" required>
 
                         <div class="form-group">
-                            <label for="uname"><b>Fecha de Nacimiento</b></label>
+                            <label for="fecha"><b>Fecha de Nacimiento</b></label>
                             <input type="date" name="fecha" id="fecha" value="0000-00-00" min="1922-01-01"
-                                max="2022-00-00" tabindex="2" class="form-control" placeholder="Fecha de Nacimiento" required>
+                                max="2022-00-00" tabindex="2" class="form-control" placeholder="Fecha de Nacimiento"
+                                required>
+                            <!-- Cuando veamos js, agregar la fecha actual del sistema en "max"-->
                         </div>
 
                         <div class="form-group" required>
                             <label for="preguntasecreta"><b>Pregunta Secreta</b></label>
-                            <select name="preguntasecreta" id="preguntasecreta" tabindex="1" class="form-control"
-                                placeholder="Pregunta Secreta" value="" required>                                
-                                <option value="1">
-                                    Primera Mascota
-                                </option>
-                                <option value="2">
-                                    Personaje Favorito
-                                </option>
-                                <option value="3">
-                                    Actividad Favorita
-                                </option>
+                            <select name="preguntasecreta" class="form-control">
+                                <option label="Seleccione una pregunta" required>
+                                    <option value="1">Primera Mascota </option>
+                                    <option value="2"> Personaje Favorito </option>
+                                    <option value="3">Actividad Favorita </option>
+                                </optgroup>
                             </select>
-                            <input type="text" placeholder="Respuesta Secreta" name="uname" required>
+
+                            <input name="respuestaSecreta" type="text" placeholder="Respuesta Secreta" required>
                         </div>
 
+                        <!-- Con js validamos si ambas contraseñas son iguales -->
                         <label for="psw"><b>Contraseña</b></label>
                         <input type="password" placeholder="Contraseña" name="psw" required>
 
-                        <label for="psw"><b>Repetir Contraseña</b></label>
-                        <input type="password" placeholder="Repetir Contraseña" name="psw" required>
+                        <label for="pswC"><b>Repetir Contraseña</b></label>
+                        <input type="password" placeholder="Repetir Contraseña" name="pswC" required>
 
                         <!-- BOTON DE REGISTRARSE -->
                         <button class="ingresar" type="submit">Registrarse</button>
                     </form>
+
                 </div>
             </div>
         </div>
