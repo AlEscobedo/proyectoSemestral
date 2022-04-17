@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+body{
+    background-color: rgb(40, 40, 40);
+}
+
+
+/****** TITULO *******/
+.contenedor-cover{
+    width: 100%;
+    height:  100%;
+    position: relative;
+    margin: auto;
+    background-image: url(../imagenes/iniciarSesion/fondo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.contenedor-cover:before{
+    content: " ";
+    width: 100%;
+    height: 100%;
+    background: rgba(34, 34, 34, 0.8);
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+}
+.contenedor-info-cover{
+    width: auto;
+    height: 500px;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+.contenedor-info-cover h1{
+    font-size: 60px;
+    font-weight: 500;
+    color: rgb(255, 165, 0);
+}
+.contenedor-info-cover p{
+    color: rgb(226, 148, 3);
+    font-size: 20px;
+    font-weight: 300px;
+}
+
+/*revisar para futuro lo de arriba*/
+
+
+
+
+
+
+
+/* datos del juego*/
+.datos{
+    text-align: center;
+    color: antiquewhite;
+}
+
+/*para editar el carrito*/
+.carrito{
+    text-align: right;
+    color: aliceblue;
+}
+
+img.card-img-top{
+    width: 600px;
+    max-width: 100%;
+    height: 350px;
+}
+
+.descripcion p{
+    margin-left: 10px;
+    border-radius: 10px;
+    border-color: aliceblue;
+    color: white;
+}
+
+
+.separacion{
+    border: solid;
+    border-color: aliceblue;
+}
+
+.datos p{
+    font-size: 13px;
+}
+.datos h2{
+    border: solid;
+    margin-left: 30%;
+    margin-right: 30%;
+    
+}
+
+
+
+/****** INICIA FOOTER ******/
+.tamaño{
+    width: 40px;
+    height: auto;
+    margin: 1%;
+}
+.text-footer {
+    color: rgb(255, 255, 255);
+    font-size: small;
+}
+.btn-footer{
+    color: rgb(255, 255, 255);
+    border-radius: 100%;
+    border-color: rgb(255, 255, 255);
+    margin: 1%;
+}
+.margin-botton{
+    margin-bottom: 4px
+}
+.padding-up{
+    padding: 20px;
+}
+.padding-down{
+    padding: 40px;
+}
+.todo{
+    margin-top: 35px;
+}
