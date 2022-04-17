@@ -74,24 +74,24 @@ body{
     height: auto;
     border-radius: 50%;
   }
-  .form-group {
+  .select-nac {
     margin-top: 15px;
     margin-bottom: 15px;
   }
-  .form-group input {
+  .select-nac input {
     background-color: orange;
     color: black;
     border-color: black;
   }
-  .form-group select {
+  .select-nac select {
     background-color: orange;
     color: black;
   }
-  .form-group select::before {
+  .select-nac select::before {
     background-color: orange;
     color: black;
   }
-  .form-group option {
+  .select-nac option {
     background-color: orange;
     color: black;
   }
