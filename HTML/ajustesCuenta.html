@@ -24,7 +24,7 @@
         <div class="container-fluid">
 
             <!-- IMAGEN DEL NAVBAR -->
-            <a class="navbar-brand" href="#"><img src="/imagenes/menuPrincipal/logoPag.png" width="100"></a>
+            <a class="navbar-brand" href="VistaUser.html"><img src="/imagenes/menuPrincipal/logoPag.png" width="100"></a>
             <p class="bienvenida">Bienvenido VicRos86!</p>
 
             <!-- BOTON EN MODO TOYCHIQUITO -->
@@ -60,108 +60,108 @@
     <!-- AJUSTES PERFIL -->
     <!-- CONTENEDOR DE FONDO -->
     <div class="separador"></div>
+
     <div class="container-fluid fondo-inicio">
         <!-- CONTENEDOR DE BOX -->
         <div class="container all ">
             <!-- IMAGEN DE BOX -->
             <form action="ajustesCuenta.html" enctype="application/x-www-form-urlencoded" name="AjustesCuenta">
-                <div class=" imgcontainer">
-                    <img src="/imagenes/admin/vr.jpg" alt="Avatar" class="avatar">
-                    <input type="file" value="" name="uname"></h3>
-                </div>
-
-
-                <!-- FORMULARIO -->
                 <div class="row">
-                    <div class="container">
-                        <label for="uname"><b>Nombre</b></label>
+
+                    <!-- FORMULARIO -->
+                    <div class="col-md-6">
                         <div class="row">
-                            <div class="col">
-                                <h3>
-                                <input type="text" placeholder="Ej: Juan Carlo" value="Victor Rosendo" name="uname"></h3>
+                            <div class="container">
+                                <label for="uname"><b>Nombre</b></label>
+                                <div class="row">
+                                    
+                                    <div class="col">
+                                        <h3>
+                                            <input type="text" placeholder="Ej: Juan Carlo" value="Victor Rosendo"
+                                                name="uname">
+                                        </h3>
+                                    </div>
+                                </div>
+
+                                <label for="uname"><b>Usuario</b></label>
+                                <div class="row">
+                                    <div class="col">
+                                        <input type="text" placeholder="Ej: Enojano" value="VicRos86" name="uname">
+                                    </div>
+
+                                </div>
+
+                                <label for="uname"><b>Dirección</b></label>
+                                <div class="row">
+                                    <div class="col">
+                                        <input type="text" placeholder="Su dirección de domicilio" value="Olimpo 1234"
+                                            name="uname">
+                                    </div>
+
+                                </div>
+
+
+                                <label for="uname"><b>Correo Electrónico</b></label>
+                                <div class="row">
+                                    <div class="col">
+                                        <input type="text" placeholder="nombre@correo.com"
+                                            value="v.rosendo@profesor.duoc.cl" name="uname">
+                                    </div>
+
+                                </div>
+
+
+                                <label for="uname"><b>Fecha de Nacimiento</b></label>
+                                <div class="row select-nac">
+                                    <div class="col">
+                                        <input type="date" name="fecha" id="fecha" value="" min="1922-01-01"
+                                            max="2022-00-00" tabindex="2" class="form-control"
+                                            placeholder="Fecha de Nacimiento">
+                                    </div>
+
+                                </div>
+
+                                <label for="uname"><b>Contraseña</b></label>
+                                <div class="row">
+                                    <div class="col">
+                                        <input type="password" placeholder="Cambiar Contraseña" name="uname"
+                                            value="1234567890" required>
+                                    </div>
+
+                                </div>
                             </div>
-                            <div class="col-2 col-sm-2 col-md-2">
-                                <i class="fa-solid fa-pen edit"></i>
-                            </div>
+                            <!-- BOTON DE REGISTRARSE -->
+
                         </div>
-
-                        <label for="uname"><b>Usuario</b></label>
-                        <div class="row">
-                            <div class="col">
-                                <input type="text" placeholder="Ej: Enojano" value="VicRos86" name="uname">
-                            </div>
-                            <div class="col-2 col-sm-2 col-md-2">
-                                <i class="fa-solid fa-pen edit"></i>
-                            </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class=" imgcontainer">
+                            <img src="/imagenes/admin/vr.jpg" alt="Avatar" class="avatar" ><hr>
+                            <input type="file" value="" name="uname"></h3>
                         </div>
-
-                        <label for="uname"><b>Dirección</b></label>
-                        <div class="row">
-                            <div class="col">
-                                <input type="text" placeholder="Su dirección de domicilio" value="Olimpo 1234" name="uname">
-                            </div>
-                            <div class="col-2 col-sm-2 col-md-2">
-                                <i class="fa-solid fa-pen edit"></i>
-                            </div>
-                        </div>
-
-
-                        <label for="uname"><b>Correo Electrónico</b></label>
-                        <div class="row">
-                            <div class="col">
-                                <input type="text" placeholder="nombre@correo.com" value="v.rosendo@profesor.duoc.cl" name="uname">
-                            </div>
-                            <div class="col-2 col-sm-2 col-md-2">
-                                <i class="fa-solid fa-pen edit"></i>
-                            </div>
-                        </div>
-
-
-                        <label for="uname"><b>Fecha de Nacimiento</b></label>
-                        <div class="row select-nac">
-                            <div class="col">
-                                <input type="date" name="fecha" id="fecha" value="" min="1922-01-01"
-                                    max="2022-00-00" tabindex="2" class="form-control"
-                                    placeholder="Fecha de Nacimiento">
-                            </div>
-                            <div class="col-2 col-sm-2 col-md-2">
-                            </div>
-                        </div>
-
-                        <label for="uname"><b>Contraseña</b></label>
-                        <div class="row">
-                            <div class="col">
-                                <input type="password" placeholder="Cambiar Contraseña" name="uname" value="1234567890" required>
-                            </div>
-                            <div class="col-2 col-sm-2 col-md-2">
-                                <i class="fa-solid fa-pen edit"></i>
-                            </div>
-                        </div>
-
-                        <!-- BOTON DE REGISTRARSE -->
-                        <button class="ingresar" type="submit">Guardar Cambios</button>
+                    </div>
+                </div>
+                <button class="ingresar" type="submit">Guardar Cambios</button>
             </form>
         </div>
     </div>
-    </div>
-    </div>
+
 
 
     <!-- FOOTER -->
-    <div class="container-fluid">
+    <div class="container-fluid color-footer">
         <hr>
         <footer class="text-center">
-            <img class="text-center tamaño" src="imagenes/menuPrincipal/iconoPagOk.png" alt="">
-            <!-- Grid container -->
+            <img class="text-center tamaño" src="/imagenes/menuPrincipal/iconoPagOk.png" alt="">
             <div class="container padding-up">
 
                 <!-- Section: Social media -->
                 <section class="margin-botton">
                     <!-- Instagram -->
-                    <a class="btn btn-footer" href="https://www.instagram.com/enojano.shop/" role="button"><i
+                    <a class="btn btn-footer" href="https://www.instagram.com/enojano.shop/" role="button" target="_blank"><i
                             class="fab fa-instagram"></i></a>
                     <!-- Github -->
-                    <a class="btn btn-footer" href="https://github.com/AlEscobedo/proyectoSemestral" role="button"><i
+                    <a class="btn btn-footer" href="https://github.com/AlEscobedo/proyectoSemestral" role="button" target="_blank"><i
                             class="fab fa-github"></i></a>
                 </section>
                 <!-- Section: Social media -->
