@@ -1,27 +1,33 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    font-family: sans-serif;
-}
-.navbar-brand{
-    padding-left: 10px;
-}
-.body{
+/* PALETA DE COLORES 
+BODY                        rgb(40, 40, 40)
+TRANSPARECIA PARA IMAGENES  rgba(34, 34, 34, 0.7)
+LETRAS PARA TITULOS         rgb(255, 165, 0)
+LETRAS PARA SUBTITULOS      rgb(226, 148, 0)
+LETRAS EN GENERAL           rgb(255, 255, 255)
+CONTENEDORES                rgb(46, 46, 46)
+2° CONTENEDORES             rgb(70,70,70)
+BORDES DE TARJETAS          rgb(255, 166, 0)
+*/
+
+body{
     background-color: rgb(40,40,40);
 }
+.bienvenida {
+    color: rgb(255, 255, 255);
+    margin: auto;
+    user-select: none;
+  }
 .tituloCarroCompras{
     margin-top: 30px;
     margin-bottom: 30px;
     text-align: center;
-    color:white
+    color:rgb(255, 165, 0);
 }
 .card{
     margin-top: 10px;
     background-color: rgb(70,70,70);
-    color: white;
-    border: 3px orange solid;
+    color: rgb(255, 255, 255);
+    border: 1px rgb(255, 165, 0) solid;
     margin-top: 30px;
     margin-bottom: 30px;
 }
@@ -101,13 +107,6 @@
 }
 .color-footer{
     background-color: #222222;
-}
-.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
-    width: 100%;
-    padding-right: 0;
-    padding-left: 0;
-    margin-right: auto;
-    margin-left: auto;
 }
 .row {
     --bs-gutter-x: 1.5rem;

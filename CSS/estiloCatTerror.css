@@ -80,7 +80,7 @@ body{
     border: none;
 }
 .modal_color{
-background-color: #3d3d3d;
+background-color: rgb(61, 61, 61);
 }
 .modal-body p{
     font-size: 20px;
