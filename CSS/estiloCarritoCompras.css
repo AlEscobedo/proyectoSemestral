@@ -23,14 +23,42 @@ body{
     text-align: center;
     color:rgb(255, 165, 0);
 }
-.card{
-    margin-top: 10px;
-    background-color: rgb(70,70,70);
-    color: rgb(255, 255, 255);
-    border: 1px rgb(255, 165, 0) solid;
-    margin-top: 30px;
-    margin-bottom: 30px;
+
+
+.tarjeta{
+    border: solid rgb(255, 166, 0);
+    background-color: rgb(27, 27, 27);
 }
+.tarjeta h3{
+    color: rgb(255, 165, 0);
+    text-align: center;
+}
+.tarjeta h5{
+   color: rgb(255, 255, 255);
+   text-align: center;
+}
+.btnEliminar{  
+    width: 100%;
+    color: #fff;
+    background-color: rgb(255, 166, 0);;
+}
+.btn:focus{
+    outline: none;
+    box-shadow: none;
+}
+.btn:hover{
+    color: black; 
+    background-color: orange;
+    border-color:white;
+    font-weight: 550;
+    outline: none;
+}
+.imagen{
+    width: 100%;    
+}
+
+
+
 
 .boton-eliminar{
     color: #fff;
@@ -53,8 +81,6 @@ body{
     margin-top: 30px;
     margin-bottom: 30px;
 }
-
-
 
 .boton-comprar{
     color: #fff;
