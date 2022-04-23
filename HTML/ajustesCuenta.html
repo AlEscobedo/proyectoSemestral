@@ -14,7 +14,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- ICONOS DE FONTAWSOME -->
     <script src="https://kit.fontawesome.com/1bb0c0c4bd.js" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <!-- CONEXION A CSS -->
     <link rel="stylesheet" href="/CSS/estilosAjustesCuenta.css">
@@ -27,7 +29,8 @@
         <div class="container-fluid">
 
             <!-- IMAGEN DEL NAVBAR -->
-            <a class="navbar-brand" href="VistaUser.html"><img src="/imagenes/menuPrincipal/logoPag.png" width="100"></a>
+            <a class="navbar-brand" href="VistaUser.html"><img src="/imagenes/menuPrincipal/logoPag.png"
+                    width="100"></a>
             <p class="bienvenida">Bienvenido VicRos86!</p>
 
             <!-- BOTON EN MODO TOYCHIQUITO -->
@@ -73,52 +76,62 @@
         <div class="container all ">
             <!-- IMAGEN DE BOX -->
             <form action="ajustesCuenta.html" enctype="application/x-www-form-urlencoded" name="AjustesCuenta">
-                <div class="row">
+                <div class="row margen">
 
                     <!-- FORMULARIO -->
                     <div class="col-md-6">
+
+
+                        <div class="imgcontainer">
+                            <label class="botonAvatar">
+                                <img class="imgAvatar" id="fotoPerfil" src="/imagenes/admin/vr.jpg">
+                                <input type="file" id="Avatar">
+                                <hr>
+                                Cambiar Foto de Perfil
+                            </label>
+
+                        </div>
+                    </div>
+                    <div class="col-md-6">
                         <div class="row">
                             <div class="container">
-                                <label for="uname"><b>Nombre</b></label>
+                                <label for="nombre"><b>Nombre</b></label>
                                 <div class="row">
-                                    
+
                                     <div class="col">
-                                        <h3>
-                                            <input type="text" placeholder="Ej: Juan Carlo" value="Victor Rosendo"
-                                                name="uname">
-                                        </h3>
+                                        <b>
+                                            <input type="text" placeholder="Victor Rosendo" id="nombre">
+                                        </b>
                                     </div>
                                 </div>
 
-                                <label for="uname"><b>Usuario</b></label>
+                                <label for="userName"><b>Usuario</b></label>
                                 <div class="row">
                                     <div class="col">
-                                        <input type="text" placeholder="Ej: Enojano" value="VicRos86" name="uname">
+                                        <input type="text" placeholder="VicRos86" id="userName">
                                     </div>
 
                                 </div>
 
-                                <label for="uname"><b>Dirección</b></label>
+                                <label for="dir"><b>Dirección</b></label>
                                 <div class="row">
                                     <div class="col">
-                                        <input type="text" placeholder="Su dirección de domicilio" value="Olimpo 1234"
-                                            name="uname">
+                                        <input type="text" placeholder="Olimpo 1234" id="dir">
                                     </div>
 
                                 </div>
 
 
-                                <label for="uname"><b>Correo Electrónico</b></label>
+                                <label for="email"><b>Correo Electrónico</b></label>
                                 <div class="row">
                                     <div class="col">
-                                        <input type="text" placeholder="nombre@correo.com"
-                                            value="v.rosendo@profesor.duoc.cl" name="uname">
+                                        <input type="text" placeholder="v.rosendo@profesor.duoc.cl" id="email">
                                     </div>
 
                                 </div>
 
 
-                                <label for="uname"><b>Fecha de Nacimiento</b></label>
+                                <label for="fecha"><b>Fecha de Nacimiento</b></label>
                                 <div class="row select-nac">
                                     <div class="col">
                                         <input type="date" name="fecha" id="fecha" value="" min="1922-01-01"
@@ -128,31 +141,21 @@
 
                                 </div>
 
-                                <label for="uname"><b>Contraseña</b></label>
+                                <label for="pass"><b>Contraseña</b></label>
                                 <div class="row">
                                     <div class="col">
-                                        <input type="password" placeholder="Cambiar Contraseña" name="uname"
-                                            value="1234567890" required>
+                                        <input type="password" placeholder="Ingresar Contraseña" id="pass" required>
+                                        <button class="ingresar" type="submit">Guardar Cambios</button>
                                     </div>
 
                                 </div>
                             </div>
-                            <!-- BOTON DE REGISTRARSE -->
 
                         </div>
                     </div>
-                    <div class="col-md-6">
 
-                        
-                        <div class="imgcontainer">
-                            
-                            <img class="imgAvatar" id="fotoPerfil" src="/imagenes/admin/vr.jpg"><hr>
-                            <input type="file" id="Avatar"></h3>
-
-                        </div>
-                    </div>
                 </div>
-                <button class="ingresar" type="submit">Guardar Cambios</button>
+
             </form>
         </div>
     </div>
@@ -169,11 +172,11 @@
                 <!-- Section: Social media -->
                 <section class="margin-botton">
                     <!-- Instagram -->
-                    <a class="btn btn-footer" href="https://www.instagram.com/enojano.shop/" role="button" target="_blank"><i
-                            class="fab fa-instagram"></i></a>
+                    <a class="btn btn-footer" href="https://www.instagram.com/enojano.shop/" role="button"
+                        target="_blank"><i class="fab fa-instagram"></i></a>
                     <!-- Github -->
-                    <a class="btn btn-footer" href="https://github.com/AlEscobedo/proyectoSemestral" role="button" target="_blank"><i
-                            class="fab fa-github"></i></a>
+                    <a class="btn btn-footer" href="https://github.com/AlEscobedo/proyectoSemestral" role="button"
+                        target="_blank"><i class="fab fa-github"></i></a>
                 </section>
                 <!-- Section: Social media -->
 

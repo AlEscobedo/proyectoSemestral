@@ -64,7 +64,7 @@ body {
 }
 
 .contenedor-info-cover p {
-  color: rgb(226, 148, 0);
+  color: rgb(255, 255, 255);
   font-size: 20px;
   font-weight: 300px;
 }
@@ -76,35 +76,34 @@ body {
   padding-bottom: 20px;
 }
 
-.texto-centrado {
-  text-align: center;
+.all{
+  border: 1px solid rgb(255, 166, 0);
+  background-color: rgb(34, 34, 34);
+  color: rgb(255, 255, 255);
+  border-radius: 20px;
+}
+.margen{
+  margin: 20px;
 }
 
-.all {
-  border: 1px solid rgb(255, 166, 0);
-  background-color: rgb(70, 70, 70);
-  color: rgb(255, 255, 255);
-  width: 100%;
-
-  height: auto;
-  margin: auto;
-  border-radius: 20px;
-  position: relative;
+.imgcontainer{
+  align-items: center;
+  align-content: center;
 }
 
 .imgcontainer img{
   text-align: center;
   align-items: center;
-  margin: 24px 0 12px 0;
+  margin: 24px 0 24px 0;
   max-width: 550px;
 }
 
 .imgAvatar {
   width: 100%;
   height: auto;
-  border-radius: 30%;
+  border-radius: 500px;
+  
 }
-
 .select-nac {
   margin-top: 15px;
   margin-bottom: 15px;
@@ -131,6 +130,29 @@ body {
   color: rgb(0, 0, 0);
 }
 
+input[type=file] {
+  display: none;
+}
+.botonAvatar{
+  text-align: center;
+  background-color: rgb(40, 40, 40);
+  color: rgb(255, 255, 255);
+  border: solid rgb(255, 165, 0);
+  padding: 14px 20px;
+  margin: 8px 0;
+  cursor: pointer;
+  width: 100%;
+  transition: all 0.2s;
+  border-radius: 10px;
+}
+
+.botonAvatar:hover{
+font-weight: bold;
+color: rgb(255, 255, 255);
+background-color: transparent;
+border: solid rgb(255, 165, 0);
+}
+
 input[type=text],
 input[type=password] {
   width: 100%;
@@ -154,16 +176,7 @@ input[type=password] {
   cursor: pointer;
   width: 100%;
   transition: all 0.2s;
-}
-
-.psw a {
-  color: rgb(255, 255, 255);
-  text-decoration: none;
-  transition: all 0.2s;
-}
-
-.psw a:hover {
-  font-weight: bold;
+  border-radius: 5px;
 }
 
 button:hover {
@@ -173,10 +186,6 @@ button:hover {
   border: solid rgb(255, 165, 0);
 }
 
-span.psw {
-  float: right;
-  color: rgb(255, 255, 255);
-}
 
 .contenedor {
   margin-top: 10px;
@@ -187,11 +196,6 @@ span.psw {
   margin-top: 5%;
 }
 
-.edit {
-  padding-right: 80%;
-  margin-left: -50px;
-  padding-top: 20px;
-}
 
 
 /****** INICIA FOOTER ******/
