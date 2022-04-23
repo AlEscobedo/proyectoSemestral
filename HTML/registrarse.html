@@ -12,6 +12,11 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- ICONOS DE FONTAWSOME -->
     <script src="https://kit.fontawesome.com/1bb0c0c4bd.js" crossorigin="anonymous"></script>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <link rel="stylesheet" href="/CSS/estilosRegistrarse.css">
 </head>
 
@@ -67,18 +72,27 @@
                 <div class="container">
 
                     <!-- El method lo agregamos despues, ya que no deja ir a la pagina correspondiente-->
-                    <form name="registrarUsuario" action="VistaUser.html" enctype="application/x-www-form-urlencoded">
-                        <label for="nombre"><b>Nombre Completo</b></label>
-                        <input type="text" placeholder="Ej: Juanito Perez" name="nombre" required>
+                    <form name="registrarUsuario" action="VistaUser.html" enctype="application/x-www-form-urlencoded" id="formRegistrarse">
 
-                        <label for="usuario"><b>Usuario</b></label>
-                        <input type="text" placeholder="Ej: VicRos86" name="usuario" required>
+                        <div class="form-group">
+                            <label for="nombre"><b>Nombre Completo</b></label>
+                            <input type="text" placeholder="Ej: Juanito Perez" name="nombre" required id="nombre">
+                        </div>
 
-                        <label for="direccion"><b>Dirección</b></label>
-                        <input type="text" placeholder="Ej: Av.Pajaritos 877" name="direccion" required>
+                        <div class="form-group">
+                            <label for="usuario"><b>Usuario</b></label>
+                            <input type="text" placeholder="Ej: VicRos86" name="usuario" required id="usuario">
+                        </div>
 
-                        <label for="email"><b>Correo Electrónico</b></label>
-                        <input type="email" placeholder="Ej:jean_doe@gmail.com" name="email" required>
+                        <div class="from-group">
+                            <label for="direccion"><b>Dirección</b></label>
+                            <input type="text" placeholder="Ej: Av.Pajaritos 877" name="direccion" required id="direccion">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email"><b>Correo Electrónico</b></label>
+                            <input type="email" placeholder="Ej:jean_doe@gmail.com" name="email" required id="correo">
+                        </div>
 
                         <div class="form-group">
                             <label for="fecha"><b>Fecha de Nacimiento</b></label>
@@ -98,18 +112,31 @@
                                 </optgroup>
                             </select>
 
-                            <input name="respuestaSecreta" type="text" placeholder="Respuesta Secreta" required>
+                            <input name="respuestaSecreta" type="text" placeholder="Respuesta Secreta" required id="respuestaSecreta">
                         </div>
 
                         <!-- Con js validamos si ambas contraseñas son iguales -->
-                        <label for="psw"><b>Contraseña</b></label>
-                        <input type="password" placeholder="Contraseña" name="psw" required>
+                        <div class="form-group">
+                            <label for="psw"><b>Contraseña</b></label>
+                            <input type="password" placeholder="Contraseña" name="psw" required id="clave">
+                        </div>
 
-                        <label for="pswC"><b>Repetir Contraseña</b></label>
-                        <input type="password" placeholder="Repetir Contraseña" name="pswC" required>
+                        <div class="form-group">
+                            <label for="pswC"><b>Repetir Contraseña</b></label>
+                            <input type="password" placeholder="Repetir Contraseña" name="pswC" required id="claveRepetida">
+                        </div>
 
                         <!-- BOTON DE REGISTRARSE -->
                         <button class="ingresar" type="submit">Registrarse</button>
+
+                        <p id="mensajeNombre"></p>
+                        <p id="mensajeUsuario"></p>
+                        <p id="mensajeDireccion"></p>
+                        <p id="mensajeCorreo"></p>
+                        <p id="mensajeFecha"></p>
+                        <p id="mensajeRespuestaSecreta"></p>
+                        <p id="mensajeClave"></p>
+
                     </form>
 
                 </div>
@@ -140,12 +167,14 @@
 
             </div>
             <!-- Copyright -->
-            <div class="text-center padding-down" style="background-color: rgba(0, 0, 0, 0.2);">
+            <div class="text-center padding-down" style="background-color: #00000033;">
                 <h6 class="text-footer">© 2022 DuocUC - Todos los Derechos Reservados</h6>
             </div>
             <!-- Copyright -->
         </footer>
     </div>
+    
+    <script src="/JS/registrarse.js"></script>
 </body>
 
 </html>
