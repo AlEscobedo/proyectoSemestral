@@ -23,7 +23,6 @@ body {
 
 
 /****** TITULO *******/
-
 .contenedor-cover {
   width: 100%;
   height: 100%;
@@ -93,17 +92,17 @@ body {
   position: relative;
 }
 
-.imgcontainer {
+.imgcontainer img{
   text-align: center;
   align-items: center;
   margin: 24px 0 12px 0;
   max-width: 550px;
 }
 
-img.avatar {
-  width: 80%;
+.imgAvatar {
+  width: 100%;
   height: auto;
-  border-radius: 50%;
+  border-radius: 30%;
 }
 
 .select-nac {
