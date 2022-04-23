@@ -62,27 +62,52 @@
         <h1 class="tituloCarroCompras"> CARRITO DE COMPRA</h1>
         <!--JUEGOS DEL CARRITO-->
         <div class="row tarjeta">
-            <div class="col col-md-4 col-sm-12 col-lg-4">
+            <div class="col-md-4 col-sm-12">
                 <img class="imagen" src="/imagenes/categoriaTerror/terror2.jpg">
             </div>
-            <div class="col col-md-4 col-sm-12 col-lg-4">
+            <div class="col-md-4 col-sm-12 ">
                 <h3>Phasmofobia</h3>
                 <h5>Categoria: Terror</h5>
             </div>
-            <div class="col col-md-4 col-sm-12 col-lg-4">
+            <div class="col-md-4 col-sm-12 ">
+                <h5>Valor: $5.000</h5>
+                <button class="btnEliminar btn-warning" type="button">Eliminar</button>
+            </div>
+        </div>
+        <div class="row tarjeta">
+            <div class="col-md-4 col-sm-12 ">
+                <img class="imagen" src="/imagenes/categoriaSupervivencia/super6.jpeg.crdownload">
+            </div>
+            <div class="col-md-4 col-sm-12 ">
+                <h3>Minecraft</h3>
+                <h5>Categoria: supervivencia</h5>
+            </div>
+            <div class="col-md-4 col-sm-12 ">
+                <h5>Valor: $8.000</h5>
+                <button class="btnEliminar btn-warning" type="button">Eliminar</button>
+            </div>
+        </div>
+        <div class="row tarjeta">
+            <div class="col-md-4 col-sm-12 ">
+                <img class="imagen" src="/imagenes/categoriaAccion/accion2.jpg">
+            </div>
+            <div class="col-md-4 col-sm-12 ">
+                <h3>Battlefield 4</h3>
+                <h5>Categoria: Accion</h5>
+            </div>
+            <div class="col-md-4 col-sm-12 ">
                 <h5>Valor: $5.000</h5>
                 <button class="btnEliminar btn-warning" type="button">Eliminar</button>
             </div>
         </div>
 
-
-
         <!--BOTONES PARA CONFIRMAR O CANCELAR COMPRA-->
-
         <div class="row ">
             <!--PARA CONFIRMAR COMPRA-->
-            <div class="col-md-6 col-sm-12 d-flex justify-content-evenly">
-
+            <div class="col-md-4 col-sm-12 d-flex justify-content-evenly">
+                <h4 class="total-pagar">TOTAL A PAGAR: $18.000</h4>
+            </div>
+            <div class="col-md-4 col-sm-12 d-flex justify-content-evenly">
                 <button class="btn btn-warning boton-comprar" type="button" data-bs-toggle="offcanvas"
                     data-bs-target="#offcanvasBottomCOMPRAR" aria-controls="offcanvasBottom">Comprar contenido del
                     Carrito</button>
@@ -104,7 +129,7 @@
                 </div>
             </div>
             <!--PARA CANCELAR COMPRA-->
-            <div class="col-md-6 col-sm-12 d-flex justify-content-evenly">
+            <div class="col-md-4 col-sm-12 d-flex justify-content-evenly">
 
                 <button class="btn btn-warning boton-eliminar" type="button" data-bs-toggle="offcanvas"
                     data-bs-target="#offcanvasBottomCANCELAR" aria-controls="offcanvasBottom">Cancelar Compras.</button>

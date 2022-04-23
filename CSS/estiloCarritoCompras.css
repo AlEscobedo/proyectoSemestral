@@ -9,131 +9,154 @@ CONTENEDORES                rgb(46, 46, 46)
 BORDES DE TARJETAS          rgb(255, 166, 0)
 */
 
-body{
-    background-color: rgb(40,40,40);
+body {
+    background-color: rgb(40, 40, 40);
 }
+
 .bienvenida {
     color: rgb(255, 255, 255);
     margin: auto;
     user-select: none;
-  }
-.tituloCarroCompras{
+}
+
+.tituloCarroCompras {
     margin-top: 30px;
     margin-bottom: 30px;
     text-align: center;
-    color:rgb(255, 165, 0);
+    color: rgb(255, 165, 0);
 }
 
 
-.tarjeta{
+.tarjeta {
     border: solid rgb(255, 166, 0);
     background-color: rgb(27, 27, 27);
 }
-.tarjeta h3{
+
+.tarjeta h3 {
     color: rgb(255, 165, 0);
     text-align: center;
 }
-.tarjeta h5{
-   color: rgb(255, 255, 255);
-   text-align: center;
+
+.tarjeta h5 {
+    color: rgb(255, 255, 255);
+    text-align: center;
 }
-.btnEliminar{  
+
+.btnEliminar {
     width: 100%;
     color: #fff;
-    background-color: rgb(255, 166, 0);;
+    background-color: rgb(255, 166, 0);
+    ;
 }
-.btn:focus{
+
+.btn:focus {
     outline: none;
     box-shadow: none;
 }
-.btn:hover{
-    color: black; 
+
+.btn:hover {
+    color: black;
     background-color: orange;
-    border-color:white;
+    border-color: white;
     font-weight: 550;
     outline: none;
 }
-.imagen{
-    width: 100%;    
+
+.imagen {
+    width: 100%;
 }
 
 
 
 
-.boton-eliminar{
+.boton-eliminar {
     color: #fff;
     font-weight: bold;
     height: 40px;
     outline: none;
 }
-.boton-eliminar:focus{
+
+.boton-eliminar:focus {
     outline: none;
     box-shadow: none;
 }
-.boton-eliminar:hover{
-    color: black; 
+
+.boton-eliminar:hover {
+    color: black;
     background-color: orange;
-    border-color:white;
+    border-color: white;
     font-weight: 550;
     outline: none;
 }
-.boton-eliminar{
+
+.boton-eliminar {
     margin-top: 30px;
     margin-bottom: 30px;
 }
 
-.boton-comprar{
+.boton-comprar {
     color: #fff;
     background-color: orange;
     border-color: black solid 3px;
 }
-.boton-comprar:hover{
+
+.boton-comprar:hover {
     color: black;
     background-color: orange;
-    border-color:white;
+    border-color: white;
     font-weight: 550;
 }
-.boton-comprar:focus{
+
+.boton-comprar:focus {
     outline: none;
     box-shadow: none;
 }
-.boton-comprar{
+
+.boton-comprar {
     margin-top: 30px;
     margin-bottom: 30px;
 }
 
-.tamaño{
+.tamaño {
     width: 40px;
     height: auto;
     margin: 1%;
 }
+
 .text-footer {
     color: rgb(255, 255, 255);
     font-size: small;
-  }
-.btn-footer{
+}
+
+.btn-footer {
     color: rgb(255, 255, 255);
     border-radius: 100%;
     border-color: rgb(255, 255, 255);
     margin: 1%;
 }
-.margin-botton{
+
+.margin-botton {
     margin-bottom: 4px
 }
-.padding-up{
+
+.padding-up {
     padding: 20px;
 }
-.padding-down{
+
+.padding-down {
     padding: 40px;
 }
-.titulo{
+
+.titulo {
     color: white;
     font-size: 400%;
     text-align: center;
 }
-.color-footer{
+
+.color-footer {
     background-color: #222222;
 }
+
 .row {
     --bs-gutter-x: 1.5rem;
     --bs-gutter-y: 0;
@@ -145,33 +168,29 @@ body{
     margin-bottom: 5px;
 }
 
-.offcanvas-header{
-    background-color: rgb(70,70,70);
+.total-pagar {
+    text-align: center;
+    color: white;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.offcanvas-header {
+    background-color: rgb(70, 70, 70);
     color: white;
 }
 
-.offcanvas-title{
-    color:white;
+.offcanvas-title {
+    color: white;
 }
 
-.offcanvas-body{
-    background-color: rgb(40,40,40);
+.offcanvas-body {
+    background-color: rgb(40, 40, 40);
     color: white;
     text-align: center;
 }
 
-
-.datosJuego{
-    font-size: x-large;
-    margin-top: 25px;
-}
-.titulo-juego{
-    color: orange;
-    margin-top: 10px;
-    margin-bottom: 20px;
-}
-
-.text-reset:focus{
+.text-reset:focus {
     outline: none;
     box-shadow: none;
 }
