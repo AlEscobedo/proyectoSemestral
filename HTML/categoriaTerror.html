@@ -31,9 +31,10 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <!-- LINKS/TEXTO -->
+            <!-- OPCIONES DEL NAVBAR -->
             <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
                 <form class="d-flex input-group w-auto">
+                    <!-- AQUI ES DONDE SE PONEN LAS OPCIONES -->
                     <ul class="navbar-nav">
                         <li class="nav-item">
                             <a href="iniciarSesion.html" class="nav-link"><i class="fa-solid fa-right-to-bracket"></i>
@@ -54,158 +55,187 @@
         </div>
     </nav>
 
-
-    <div class="container-fluid contenedor-terror">
-
+    <!-- EL TITULO DE LA PAGINA -->
+    <div class="contenedor-terror">
         <div class="contenedor-info-terror">
-            <div class="container">
-                <h1>Juegos de Terror</h1>
-                <p>Los videojuegos de terror, o videojuegos de horror, son un género de videojuegos<br>
-                    centrado en la ficción a través de los elementosy las experiencias de terror, <br>
-                    los cuales normalmente están diseñados para asustar al jugador a través de <br>
-                    situaciones intimidantes, entornos tétricos, enemigos monstruosos y muy dañinos,<br>
-                    además de sonidos, música e imágenes inquietantes para el jugador.</p>
-            </div>
+            <h1>Juegos de Terror</h1>
+            <p>Los videojuegos de terror, o videojuegos de horror, son un género de videojuegos<br>
+                centrado en la ficción a través de los elementosy las experiencias de terror, <br>
+                los cuales normalmente están diseñados para asustar al jugador a través de <br>
+                situaciones intimidantes, entornos tétricos, enemigos monstruosos y muy dañinos,<br>
+                además de sonidos, música e imágenes inquietantes para el jugador.</p>
         </div>
     </div>
 
 
-
-    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <!-- CARRUSEL -->
+    <div id="carouselIndicators" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+            <!-- VISTA CARRUSEL 1 -->
+            <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="0" class="active"
                 aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+            <!-- VISTA CARRUSEL 2 -->
+            <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="1"
                 aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+            <!-- VISTA CARRUSEL 3 -->
+            <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="2"
                 aria-label="Slide 3"></button>
         </div>
+
+        <!-- LO QUE CONTIENE EL CARRUSEL -->
         <div class="carousel-inner">
+            <!-- CARRUSEL 1 -->
             <div class="carousel-item active">
                 <div class="row">
+                    <!-- CARD 1 -->
                     <div class="col-md-4 col-sm-12 d-flex d-md-flex justify-content-evenly">
                         <div class="card" style="width: 18rem;">
                             <img src="/imagenes/categoriaTerror/terror1.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">Five Nights At Freddy's</h5>
-                                <p class="card-text">¡Nuevo trabajo!<br>
-                                    ¿Tu curriculum podrá soportarlo? </p>
-                                <button type="button" class="btn btn-categoria" data-bs-toggle="modal"
-                                    data-bs-target="#myModal1">
-                                    ¡Comprar Ahora!
-                                </button>
+                                <p class="card-text">Como guardia de seguridad debes sobrevivir a toda la noche y cuidar
+                                    de
+                                    que los muñecos no escapen del restaurante.
+                                    Muchos guardias de seguridad han caído ya en tu puesto.</p>
+                                <!-- !!!!PONER REDIRECCION A PAGINA DEL JUEGO!!!! -->
+                                <input type="button" value="¡Comprar Ahora!">
                             </div>
                         </div>
                     </div>
+                    <!-- CARD 2 -->
                     <div class="col-md-4 col-sm-12 d-flex d-none d-md-flex justify-content-evenly">
                         <div class="card" style="width: 18rem;">
                             <img src="/imagenes/categoriaTerror/terror2.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">Phasmophobia</h5>
-                                <p class="card-text">Con Phasmophobia, ¡Ahora puedes ser un GhostBuster real!(¡Como
-                                    en la película!)</p>
-                                <button type="button" class="btn btn-categoria" data-bs-toggle="modal"
-                                    data-bs-target="#myModal2">
-                                    ¡Comprar Ahora!
-                                </button>
+                                <p class="card-text">Phasmophobia en un juego de terror y supervivencia en primera
+                                    persona, pero también una
+                                    especie de simulador de fenómenos paranormales.</p>
+                                <!-- !!!!PONER REDIRECCION A PAGINA DEL JUEGO!!!! -->
+                                <input type="button" value="¡Comprar Ahora!">
                             </div>
                         </div>
                     </div>
+                    <!-- CARD 3 -->
                     <div class="col-md-4 col-sm-12 d-flex d-none d-md-flex justify-content-evenly">
                         <div class="card" style="width: 18rem;">
                             <img src="/imagenes/categoriaTerror/terror3.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">Dead By Daylight</h5>
-                                <p class="card-text">¿Serás de los que se esconden, de los que trabajan, de los que
-                                    trolean al asesino o de los que fallan las pruebas de habilidad?</p>
-                                <button type="button" class="btn btn-categoria" data-bs-toggle="modal"
-                                    data-bs-target="#myModal3">
-                                    ¡Comprar Ahora!
-                                </button>
+                                <p class="card-text">Es un videojuego multijugador en línea de 1 contra 4, en el que
+                                    cuatro jugadores toman
+                                    el papel de supervivientes y uno el de asesino. Tanto los objetivos del videojuego
+                                    como
+                                    la perspectiva de los dos tipos de jugadores son distintos, los supervivientes se
+                                    concentran en escapar mientras que el asesino debe darles caza para sacrificarlos al
+                                    Ente.</p>
+                                <!-- !!!!PONER REDIRECCION A PAGINA DEL JUEGO!!!! -->
+                                <input type="button" value="¡Comprar Ahora!">
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <!-- CARRUSEL 2 -->
             <div class="carousel-item">
                 <div class="row">
+                    <!-- CARD 4 -->
                     <div class="col-md-4 col-sm-12 d-flex d-md-flex justify-content-evenly">
                         <div class="card" style="width: 18rem;">
                             <img src="/imagenes/categoriaTerror/terror4.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">Slender</h5>
-                                <p class="card-text">Entras a un bosque intentando recolectar unas páginas, no
-                                    sabes, por qué ni para qué, solo lo haces...</p>
-                                <a class="btn btn-categoria">¡Próximamente!</a>
+                                <p class="card-text">Slender: The Eight Pages es un videojuego de terror en primera
+                                    persona lanzado en junio de 2012 para Microsoft Windows y OS X, utilizando el motor
+                                    de videojuegos Unity.</p>
+                                <input type="button" value="¡Próximamente!">
                             </div>
                         </div>
                     </div>
+                    <!-- CARD 5 -->
                     <div class="col-md-4 col-sm-12 d-flex d-none d-md-flex justify-content-evenly">
                         <div class="card" style="width: 18rem;">
                             <img src="/imagenes/categoriaTerror/terror5.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">Outlast</h5>
-                                <p class="card-text">¿Alguna vez viste la pelicula de Leonardo DiCaprio "La isla
-                                    Siniestra"?</p>
-                                <a class="btn btn-categoria">¡Próximamente!</a>
+                                <p class="card-text">Miles Upshur, un tenaz periodista independiente que «se atreve a
+                                    indagar en donde nadie más» recibe un correo anónimo que le informa acerca de
+                                    experimentos ilegales llevados a cabo en un manicomio llamado Mount Massive, el cual
+                                    es propiedad de la corporación Murkoff.</p>
+                                <input type="button" value="¡Próximamente!">
                             </div>
                         </div>
                     </div>
+                    <!-- CARD 6 -->
                     <div class="col-md-4 col-sm-12 d-flex d-none d-md-flex justify-content-evenly">
                         <div class="card" style="width: 18rem;">
                             <img src="/imagenes/categoriaTerror/terror6.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">Deceit</h5>
-                                <p class="card-text">Amongas pero live action y de terror</p>
-                                <a class="btn btn-categoria">¡Próximamente!</a>
+                                <p class="card-text">Durante la exploración del edificio, la corriente eléctrica se
+                                    apagará creando oscuridad, permitiendo a los jugadores transformarse en su forma de
+                                    terror y atacar. Encontrar aliados y completar objetivos en el mapa aumentará las
+                                    posibilidades de escapar.</p>
+                                <input type="button" value="¡Próximamente!">
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <!-- CARRUSEL 3 -->
             <div class="carousel-item">
                 <div class="row">
+                    <!-- CARD 7 -->
                     <div class="col-md-4 col-sm-12 d-flex d-md-flex justify-content-evenly">
                         <div class="card" style="width: 18rem;">
                             <img src="/imagenes/categoriaTerror/terror7.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">Dead Space 3</h5>
-                                <p class="card-text">Suspenso, buena historia, buena ambientación y mucha, pero
-                                    mucha exageración con las muertes</p>
-                                    <a class="btn btn-categoria">¡Próximamente!</a>
+                                <p class="card-text">Viaja por el espacio hasta el planeta helado de Tau Volantis con
+                                    Isaac Clarke y el soldado John Carver para descubrir el origen del brote necromorfo
+                                    y destruirlo.</p>
+                                <input type="button" value="¡Próximamente!">
                             </div>
                         </div>
                     </div>
+                    <!-- CARD 8 -->
                     <div class="col-md-4 col-sm-12 d-flex d-none d-md-flex justify-content-evenly">
                         <div class="card" style="width: 18rem;">
                             <img src="/imagenes/categoriaTerror/terror8.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">The Walking Dead</h5>
-                                <p class="card-text">Nooooo Lee, no puede ser.....</p>
-                                <a class="btn btn-categoria">¡Próximamente!</a>
+                                <p class="card-text">A diferencia de muchos juegos de aventuras gráficas, The Walking
+                                    Dead no hace hincapié en la resolución de puzles, sino que se enfoca en el
+                                    desarrollo de la historia y personajes.</p>
+                                <input type="button" value="¡Próximamente!">
                             </div>
                         </div>
                     </div>
+                    <!-- CARD 9 -->
                     <div class="col-md-4 col-sm-12 d-flex d-none d-md-flex justify-content-evenly">
                         <div class="card" style="width: 18rem;">
                             <img src="/imagenes/categoriaTerror/terror9.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">Dying Light</h5>
-                                <p class="card-text">Mirror's Edge pero con zombies.</p>
-                                <a class="btn btn-categoria">¡Próximamente!</a>
+                                <p class="card-text">Cuando el virus de Harran se apoderó del mundo, la humanidad se
+                                    refugió en los últimos asentamientos que quedaban en pie. Los peregrinos, que viajan
+                                    en un implacable mundo posapocalíptico, hacen de enlace entre los diferentes
+                                    enclaves, llevando consigo recursos e información valiosa de un lado a otro.</p>
+                                <input type="button" value="¡Próximamente!">
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="prev">
+        <!-- BOTONES DEL CARRUSEL -->
+        <!-- BOTON HACIA LA IZQUIERDA -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselIndicators" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="next">
+        <!-- BOTON HACIA LA DERECHA -->
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselIndicators" data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
         </button>
@@ -213,220 +243,76 @@
 
 
 
-    <!--Titulo-->
-    <div class="container-fluid">
+    <!--TITULO SECCION CATALOGOS-->
+    <div class="container all">
         <h1 class="titulo">Catálogo de Juegos</h1>
-    </div>
-    <!--Tarjeta VideoJuego FNAF-->
-    <div class="container all">
-        <div class="card mb-3" style="max-width: 1000px;">
-            <div class="row no-gutters">
-                <div class="col-md-4">
-                    <img src="/imagenes/categoriaTerror/terror1.jpg" class="card-img" alt="fnaf">
-                </div>
-                <div class="col-md-8">
-                    <div class="card-body">
-                        <h5 class="card-title">Five Nights at Freddy's</h5>
-                        <p class="card-text">Como guardia de seguridad debes sobrevivir a toda la noche y cuidar de
-                            que los muñecos no escapen del restaurante.
-                            Muchos guardias de seguridad han caído ya en tu puesto.
-                        <p>¿Estarás a la altura?</p>
-                        </p>
-                        <button type="button" class="btn btn-categoria" data-bs-toggle="modal"
-                            data-bs-target="#myModal1">
-                            Ver Más
-                        </button>
+
+        <!--Tarjeta VideoJuego FNAF-->
+        <div class="container">
+            <div class="card mb-3">
+                <div class="row no-gutters">
+                    <div class="col-xl-4">
+                        <img src="/imagenes/categoriaTerror/terror1.jpg" class="card-img" alt="fnaf">
                     </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="modal" id="myModal1">
-            <div class="modal-dialog modal-dialog-scrollable">
-                <div class="modal-content">
-
-                    <!-- Modal Header -->
-                    <div class="modal-header">
-                        <h1>Five Nights at Freddy's</h1>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                    </div>
-
-                    <!-- Modal body -->
-
-                    <div class="modal-body">
-                        <img src="/imagenes/categoriaTerror/terror1.jpg" alt="">
-                        <h1>¿De qué trata?</h1>
-                        <h5>Atrincherate en tu garita y controla las cámaras de seguridad, así podrás
-                            ver
-                            que
-                            muñecos se han despertado y en qué parte del restaurante están. Encender las
-                            luces puede ahuyentarlos y a algunos solo les podrás parar cerrando las
-                            puertas
-                            a cal y canto. Pero ten cuidado, tienes una energía limitada para cada noche
-                            y
-                            no podrás mantener todas tus defensas encendidas todo rato o se gastará y
-                            estarás expuesto a cualquier muñeco con sangrientas intenciones. </h5>
-                        <div class="row">
-                            <p>Valor Juego: $3.000</p>
-                            <div class="col">
-                            </div>
-                            <div class="col">
-                                <div class="row botonModal"><button type="button" class="btn btn-dark"
-                                        data-bs-dismiss="#">Agregar al Carrito</button></div>
-                                <div class="row botonModal"><button type="button" class="btn btn-warning"
-                                        data-bs-dismiss="#">Comprar</button>
-                                </div>
-                            </div>
-
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Five Nights at Freddy's</h5>
+                            <p class="card-text">Como guardia de seguridad debes sobrevivir a toda la noche y cuidar de
+                                que los muñecos no escapen del restaurante.
+                                Muchos guardias de seguridad han caído ya en tu puesto.
+                            <p>¿Estarás a la altura?</p>
+                            </p>
+                            <input type="button" value="Ver Más">
                         </div>
                     </div>
-
-                    <!-- Modal footer -->
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Cerrar</button>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--Tarjeta VideoJuego PHASMO-->
-    <div class="container all">
-        <div class="card mb-3" style="max-width: 1000px;">
-            <div class="row no-gutters">
-                <div class="col-md-4">
-                    <img src="/imagenes/categoriaTerror/terror2.jpg" class="card-img" alt="phasmophobia">
-                </div>
-                <div class="col-md-8">
-                    <div class="card-body">
-                        <h5 class="card-title">Phasmophobia</h5>
-                        <p class="card-text">
-                            Un particular ticket hacia el inquietante mundo de los seres y demonios que se
-                            manifiestan en el mundo de los vivos
-                        <p>¿Estás listo para cazar unos fantasmas?</p>
-                        </p>
-                        <button type="button" class="btn btn-categoria" data-bs-toggle="modal"
-                            data-bs-target="#myModal2">
-                            Ver Más
-                        </button>
-                    </div>
                 </div>
             </div>
         </div>
 
-        <div class="modal" id="myModal2">
-            <div class="modal-dialog modal-dialog-scrollable">
-                <div class="modal-content">
-
-                    <!-- Modal Header -->
-                    <div class="modal-header">
-                        <h1>Phasmophobia</h1>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        <!--Tarjeta VideoJuego PHASMO-->
+        <div class="container">
+            <div class="card mb-3">
+                <div class="row no-gutters">
+                    <div class="col-xl-4">
+                        <img src="/imagenes/categoriaTerror/terror2.jpg" class="card-img" alt="phasmophobia">
                     </div>
-
-                    <!-- Modal body -->
-
-                    <div class="modal-body">
-                        <img src="/imagenes/categoriaTerror/terror2.jpg" alt="">
-                        <h1>¿De qué trata?</h1>
-                        <h5>
-                            Phasmophobia en un juego de terror y supervivencia en primera persona, pero también una
-                            especie de simulador de fenómenos paranormales. </h5>
-                        <div class="row">
-                            <p>Valor Juego: $6.000</p>
-                            <div class="col">
-                            </div>
-                            <div class="col">
-                                <div class="row botonModal"><button type="button" class="btn btn-dark"
-                                        data-bs-dismiss="#">Agregar al Carrito</button></div>
-                                <div class="row botonModal"><button type="button" class="btn btn-warning"
-                                        data-bs-dismiss="#">Comprar</button>
-                                </div>
-                            </div>
-
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Phasmophobia</h5>
+                            <p class="card-text">
+                                Un particular ticket hacia el inquietante mundo de los seres y demonios que se
+                                manifiestan en el mundo de los vivos
+                            <p>¿Estás listo para cazar unos fantasmas?</p>
+                            </p>
+                            <input type="button" value="Ver Más">
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
 
-                    <!-- Modal footer -->
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Cerrar</button>
+        <!--Tarjeta VideoJuego DBD-->
+        <div class="container">
+            <div class="card mb-3">
+                <div class="row no-gutters">
+                    <div class="col-xl-4">
+                        <img src="/imagenes/categoriaTerror/terror3.jpg" class="card-img" alt="dbd">
                     </div>
-
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Dead by Daylight</h5>
+                            <p class="card-text">
+                                Juega como superviviente e intenta escapar de el asesino para evitar ser capturado y
+                                asesinado.
+                            <p>¿Tienes lo necesario para escapar?</p>
+                            </p>
+                            <input type="button" value="Ver Más">
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <!--Tarjeta VideoJuego DBD-->
-    <div class="container all">
-        <div class="card mb-3" style="max-width: 1000px;">
-            <div class="row no-gutters">
-                <div class="col-md-4">
-                    <img src="/imagenes/categoriaTerror/terror3.jpg" class="card-img" alt="dbd">
-                </div>
-                <div class="col-md-8">
-                    <div class="card-body">
-                        <h5 class="card-title">Dead by Daylight</h5>
-                        <p class="card-text">
-                            Juega como superviviente e intenta escapar de el asesino para evitar ser capturado y
-                            asesinado.
-                        <p>¿Tienes lo necesario para escapar?</p>
-                        </p>
-                        <button type="button" class="btn btn-categoria" data-bs-toggle="modal"
-                            data-bs-target="#myModal3">
-                            Ver Más
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="modal" id="myModal3">
-            <div class="modal-dialog modal-dialog-scrollable">
-                <div class="modal-content">
-
-                    <!-- Modal Header -->
-                    <div class="modal-header">
-                        <h1>Dead by Daylight</h1>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                    </div>
-
-                    <!-- Modal body -->
-
-                    <div class="modal-body">
-                        <img src="/imagenes/categoriaTerror/terror3.jpg" alt="">
-                        <h1>¿De qué trata?</h1>
-                        <h5>
-                            Es un videojuego multijugador en línea de 1 contra 4, en el que cuatro jugadores toman
-                            el papel de supervivientes y uno el de asesino. Tanto los objetivos del videojuego como
-                            la perspectiva de los dos tipos de jugadores son distintos, los supervivientes se
-                            concentran en escapar mientras que el asesino debe darles caza para sacrificarlos al
-                            Ente.
-                            <div class="row">
-                                <p>Valor Juego: $8.000</p>
-                                <div class="col">
-                                </div>
-                                <div class="col">
-                                    <div class="row botonModal"><button type="button" class="btn btn-dark"
-                                            data-bs-dismiss="#">Agregar al Carrito</button></div>
-                                    <div class="row botonModal"><button type="button" class="btn btn-warning"
-                                            data-bs-dismiss="#">Comprar</button>
-                                    </div>
-                                </div>
-
-                            </div>
-                    </div>
-
-                    <!-- Modal footer -->
-                    <div class="modal-footer">
-
-                        <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Cerrar</button>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </div>
-
 
 
 
