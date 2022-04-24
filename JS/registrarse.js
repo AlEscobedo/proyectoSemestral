@@ -62,7 +62,7 @@ $(document).ready(function(){
 
         //VALIDACION INPUT USUARIO
         if(usuario.trim().length < 4 || usuario.trim().length > 10){
-            mensajeUsuario += "El nombre de usuario debe tener entre 8 y 16 caracteres.";
+            mensajeUsuario += "El nombre de usuario debe tener entre 4 y 10 caracteres.";
             entrarMensajeUsuario = true;
         }
 
