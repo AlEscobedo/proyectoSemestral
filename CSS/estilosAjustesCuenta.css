@@ -70,6 +70,13 @@ body {
 }
 
 /* FORMULARIO */
+
+.tituloAjuste{
+text-align: center;
+margin: 10px;
+color: rgb(255, 255, 255);
+}
+
 .fondo-inicio{
   background: rgb(46, 46, 46);
   padding-top: 20px;
