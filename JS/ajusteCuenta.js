@@ -6,32 +6,59 @@ $(document).ready(function () {
 
         // Validar nombre
         var nom = $("#nombre").val();
+        var primeraLetra = nom.charAt(0);
         let validarNom = false;
-        const pattern = new RegExp('^[A-Z]+$', 'i');
         let mensajeNom = "";
 
-        if (validarCaracteres(nom)) {            
-            mensajeNom += "Datos Correctos<br>";
-            validarNom = true;
+        if (validarCaracteres(nom)) {
+            if (!esMayuscula(primeraLetra)) {
+                mensajeNom += "El nombre debe comenzar con mayúscula<br>";
+                validarNom = false;
+            } else {
+                mensajeNom += "Datos Correctos<br>";
+                validarNom = true;
+            }
+
         } else {
             mensajeNom += "El nombre debe contener solo caracteres<br>";
             validarNom = false;
         }
 
-        if(validarNom){
+        if (validarNom) {
             $("#mensajeNomb").html(mensajeNom);
         }
-        else{
+        else {
             $("#mensajeNomb").html(mensajeNom);
         }
 
-        
+
+        //Validar Longitud Nombre Usuario
+        var usu = $("#userName").val();
+        let validarLongUsu = false;
+        let mensajeUsu = "";
+
+        if (validarLongitud(usu)) {
+            mensajeUsu += "El nombre de usuario debe tener una longitud entre 4 y 10 caracteres<br>";
+            validarLongUsu = false;
+        } else {
+            mensajeUsu += "Datos Correctos<br>";
+            validarLongUsu = true;
+        }
+
+        if (validarLongUsu) {
+            $("#mensajeUsu").html(mensajeUsu);
+        } else {
+            $("#mensajeUsu").html(mensajeUsu);
+        }
+
+
+
         //Validar correo
         var correo = $("#email").val();
         let validarCorreo = false;
         var mensajeEmail = $("#mensajeEmail").val();
-        
-        if(validarEmail(correo)){
+
+        if (validarEmail(correo)) {
             mensajeEmail += "Datos Correctos<br>"
             validarCorreo = true;
         } else {
@@ -39,10 +66,10 @@ $(document).ready(function () {
             validarCorreo = false;
         }
 
-        if(validarCorreo){
+        if (validarCorreo) {
             $("#mensajeEmail").html(mensajeEmail);
         }
-        else{
+        else {
             $("#mensajeEmail").html(mensajeEmail);
         }
 
@@ -52,68 +79,84 @@ $(document).ready(function () {
         var mensajeContra = $("#mensajePass").val();
         let validarContra = false;
 
-        if(validarPass(passActual, passNueva)){
-            mensajeContra += "La contraseña nueva no puede ser la misma que Actual<br>"
-            let validarContra = false;
-        }else{
+        if (!validarPass(passActual, passNueva)) {
             mensajeContra += "Datos Correctos<br>"
             let validarContra = true;
+        } else {
+            mensajeContra += "La contraseña nueva no puede ser la misma que Actual<br>"
+            let validarContra = false;
         }
-        
-        if(validarContra){
+
+        if (validarContra) {
             $("#mensajePass").html(mensajeContra);
         }
-        else{
+        else {
             $("#mensajePass").html(mensajeContra);
         }
 
     });
 
-        // Previsualizar la foto de perfil
-        function init() {
-            var inputFile = document.getElementById('Avatar');
-            inputFile.addEventListener('change', mostrarImagen, false);
+    // Previsualizar la foto de perfil
+    function init() {
+        var inputFile = document.getElementById('Avatar');
+        inputFile.addEventListener('change', mostrarImagen, false);
+    }
+
+    function mostrarImagen(event) {
+        var file = event.target.files[0];
+        var reader = new FileReader();
+        reader.onload = function (event) {
+            var img = document.getElementById('fotoPerfil');
+            img.src = event.target.result;
         }
-    
-        function mostrarImagen(event) {
-            var file = event.target.files[0];
-            var reader = new FileReader();
-            reader.onload = function (event) {
-                var img = document.getElementById('fotoPerfil');
-                img.src = event.target.result;
-            }
-            reader.readAsDataURL(file);
-        }
-    
-        window.addEventListener('load', init, false);
+        reader.readAsDataURL(file);
+    }
+
+    window.addEventListener('load', init, false);
 
 
-        // Validar que el nombre no contenga numeros
-    function validarCaracteres(nombre){
-        const caracteres = new RegExp('^[A-Z ]+$', 'i'," ");
-        if(nombre.match(caracteres)){
+    // Validar que el nombre no contenga numeros
+    function validarCaracteres(nombre) {
+        const caracteres = new RegExp('^[A-Z ]+$', 'i', " ");
+        if (nombre.match(caracteres)) {
             return true;
         }
-        else{
+        else {
+
+            return false;
+        }
+    }
+    // Validar que el nombre comience con mayuscula
+    function esMayuscula(primeraLetra) {
+        return primeraLetra == primeraLetra.toUpperCase();
+    }
+
+    // Validar que el nombre de ususario tenga una longitud entre 4 y 10 caracteres
+    function validarLongitud(usuario) {
+        if (usuario.trim().length < 4 || usuario.trim().length > 10) {
+            return true;
+        } else {
             return false;
         }
     }
 
-        // Validar que el email este en el formato correcto
-    function validarEmail(email) {
-        if (/^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i.test(email)){
-         return true;
-        } else {
-         return false;
-        }
-      }
 
-    function validarPass(pass1, pass2){
-        if(pass1 == pass2){
-            return true
+    // Validar que el email este en el formato correcto
+    function validarEmail(email) {
+        if (/^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i.test(email)) {
+            return true;
+        } else {
+            return false;
         }
-        else{
-            return false
+    }
+
+    // Validar que las contras no sean iguales
+    function validarPass(pass1, pass2) {
+        if (pass1 == pass2) {
+            return true;
+        }
+        else {
+            return false;
         }
     }
 })
