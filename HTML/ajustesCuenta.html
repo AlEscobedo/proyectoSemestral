@@ -75,7 +75,8 @@
         <!-- CONTENEDOR DE BOX -->
         <div class="container all ">
             <!-- IMAGEN DE BOX -->
-            <form action="ajustesCuenta.html" enctype="application/x-www-form-urlencoded" name="AjustesCuenta">
+            <form action="ajustesCuenta.html" enctype="application/x-www-form-urlencoded" name="AjustesCuenta"
+                id="formAjuste">
                 <div class="row margen">
                     <h1 class="tituloAjuste">Información Personal
                         <hr>
@@ -96,69 +97,71 @@
                     <div class="col-md-6">
                         <div class="row">
                             <div class="container">
-                                <label for="nombre"><b>Nombre</b></label>
-                                <div class="row">
-
-                                    <div class="col">
-                                        <b>
-                                            <input type="text" placeholder="Victor Rosendo" id="nombre">
-                                        </b>
-                                    </div>
-                                </div>
-
-                                <label for="userName"><b>Usuario</b></label>
-                                <div class="row">
-                                    <div class="col">
-                                        <input type="text" placeholder="VicRos86" id="userName">
+                                <label for="nombre"><b>Nombre</b>
+                                    <div class="row">
+                                        <div class="col">
+                                            <b>
+                                                <div class="form-group">
+                                                    <input type="text" placeholder="Victor Rosendo" id="nombre" class="form-control">
+                                                    <p id="mensajeNomb"></p>
+                                                </div>
+                                            </b>
+                                        </div>
                                     </div>
 
-                                </div>
+                                    <label for="userName"><b>Usuario</b></label>
+                                    <div class="row">
+                                        <div class="col">
+                                            <input type="text" placeholder="VicRos86" id="userName">                                            
+                                        </div>
 
-                                <label for="dir"><b>Dirección</b></label>
-                                <div class="row">
-                                    <div class="col">
-                                        <input type="text" placeholder="Olimpo 1234" id="dir">
                                     </div>
 
-                                </div>
+                                    <label for="dir"><b>Dirección</b></label>
+                                    <div class="row">
+                                        <div class="col">
+                                            <input type="text" placeholder="Olimpo 1234" id="dir">
+                                        </div>
 
-
-                                <label for="email"><b>Correo Electrónico</b></label>
-                                <div class="row">
-                                    <div class="col">
-                                        <input type="text" placeholder="v.rosendo@profesor.duoc.cl" id="email">
-                                    </div>
-
-                                </div>
-
-
-                                <label for="fecha"><b>Fecha de Nacimiento</b></label>
-                                <div class="row select-nac">
-                                    <div class="col">
-                                        <input type="date" name="fecha" id="fecha" value="" min="1922-01-01"
-                                            max="2022-00-00" tabindex="2" class="form-control"
-                                            placeholder="Fecha de Nacimiento">
-                                    </div>
-
-                                </div>
-
-                                <label for="pass"><b>Cambiar Contraseña</b></label>
-                                <div class="row">
-                                    <div class="col">
-                                        <input type="password" placeholder="Ingresar Contraseña Actual" id="passO">
-                                        <input type="password" placeholder="Ingresar Contraseña Nueva" id="passN">
-                                        <button class="ingresar" type="submit">Guardar Cambios</button>
                                     </div>
 
 
-                                </div>
+                                    <label for="email"><b>Correo Electrónico</b></label>
+                                    <div class="row">
+                                        <div class="col">
+                                            <input type="text" placeholder="v.rosendo@profesor.duoc.cl" id="email">
+                                            <p id="mensajeEmail"></p>
+                                        </div>
+
+                                    </div>
+
+
+                                    <label for="fecha"><b>Fecha de Nacimiento</b></label>
+                                    <div class="row select-nac">
+                                        <div class="col">
+                                            <input type="date" name="fecha" id="fecha" value="" min="1922-01-01"
+                                                max="2022-00-00" tabindex="2" class="form-control"
+                                                placeholder="Fecha de Nacimiento">
+                                        </div>
+
+                                    </div>
+
+                                    <label for="pass"><b>Cambiar Contraseña</b></label>
+                                    <div class="row">
+                                        <div class="col">
+                                            <input type="password" placeholder="Ingresar Contraseña Actual" id="passA">
+                                            <input type="password" placeholder="Ingresar Contraseña Nueva" id="passO">
+                                            <p id="mensajePass"></p>
+                                            <button class="ingresar" type="submit">Guardar Cambios</button>
+                                        </div>
+
+
+                                    </div>
                             </div>
-
                         </div>
                     </div>
-
-                </div>
-
+                </div>                
+                
             </form>
         </div>
     </div>
@@ -194,7 +197,7 @@
 
 
     <!-- CONEXION A JS -->
-    <script src="/JS/ajusteCuenta.js"></script>
+    <script type="text/javascript" src="/JS/ajusteCuenta.js"></script>
 </body>
 
 </html>
