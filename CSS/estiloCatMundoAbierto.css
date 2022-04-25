@@ -1,55 +1,54 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    font-family: sans-serif;
-}
-body{
+/* PALETA DE COLORES 
+BODY                        rgb(40, 40, 40)
+TRANSPARECIA PARA IMAGENES  rgba(34, 34, 34, 0.7)
+LETRAS PARA TITULOS         rgb(255, 165, 0)
+LETRAS PARA SUBTITULOS      rgb(226, 148, 0)
+LETRAS EN GENERAL           rgb(255, 255, 255)
+CONTENEDORES                rgb(46, 46, 46)
+2° CONTENEDORES             rgb(70,70,70)
+BORDES DE TARJETAS          rgb(255, 166, 0)
+*/
+
+body {
     background-color: rgb(40, 40, 40);
 }
 
-
-
-.contenedor-mundoAbierto{
-    width: 100%;
-    height:  500px;
+/****** TITULO *******/
+/* IMAGEN DE FONDO DE TITULO */
+.contenedor-mundoAbierto {
     position: relative;
-    top: 80px;
-    background-image: url(/imagenes/categoriaMundoAbierto/mundoAbierto.jpg);
-    background-position: center;
+    background-image: url(../imagenes/categoriaMundoAbierto/mundoAbierto.jpg);
     background-size: cover;
-    background-repeat: no-repeat;
-    margin-bottom: 100px;
 }
 
-.contenedor-mundoAbierto:before{
+/* TRANSPARENSIA PARA LA IMAGEN DEL FONDO DE TITULO */
+.contenedor-mundoAbierto:before {
     content: " ";
     width: 100%;
     height: 100%;
-    background: rgba(34, 34, 34, 0.5);
+    background: rgba(34, 34, 34, 0.7);
     position: absolute;
-    top: 0;
-    left: 0;    
 }
-.contenedor-info-mundoAbierto{
-    width: 100%;
+
+/* TITULO Y DESCRIPCION */
+.contenedor-info-mundoAbierto {
     height: 500px;
-    margin: auto;
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     position: relative;
-    z-index: 1; 
 }
-.contenedor-info-mundoAbierto h1{
-    color: rgb(255, 255, 255);
+
+/* TITULO */
+.contenedor-info-mundoAbierto h1 {
+    font-size: 60px;
+    color: rgb(255, 165, 0);
 }
-.contenedor-info-mundoAbierto p{
-    color: rgb(255, 255, 255);
-    margin-top: 10px;
+
+/* DESCRIPCION */
+.contenedor-info-mundoAbierto p {
+    color: rgb(255, 165, 0);
     font-size: 20px;
     display: -webkit-box;
     display: -moz-box;
@@ -61,168 +60,129 @@ body{
     line-clamp: 10;
     overflow: hidden;
 }
-.img-juego{
+
+/* CONTENEDOR DEL CARRUSEL */
+.carousel {
+    margin-top: 50px;
+    background-color: rgb(25, 25, 25);
+    height: 400px;
     width: 100%;
-    height: auto;
+    padding-top: 10px;
 }
-.modal-content{
-    border: solid orange;
+
+/* BOTONES DEL CARRUSEL */
+.carousel-control-next,
+.carousel-control-prev {
+    position: absolute;
+    width: 4.5%;
 }
-.modal-header{
-    background-color: rgb(41, 41, 41);
-    border: none;    
+
+/* TAMAÑO IMAGEN CARD */
+.card {
+    margin-top: 10px;
+    background-color: rgb(70, 70, 70);
+    color: white;
+    border: 3px rgb(255, 165, 0) solid;
 }
-.modal-body{
-    background-color: rgb(60, 60, 60);
+
+/* BORDE DE LA CARD */
+.card-img-top {
+    border-bottom: 3px orange solid;
+    width: 280px;
+    height: 160px;
 }
-.modal-footer{
-    background-color: rgb(41, 41, 41);
+
+/* RECORTE DE TITULO EN CARD */
+.card-title {
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    box-orient: vertical;
+    -webkit-line-clamp: 1;
+    line-clamp: 1;
+    overflow: hidden;
+}
+
+/* RECORTE DE TITULO EN CARD */
+.card-text {
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    box-orient: vertical;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    overflow: hidden;
+}
+
+/* BOTON DE DESCRIPCION DE CATEGORIA */
+.card-body input {
+    padding: 5px 10px;
+    background: rgb(255, 165, 0);
+    color: rgb(0, 0, 0);
+    font-weight: 800;
     border: none;
+    border-radius: 5px;
+    transition: box-shadow 300ms;
 }
-.modal_color{
-background-color: #3d3d3d;
+
+/* BRILLITO DEL BOTON UWU */
+.card-body input:hover {
+    box-shadow: 1px 1px 22px -5px rgb(255, 165, 0);
 }
-.modal-body p{
-    font-size: 20px;
-    color: rgb(255, 255, 255);    
-    margin: auto;
+
+/* TITULO DE CATALOGOS DE JUEGOS */
+.titulo {
+    color: rgb(226, 148, 0);
+    font-size: 70px;
     text-align: center;
     margin-top: 20px;
     margin-bottom: 20px;
 }
-.modal-body h5{
-    color: rgb(255, 255, 255);
-    font-size: 20px;
-}
-.modal-body h1{
-    color: rgb(255, 255, 255);
-    font-size: 40px;
-}
-.modal-header h1{
-    color: rgb(255, 255, 255);     
-}
-.modal-body img{
-    width: 100%;
-    height: auto;
-}
-.btn-close{    
-    background-color: orange;
-    border-radius: 50%;
-}
-.btn{
-    border: solid rgb(255, 255, 255);
-    border-width: 1px;
-    margin-top: 5px;
-    margin-bottom: 20px;
-    margin-left: 10px;
-}
-.btn::before{
-    background-color: orange;
-}
 
-.botonModal{
-    margin-top: 5px;
-    margin-bottom: 5px;
-    width: 100%; 
-    font-weight: bold;
-}
-.titulo{
-   margin-top: 20px;
-   margin-bottom: 20px;
-
-}
-.display-1{
-    color: white;
-    font-weight: bold;
-    text-align: center;
-}
-
-.container-fluid{
-    padding-left: 0px;
-    padding-right: 0px;
-}
-.carousel{
-    margin-top: 50px;
-    background-color: rgb(25,25,25);
-    height: 450px;
-    width: 100%;
-}
-.card{
-    margin-top: 10px;
-    background-color: rgb(70,70,70);
-    color: white;
-    border: 3px orange solid;
-}
-.button{
-    background-color: orange;
-    color: white;
-}
-.btn-categoria {
-    color: white;
-    background-color: rgb(41, 41, 41);
-    border-color: orange;
-}
-.btn-categoria:hover {
-    color: black;
-    background-color: orange;
-    border-color: white;
-    font-weight: 550;
-}
-.card-img-top{
-    border-bottom: 3px orange solid;
-    width: 100%;
-    height: 100%;
-}
-.carousel-control-next, .carousel-control-prev {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    z-index: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 5%;
-    padding: 0;
-    color: #fff;
-    text-align: center;
-    background: 0 0;
-    border: 0;
-    opacity: .5;
-    transition: opacity .15s ease;
+/* CONTENEDOR GENERAL DE CATALOGO DE JUEGOS */
+.all {
+    background: rgb(46, 46, 46);
+    padding-bottom: 10px;
 }
 
 
 
 /****** INICIA FOOTER ******/
-.tamaño{
-    width: 40px;
-    height: auto;
-    margin: 1%;
+hr {
+    background: white;
 }
-.text-footer {
-    color: rgb(255, 255, 255);
-    font-size: small;
-  }
-.btn-footer{
+
+/* TAMAÑO DEL LOGO EN FOOTER */
+.tamaño {
+    width: 40px;
+}
+
+/* BOTON REDES DEL FOOTER */
+.btn-footer {
     color: rgb(255, 255, 255);
     border-radius: 100%;
     border-color: rgb(255, 255, 255);
     margin: 1%;
 }
-.margin-botton{
+
+
+.margin-botton {
     margin-bottom: 4px
 }
-.padding-up{
+
+.padding-up {
     padding: 20px;
 }
-.padding-down{
+
+.padding-down {
     padding: 40px;
 }
-.titulo{
-    color: white;
-    font-size: 400%;
-    text-align: center;
-}
-.color-footer{
-    background-color: #222222;
+
+.text-footer {
+    color: rgb(255, 255, 255);
+    font-size: small;
 }

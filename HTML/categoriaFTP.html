@@ -31,14 +31,15 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <!-- LINKS/TEXTO -->
+            <!-- OPCIONES DEL NAVBAR -->
             <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
                 <form class="d-flex input-group w-auto">
+                    <!-- AQUI ES DONDE SE PONEN LAS OPCIONES -->
                     <ul class="navbar-nav">
                         <li class="nav-item">
                             <a href="iniciarSesion.html" class="nav-link"><i class="fa-solid fa-right-to-bracket"></i>
                                 Iniciar
-                                Sesión</a>
+                                Sesion</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="registrarse.html"><i
@@ -54,165 +55,192 @@
         </div>
     </nav>
 
-
-    <div class="container-fluid contenedor-FTP">
-
+    <!-- EL TITULO DE LA PAGINA -->
+    <div class="contenedor-FTP">
         <div class="contenedor-info-FTP">
-            <div class="container">
-                <h1>Juegos Free To Play</h1>
-                <p>Un videojuego gratuito (en inglés, free-to-play o F2P y también conocidos<br>
-                    como free-to-start) es un tipo de videojuego que permite a los jugadores el<br>
-                    acceso al conjunto de su contenido, o al menos a una parte importante del mismo,<br>
-                    sin necesidad de pagar.</p>
-            </div>
+            <h1>Juegos Free To Play</h1>
+            <p>Un videojuego gratuito (en inglés, free-to-play o F2P y también conocidos<br>
+                como free-to-start) es un tipo de videojuego que permite a los jugadores el<br>
+                acceso al conjunto de su contenido, o al menos a una parte importante del mismo,<br>
+                sin necesidad de pagar.</p>
         </div>
     </div>
 
 
 
-    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <!-- CARRUSEL -->
+    <div id="carouselIndicators" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+            <!-- VISTA CARRUSEL 1 -->
+            <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="0" class="active"
                 aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+            <!-- VISTA CARRUSEL 2 -->
+            <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="1"
                 aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+            <!-- VISTA CARRUSEL 3 -->
+            <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="2"
                 aria-label="Slide 3"></button>
         </div>
+
+        <!-- LO QUE CONTIENE EL CARRUSEL -->
         <div class="carousel-inner">
+            <!-- CARRUSEL 1 -->
             <div class="carousel-item active">
                 <div class="row">
+                    <!-- CARD 1 -->
                     <div class="col-md-4 col-sm-12 d-flex d-md-flex justify-content-evenly">
                         <div class="card" style="width: 18rem;">
                             <img src="/imagenes/categoriaFTP/ftp2.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">Brawlhalla</h5>
-                                <p class="card-text">¿Acaso conoces Super Smash Bros?,<br> bueno, esto es lo mismo, pero
-                                    gratis.</p>
-                                <button type="button" class="btn btn-categoria" data-bs-toggle="modal"
-                                    data-bs-target="#myModal1">
-                                    ¡Comprar Ahora!
-                                </button>
+                                <p class="card-text">En casi todos los modos de juego de Brawlhalla, el objetivo es
+                                    sacar al oponente del escenario, comparable a Super Smash Bros. Esto se puede hacer
+                                    aplicando daño sobre ellos repetidamente.</p>
+                                <!-- !!!!PONER REDIRECCION A PAGINA DEL JUEGO!!!! -->
+                                <input type="button" value="¡Comprar Ahora!">
                             </div>
                         </div>
                     </div>
+                    <!-- CARD 2 -->
                     <div class="col-md-4 col-sm-12 d-flex d-none d-md-flex justify-content-evenly">
                         <div class="card" style="width: 18rem;">
                             <img src="/imagenes/categoriaFTP/ftp4.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">Warzone</h5>
-                                <p class="card-text">Es el momento de sacar tu máxima concentración, y prepararte para
-                                    encontrarte con camperos y francos.
-
-                                    <button type="button" class="btn btn-categoria" data-bs-toggle="modal"
-                                        data-bs-target="#myModal2">
-                                        ¡Comprar Ahora!
-                                    </button>
+                                <p class="card-text">El juego presenta tres modos principales: Saqueo (botín),
+                                    resurgimiento y Battle royale. Warzone introduce un nuevo sistema de moneda en el
+                                    juego que se puede utilizar en "Estaciones de compra" en Verdansk, isla de
+                                    renacimiento y sus alrededores.</p>
+                                <!-- !!!!PONER REDIRECCION A PAGINA DEL JUEGO!!!! -->
+                                <input type="button" value="¡Comprar Ahora!">
                             </div>
                         </div>
                     </div>
+                    <!-- CARD 3 -->
                     <div class="col-md-4 col-sm-12 d-flex d-none d-md-flex justify-content-evenly">
                         <div class="card" style="width: 18rem;">
                             <img src="/imagenes/categoriaFTP/ftp6.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">Dota 2</h5>
-                                <p class="card-text">Es hora de sacar tu máximo potencial estratégico, escoger
-                                    cual es tu camino preferido y rabiar por horas.</p>
+                                <p class="card-text">Una partida de Dota 2, cuenta con una fortaleza para cada una de
+                                    las dos facciones opuestas, Los Dire y Los Radiant , que contienen una estructura
+                                    principal a la que se le denomina como Ancestro, que son defendidos por varios
+                                    edificios más pequeños.</p>
 
-                                <button type="button" class="btn btn-categoria" data-bs-toggle="modal"
-                                    data-bs-target="#myModal3">
-                                    ¡Comprar Ahora!
-                                </button>
+                                <!-- !!!!PONER REDIRECCION A PAGINA DEL JUEGO!!!! -->
+                                <input type="button" value="¡Comprar Ahora!">
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <!-- CARRUSEL 2 -->
             <div class="carousel-item">
                 <div class="row">
+                    <!-- CARD 4 -->
                     <div class="col-md-4 col-sm-12 d-flex d-md-flex justify-content-evenly">
                         <div class="card" style="width: 18rem;">
                             <img src="/imagenes/categoriaFTP/ftp1.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">Fortnite</h5>
-                                <p class="card-text">¿Disparar?,<br>
-                                    ¡ja!, eso es para bobos,
-                                    ¿No es mejor construir una mansión en cosa de segundos? </p>
+                                <p class="card-text">Es un juego de tipo batalla real en el que compiten hasta cien
+                                    jugadores en solitario o en escuadrones de dos o cuatro miembros. Los jugadores
+                                    saltan de un autobús que cruza el mapa en el momento que deseen, y empiezan sin
+                                    armas.
                                 </p>
-                                <a class="btn btn-categoria">¡Próximamente!</a>
+                                <input type="button" value="¡Próximamente!">
                             </div>
                         </div>
                     </div>
+                    <!-- CARD 5 -->
                     <div class="col-md-4 col-sm-12 d-flex d-none d-md-flex justify-content-evenly">
                         <div class="card" style="width: 18rem;">
                             <img src="/imagenes/categoriaFTP/ftp5.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">Rocket League</h5>
-                                <p class="card-text">Si nunca haz visto un auto volar, hacer explotar a otro,
-                                    y marcar un golazo, con este juego ya puedes hacerlo.</p>
-                                <a class="btn btn-categoria">¡Próximamente!</a>
+                                <p class="card-text">El juego se asemeja al fútbol, pero utilizando vehículos en lugar
+                                    de jugadores y una pelota de gran tamaño. En los partidos pueden participar desde 1
+                                    vs 1 hasta 3 vs 3 en modo competitivo, en modo informal se puede hasta 4 vs 4
+                                    jugadores distribuidos en dos equipos, naranja y azul o rojo y gris cuando es 2 vs 2
+                                    equipo contra equipo.</p>
+                                <input type="button" value="¡Próximamente!">
                             </div>
                         </div>
                     </div>
+                    <!-- CARD 6 -->
                     <div class="col-md-4 col-sm-12 d-flex d-none d-md-flex justify-content-evenly">
                         <div class="card" style="width: 18rem;">
                             <img src="/imagenes/categoriaFTP/ftp3.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">Valorant</h5>
                                 <p class="card-text">
-                                    Si buscas un juego en el que dispares y tengas poderes,
-                                    ademas de una competitividad adictiva, acabas de encontrar el juego perfecto.</p>
-                                <a class="btn btn-categoria">¡Próximamente!</a>
+                                    Valorant es un juego de disparos en primera persona en el que dos equipos de cinco
+                                    jugadores se enfrentan entre ellos. Además de los consabidos tiros, el objetivo de
+                                    las partidas es colocar un dispositivo llamado Spike en una zona concreta del mapa.
+                                </p>
+                                <input type="button" value="¡Próximamente!">
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <!-- CARRUSEL 3 -->
             <div class="carousel-item">
                 <div class="row">
+                    <!-- CARD 7 -->
                     <div class="col-md-4 col-sm-12 d-flex d-md-flex justify-content-evenly">
                         <div class="card" style="width: 18rem;">
                             <img src="/imagenes/categoriaFTP/ftp7.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">CS:GO</h5>
-                                <p class="card-text">Toma tu arma y ve a plantar ese c4, o ¿prefieres defender la base
-                                    de FTPistas?</p>
-                                <a class="btn btn-categoria">¡Próximamente!</a>
+                                <p class="card-text">El juego consiste en dos equipos, los Terroristas y los
+                                    Antiterroristas (T y CT, respectivamente), los cuales se enfrentan entre ellos en
+                                    diferentes modos de juego. El modo más común es en el cual el bando Terrorista
+                                    tienen que plantar y defender una bomba mientras los Antiterroristas defender las
+                                    zonas de plante de la bomba y su posterior desactivación.</p>
+                                <input type="button" value="¡Próximamente!">
                             </div>
                         </div>
                     </div>
+                    <!-- CARD 8 -->
                     <div class="col-md-4 col-sm-12 d-flex d-none d-md-flex justify-content-evenly">
                         <div class="card" style="width: 18rem;">
                             <img src="/imagenes/categoriaFTP/ftp8.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">Rogue Company</h5>
-                                <p class="card-text">Escoge tu personaje, toma un arma y ¡Que comiencen los disparos!
+                                <p class="card-text">Rogue Company es el juego de disparos y acción táctica en tercera
+                                    persona que pone el destino del mundo en tus manos. Derrota al equipo enemigo en
+                                    modos de juego con objetivos y ambientados en lugares exóticos, emocionantes
+                                    tiroteos y explosiones... muchas explosiones.
                                 </p>
-                                <a class="btn btn-categoria">¡Próximamente!</a>
+                                <input type="button" value="¡Próximamente!">
                             </div>
                         </div>
                     </div>
+                    <!-- CARD 9 -->
                     <div class="col-md-4 col-sm-12 d-flex d-none d-md-flex justify-content-evenly">
                         <div class="card" style="width: 18rem;">
                             <img src="/imagenes/categoriaFTP/ftp9.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">Fallout Shelter</h5>
-                                <p class="card-text">Construye, cuida a tu gente, defiende a tu gente y lo mas
-                                    importante sal a explorar.</p>
-                                <a class="btn btn-categoria">¡Próximamente!</a>
+                                <p class="card-text">Fallout Shelter es un juego de simulación en el que controlas un
+                                    refugio Vault-Tec como supervisor. Las funciones del refugio que controlas incluyen:
+                                    energía, comida, agua y el número de habitantes del refugio.</p>
+                                <input type="button" value="¡Próximamente!">
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="prev">
+        <!-- BOTONES DEL CARRUSEL -->
+        <!-- BOTON HACIA LA IZQUIERDA -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselIndicators" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="next">
+        <!-- BOTON HACIA LA DERECHA -->
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselIndicators" data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
         </button>
@@ -220,215 +248,74 @@
 
 
 
-    <!--Titulo-->
-    <div class="container-fluid">
+    <!--TITULO SECCION CATALOGOS-->
+    <div class="container all">
         <h1 class="titulo">Catálogo de Juegos</h1>
-    </div>
-    <!--Tarjeta VideoJuego FNAF-->
-    <div class="container all">
-        <div class="card mb-3" style="max-width: 1000px;">
-            <div class="row no-gutters">
-                <div class="col-md-4">
-                    <img src="/imagenes/categoriaFTP/ftp2.jpg" class="card-img" alt="fnaf">
-                </div>
-                <div class="col-md-8">
-                    <div class="card-body">
-                        <h5 class="card-title">Brawlhalla</h5>
-                        <p class="card-text">En una presentación 2D, con decenas de opciones de personajes, armas
-                            skins etc... Tan solo trata de no caerte, lo complicado es hacerlo mientras tú intentas
-                            tirar a los otros.
-                        <p>¿Crees poder mantenerte en la plataforma?</p>
-                        </p>
-                        <button type="button" class="btn btn-categoria" data-bs-toggle="modal"
-                            data-bs-target="#myModal1">
-                            Ver Más
-                        </button>
+
+        <!--Tarjeta VideoJuego Brawlhalla-->
+        <div class="container">
+            <div class="card mb-3">
+                <div class="row no-gutters">
+                    <div class="col-xl-4">
+                        <img src="/imagenes/categoriaFTP/ftp2.jpg" class="card-img" alt="fnaf">
                     </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="modal" id="myModal1">
-            <div class="modal-dialog modal-dialog-scrollable">
-                <div class="modal-content">
-
-                    <!-- Modal Header -->
-                    <div class="modal-header">
-                        <h1>Brawlhalla</h1>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                    </div>
-
-                    <!-- Modal body -->
-
-                    <div class="modal-body">
-                        <img src="/imagenes/categoriaFTP/ftp2.jpg" alt="">
-                        <h1>¿De qué trata?</h1>
-                        <h5> Es un juego de plataforma de luchas en el cual tienes que intentar no caer,
-                            donde los más grandes guerreros de la historia se enfrentan para demostrar
-                            quién es o será el más grande de todos </h5>
-                        <div class="row">
-                            <p>Valor Juego: $0</p>
-                            <div class="col">
-                            </div>
-                            <div class="col">
-                                <div class="row botonModal"><button type="button" class="btn btn-dark"
-                                        data-bs-dismiss="#">Agregar al Carrito</button></div>
-                                <div class="row botonModal"><button type="button" class="btn btn-warning"
-                                        data-bs-dismiss="#">Comprar</button>
-                                </div>
-                            </div>
-
+                    <div class="col-xl-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Brawlhalla</h5>
+                            <p class="card-text">En casi todos los modos de juego de Brawlhalla, el objetivo es
+                                sacar al oponente del escenario, comparable a Super Smash Bros. Esto se puede hacer
+                                aplicando daño sobre ellos repetidamente.</p>
+                            <input type="button" value="Ver Más">
                         </div>
                     </div>
-
-                    <!-- Modal footer -->
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Cerrar</button>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--Tarjeta VideoJuego PHASMO-->
-    <div class="container all">
-        <div class="card mb-3" style="max-width: 1000px;">
-            <div class="row no-gutters">
-                <div class="col-md-4">
-                    <img src="/imagenes/categoriaFTP/ftp4.jpg" class="card-img" alt="Warzone">
-                </div>
-                <div class="col-md-8">
-                    <div class="card-body">
-                        <h5 class="card-title">Warzone</h5>
-                        <p class="card-text">
-                            Toma tu Arma preferida, y preparate para vivir una experiencia increíble
-                            en un juego totalmente competitivo, donde no tan solo es disparar, sino también
-                            prevalece el trabajo en equipo.</p>
-                        </p>
-                        <button type="button" class="btn btn-categoria" data-bs-toggle="modal"
-                            data-bs-target="#myModal2">
-                            Ver Más
-                        </button>
-                    </div>
                 </div>
             </div>
         </div>
 
-        <div class="modal" id="myModal2">
-            <div class="modal-dialog modal-dialog-scrollable">
-                <div class="modal-content">
-
-                    <!-- Modal Header -->
-                    <div class="modal-header">
-                        <h1>Warzone</h1>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        <!--Tarjeta VideoJuego Warzone-->
+        <div class="container">
+            <div class="card mb-3">
+                <div class="row no-gutters">
+                    <div class="col-xl-4">
+                        <img src="/imagenes/categoriaFTP/ftp4.jpg" class="card-img" alt="Warzone">
                     </div>
-
-                    <!-- Modal body -->
-
-                    <div class="modal-body">
-                        <img src="/imagenes/categoriaFTP/ftp4.jpg" alt="">
-                        <h1>¿De qué trata?</h1>
-                        <h5>
-                            Permite el combate multijugador en línea entre 150 jugadores, aunque algunos
-                            modos de juego por tiempo limitado admiten 200 jugadores. El juego presenta
-                            tanto un juego multiplataforma como una progresión multiplataforma entre tres
-                            juegos </h5>
-                        <div class="row">
-                            <p>Valor Juego: $0</p>
-                            <div class="col">
-                            </div>
-                            <div class="col">
-                                <div class="row botonModal"><button type="button" class="btn btn-dark"
-                                        data-bs-dismiss="#">Agregar al Carrito</button></div>
-                                <div class="row botonModal"><button type="button" class="btn btn-warning"
-                                        data-bs-dismiss="#">Comprar</button>
-                                </div>
-                            </div>
-
+                    <div class="col-xl-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Warzone</h5>
+                            <p class="card-text">El juego presenta tres modos principales: Saqueo (botín),
+                                resurgimiento y Battle royale. Warzone introduce un nuevo sistema de moneda en el
+                                juego que se puede utilizar en "Estaciones de compra" en Verdansk, isla de
+                                renacimiento y sus alrededores.
+                            </p>
+                            <input type="button" value="Ver Más">
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
 
-                    <!-- Modal footer -->
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Cerrar</button>
+        <!--Tarjeta VideoJuego Dota-->
+        <div class="container">
+            <div class="card mb-3">
+                <div class="row no-gutters">
+                    <div class="col-xl-4">
+                        <img src="/imagenes/categoriaFTP/ftp6.jpg" class="card-img" alt="dbd">
                     </div>
-
+                    <div class="col-xl-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Dota 2</h5>
+                            <p class="card-text">Una partida de Dota 2, cuenta con una fortaleza para cada una de
+                                las dos facciones opuestas, Los Dire y Los Radiant , que contienen una estructura
+                                principal a la que se le denomina como Ancestro, que son defendidos por varios
+                                edificios más pequeños.
+                            </p>
+                            <input type="button" value="Ver Más">
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <!--Tarjeta VideoJuego DBD-->
-    <div class="container all">
-        <div class="card mb-3" style="max-width: 1000px;">
-            <div class="row no-gutters">
-                <div class="col-md-4">
-                    <img src="/imagenes/categoriaFTP/ftp6.jpg" class="card-img" alt="dbd">
-                </div>
-                <div class="col-md-8">
-                    <div class="card-body">
-                        <h5 class="card-title">Dota 2</h5>
-                        <p class="card-text">
-                            Tu lado más estratégico se une de la mano con tu nivel de competitividad y
-                            concentración, esto es un poco de lo que necesitas para jugar este excelente juego<br>
-                            ¡Animo, tu puedes!
-                        </p>
-                        </p>
-                        <button type="button" class="btn btn-categoria" data-bs-toggle="modal"
-                            data-bs-target="#myModal3">
-                            Ver Más
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="modal" id="myModal3">
-            <div class="modal-dialog modal-dialog-scrollable">
-                <div class="modal-content">
-
-                    <!-- Modal Header -->
-                    <div class="modal-header">
-                        <h1>Dota 2</h1>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                    </div>
-
-                    <!-- Modal body -->
-
-                    <div class="modal-body">
-                        <img src="/imagenes/categoriaFTP/ftp6.jpg" alt="">
-                        <h1>¿De qué trata?</h1>
-                        <h5>
-                            Es un juego multijugador de estrategia en tiempo real, En este, dos equipos de cinco
-                            jugadores tienen el
-                            objetivo de destruir las estructuras rivales controlando a personajes denominados
-                            héroes.
-                            <div class="row">
-                                <p>Valor Juego: $0</p>
-                                <div class="col">
-                                </div>
-                                <div class="col">
-                                    <div class="row botonModal"><button type="button" class="btn btn-dark"
-                                            data-bs-dismiss="#">Agregar al Carrito</button></div>
-                                    <div class="row botonModal"><button type="button" class="btn btn-warning"
-                                            data-bs-dismiss="#">Comprar</button>
-                                    </div>
-                                </div>
-
-                            </div>
-                    </div>
-
-                    <!-- Modal footer -->
-                    <div class="modal-footer">
-
-                        <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Cerrar</button>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </div>
-
 
 
 
@@ -459,8 +346,6 @@
             </div>
             <!-- Copyright -->
         </footer>
-    </div>
-
     </div>
 </body>
 

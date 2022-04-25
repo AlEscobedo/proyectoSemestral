@@ -31,14 +31,15 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <!-- LINKS/TEXTO -->
+            <!-- OPCIONES DEL NAVBAR -->
             <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
                 <form class="d-flex input-group w-auto">
+                    <!-- AQUI ES DONDE SE PONEN LAS OPCIONES -->
                     <ul class="navbar-nav">
                         <li class="nav-item">
                             <a href="iniciarSesion.html" class="nav-link"><i class="fa-solid fa-right-to-bracket"></i>
                                 Iniciar
-                                Sesión</a>
+                                Sesion</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="registrarse.html"><i
@@ -55,161 +56,193 @@
     </nav>
 
 
-    <div class="container-fluid contenedor-accion">
-
+    <!-- EL TITULO DE LA PAGINA -->
+    <div class="contenedor-accion">
         <div class="contenedor-info-accion">
-            <div class="container">
-                <h1>Juegos de Accion</h1>
-                <p>Un videojuego de acción es un videojuego en el que el jugador debe usar su velocidad,<br>
-                    destreza y tiempo de reacción. Entre los diversos géneros de videojuegos, reacción.<br>
-                    Entre los diversos géneros de videojuegos, englobando muchos subgéneros como<br>
-                    videojuegos de lucha, videojuegos de disparos en primera persona, beat 'em ups<br>
-                    y videojuegos de plataformas.</p>
-            </div>
+            <h1>Juegos de Accion</h1>
+            <p>Un videojuego de acción es un videojuego en el que el jugador debe usar su velocidad,<br>
+                destreza y tiempo de reacción. Entre los diversos géneros de videojuegos, reacción.<br>
+                Entre los diversos géneros de videojuegos, englobando muchos subgéneros como<br>
+                videojuegos de lucha, videojuegos de disparos en primera persona, beat 'em ups<br>
+                y videojuegos de plataformas.</p>
         </div>
     </div>
 
 
-
-    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <!-- CARRUSEL -->
+    <div id="carouselIndicators" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+            <!-- VISTA CARRUSEL 1 -->
+            <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="0" class="active"
                 aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+            <!-- VISTA CARRUSEL 2 -->
+            <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="1"
                 aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+            <!-- VISTA CARRUSEL 3 -->
+            <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="2"
                 aria-label="Slide 3"></button>
         </div>
+
+        <!-- LO QUE CONTIENE EL CARRUSEL -->
         <div class="carousel-inner">
+            <!-- CARRUSEL 1 -->
             <div class="carousel-item active">
                 <div class="row">
+                    <!-- CARD 1 -->
                     <div class="col-md-4 col-sm-12 d-flex d-md-flex justify-content-evenly">
                         <div class="card" style="width: 18rem;">
                             <img src="/imagenes/categoriaaccion/accion1.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">Tom Clancy's The Division</h5>
-                                <p class="card-text">The Division está inspirado por la Operation Dark Winter y la
-                                    Directive 51. </p>
-                                <button type="button" class="btn btn-categoria" data-bs-toggle="modal"
-                                    data-bs-target="#myModal1">
-                                    ¡Comprar Ahora!
-                                </button>
+                                <p class="card-text">Tom Clancy's The Division es la revolucionaria experiencia de nueva
+                                    generación que lleva un juego de rol por primera vez a un escenario militar moderno.
+                                    Una pandemia devastadora se extiende por la ciudad de Nueva York y, uno tras otro,
+                                    los servicios básicos van cayendo.</p>
+                                <!-- !!!!PONER REDIRECCION A PAGINA DEL JUEGO!!!! -->
+                                <input type="button" value="¡Comprar Ahora!">
                             </div>
                         </div>
                     </div>
+                    <!-- CARD 2 -->
                     <div class="col-md-4 col-sm-12 d-flex d-none d-md-flex justify-content-evenly">
                         <div class="card" style="width: 18rem;">
                             <img src="/imagenes/categoriaaccion/accion2.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">Battlefield 4</h5>
-                                <p class="card-text">El presidente de Electronic Arts, Frank Gibeau, confirmó la
-                                    intención de la compañía de lanzar una secuela de Battlefield 3.</p>
-                                <button type="button" class="btn btn-categoria" data-bs-toggle="modal"
-                                    data-bs-target="#myModal2">
-                                    ¡Comprar Ahora!
-                                </button>
+                                <p class="card-text">La campaña para un jugador tiene varias diferencias con respecto al
+                                    componente principal de varios jugadores. En su mayor parte, el jugador debe
+                                    atravesar niveles estilo mini caja de arena, en algunos casos utilizando vehículos,
+                                    como tanques y botes, para atravesar el entorno.</p>
+                                <!-- !!!!PONER REDIRECCION A PAGINA DEL JUEGO!!!! -->
+                                <input type="button" value="¡Comprar Ahora!">
                             </div>
                         </div>
                     </div>
+                    <!-- CARD 3 -->
                     <div class="col-md-4 col-sm-12 d-flex d-none d-md-flex justify-content-evenly">
                         <div class="card" style="width: 18rem;">
                             <img src="/imagenes/categoriaaccion/accion3.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">Call of Duty: Black Ops 3</h5>
-                                <p class="card-text">Call of Duty: Black Ops 3 tiene lugar en el año 2065, 40 años
-                                    después de los acontecimientos de Black Ops 2</p>
-                                <button type="button" class="btn btn-categoria" data-bs-toggle="modal"
-                                    data-bs-target="#myModal3">
-                                    ¡Comprar Ahora!
-                                </button>
+                                <p class="card-text">El 27 de octubre de 2065, el Acuerdo Winslow inicia una misión
+                                    exitosa en Etiopía para rescatar rehenes de la tiránica Coalición del Río Nilo (NRC,
+                                    por sus siglas en inglés). Sin embargo, el jugador es herido de gravedad por un
+                                    robot de combate, al arrancarle sus brazos y su pierna derecha.</p>
+                                <!-- !!!!PONER REDIRECCION A PAGINA DEL JUEGO!!!! -->
+                                <input type="button" value="¡Comprar Ahora!">
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <!-- CARRUSEL 2 -->
             <div class="carousel-item">
                 <div class="row">
+                    <!-- CARD 4 -->
                     <div class="col-md-4 col-sm-12 d-flex d-md-flex justify-content-evenly">
                         <div class="card" style="width: 18rem;">
                             <img src="/imagenes/categoriaaccion/accion4.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">Fallout 4</h5>
-                                <p class="card-text">El jugador asume el control del que será conocido como el "Único
-                                    Sobreviviente" en cuyo caso la elección a cargo del jugador".</p>
-                                <a class="btn btn-categoria">¡Próximamente!</a>
+                                <p class="card-text">Fallout 4 está ambientado en la post-apocalíptica zona
+                                    estadounidense de la Commonwealth, Massachusetts en el año 2287, 210 años después
+                                    del inicio de la guerra nuclear que aniquilaria a gran parte de la civilización, en
+                                    la que el o la protagonista sobrevive en un búnker subterráneo de la compañía
+                                    Vault-Tec.</p>
+                                <input type="button" value="¡Próximamente!">
                             </div>
                         </div>
                     </div>
+                    <!-- CARD 5 -->
                     <div class="col-md-4 col-sm-12 d-flex d-none d-md-flex justify-content-evenly">
                         <div class="card" style="width: 18rem;">
                             <img src="/imagenes/categoriaaccion/accion5.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">Grand Theft Auto V</h5>
                                 <p class="card-text">En el año 2004, Michael Townley, Trevor Philips y Brad Snider eran
-                                    ladrones de bancos que vivían en Ludendorff.</p>
-                                <a class="btn btn-categoria">¡Próximamente!</a>
+                                    ladrones de bancos que vivían en Ludendorff, en el estado de North Yankton (basado
+                                    en Dakota del Norte). Michael, queriendo huir de esa vida entonces, planea un atraco
+                                    falso junto al agente federal corrupto Dave Norton (Dave tenía que matar a Trevor y
+                                    arrestar a Brad mientras Michael fingía su muerte).</p>
+                                <input type="button" value="¡Próximamente!">
                             </div>
                         </div>
                     </div>
+                    <!-- CARD 6 -->
                     <div class="col-md-4 col-sm-12 d-flex d-none d-md-flex justify-content-evenly">
                         <div class="card" style="width: 18rem;">
                             <img src="/imagenes/categoriaaccion/accion6.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">Sekiro: Shadows Die Twice</h5>
-                                <p class="card-text">En un reinventado período Sengoku de finales del siglo XVI en
-                                    Japón, el señor de la guerra Isshin Ashina</p>
-                                <a class="btn btn-categoria">¡Próximamente!</a>
+                                <p class="card-text">En Sekiro: Shadows Die Twice, encarnarás al "lobo de un solo
+                                    brazo", un guerrero desfigurado y caído en desgracia rescatado de los brazos de la
+                                    muerte. Tras comprometerte a proteger a un joven lord, descendiente de un antiguo
+                                    linaje, te convertirás en el objetivo de varios enemigos, incluido el peligroso clan
+                                    Ashina.</p>
+                                <input type="button" value="¡Próximamente!">
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <!-- CARRUSEL 3 -->
             <div class="carousel-item">
                 <div class="row">
+                    <!-- CARD 7 -->
                     <div class="col-md-4 col-sm-12 d-flex d-md-flex justify-content-evenly">
                         <div class="card" style="width: 18rem;">
                             <img src="/imagenes/categoriaaccion/accion7.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">Metal Gear Solid V: The Phantom Pain</h5>
-                                <p class="card-text">Siempre he sido más de carne que de pescado, principalmente porque
-                                    me gusta más su sabor.</p>
-                                <a class="btn btn-categoria">¡Próximamente!</a>
+                                <p class="card-text">El protagonista del videojuego (Snake), tras los acontecimientos
+                                    ocurridos en el atentado de 1975 en el Mar Caribe perpetuado por la organización
+                                    'XOF' queda herido de gravedad, por lo que debe ser trasladado junto con los demás
+                                    tripulantes que se encontraban con él en ese momento al hospital perteneciente a las
+                                    bases de Reino Unido.</p>
+                                <input type="button" value="¡Próximamente!">
                             </div>
                         </div>
                     </div>
+                    <!-- CARD 8 -->
                     <div class="col-md-4 col-sm-12 d-flex d-none d-md-flex justify-content-evenly">
                         <div class="card" style="width: 18rem;">
                             <img src="/imagenes/categoriaaccion/accion8.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">Fry Cry 6</h5>
-                                <p class="card-text">La historia se desarrolla en Yara, una isla ficticia del Caribe,
-                                    bajo un régimen fascista inspirado en el gobierno de Fulgencio
-                                    Batista. </p>
-                                <a class="btn btn-categoria">¡Próximamente!</a>
+                                <p class="card-text">En esta ocasión deberemos hacer frente a una secta apocalíptica
+                                    conocida como la puerta del Edén que tiene su sede en el corazón de Hope County,
+                                    Montana, en Estados unidos. Para liberar el condado de Hope de esta amenaza, y para
+                                    acabar con su líder Joseph Seed, tendremos a nuestra disposición una gran variedad
+                                    de armas y vehículos con los que surcar tierra, mar y cielo.</p>
+                                <input type="button" value="¡Próximamente!">
                             </div>
                         </div>
                     </div>
+                    <!-- CARD 9 -->
                     <div class="col-md-4 col-sm-12 d-flex d-none d-md-flex justify-content-evenly">
                         <div class="card" style="width: 18rem;">
                             <img src="/imagenes/categoriaaccion/accion9.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">Doom Eternal</h5>
                                 <p class="card-text">Las fuerzas del Inframundo han comenzado a invadir la Tierra, y
-                                    junto a las Corporación Aerospacial.</p>
-                                <a class="btn btn-categoria">¡Próximamente!</a>
+                                    mientras la Corporación Aerospacial de la Unión lucha por defenderla, ponte en la
+                                    piel del Slayer y enfrenta a nuevos enemigos infernales los cuales no temen a nada,
+                                    salvo a ti .</p>
+                                <input type="button" value="¡Próximamente!">
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="prev">
+        <!-- BOTONES DEL CARRUSEL -->
+        <!-- BOTON HACIA LA IZQUIERDA -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselIndicators" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="next">
+        <!-- BOTON HACIA LA DERECHA -->
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselIndicators" data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
         </button>
@@ -217,220 +250,74 @@
 
 
 
-    <!--Titulo-->
-    <div class="container-fluid">
+    <!--TITULO SECCION CATALOGOS-->
+    <div class="container all">
         <h1 class="titulo">Catálogo de Juegos</h1>
-    </div>
-    <!--Tarjeta VideoJuego FNAF-->
-    <div class="container all">
-        <div class="card mb-3" style="max-width: 1000px;">
-            <div class="row no-gutters">
-                <div class="col-md-4">
-                    <img src="/imagenes/categoriaaccion/accion1.jpg" class="card-img" alt="fnaf">
-                </div>
-                <div class="col-md-8">
-                    <div class="card-body">
-                        <h5 class="card-title">Tom Clancy's The Division</h5>
-                        <p class="card-text">The Division está inspirado por la Operation Dark Winter y la Directive 51,
-                            eventos reales que "revelaron lo vulnerables que nos hemos convertido"; la sociedad se ha
-                            vuelto "frágil" y "compleja". En el juego, un grupo terrorista crea un arma biológica
-                            nombrada como "Fiebre del Dolar",</p>
-                        </p>
-                        <button type="button" class="btn btn-categoria" data-bs-toggle="modal"
-                            data-bs-target="#myModal1">
-                            Ver Más
-                        </button>
+
+        <!--Tarjeta VideoJuego Tom Clancy's-->
+        <div class="container">
+            <div class="card mb-3">
+                <div class="row no-gutters">
+                    <div class="col-xl-4">
+                        <img src="/imagenes/categoriaaccion/accion1.jpg" class="card-img" alt="fnaf">
                     </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="modal" id="myModal1">
-            <div class="modal-dialog modal-dialog-scrollable">
-                <div class="modal-content">
-
-                    <!-- Modal Header -->
-                    <div class="modal-header">
-                        <h1>Tom Clancy's The Division</h1>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                    </div>
-
-                    <!-- Modal body -->
-
-                    <div class="modal-body">
-                        <img src="/imagenes/categoriaaccion/accion1.jpg" alt="">
-                        <h1>¿De qué trata?</h1>
-                        <h5>The Division está inspirado por la Operation Dark Winter y la Directive 51, eventos reales
-                            que "revelaron lo vulnerables que nos hemos convertido"; la sociedad se ha vuelto "frágil" y
-                            "compleja". En el juego, un grupo terrorista crea un arma biológica nombrada como "Fiebre
-                            del Dolar", debido a que usa el dinero como medio de propagación, que se extiende durante el
-                            «viernes negro» causando el colapso de Estados Unidos en cinco días. </h5>
-                        <div class="row">
-                            <p>Valor Juego: $3.000</p>
-                            <div class="col">
-                            </div>
-                            <div class="col">
-                                <div class="row botonModal"><button type="button" class="btn btn-dark"
-                                        data-bs-dismiss="#">Agregar al Carrito</button></div>
-                                <div class="row botonModal"><button type="button" class="btn btn-warning"
-                                        data-bs-dismiss="#">Comprar</button>
-                                </div>
-                            </div>
-
+                    <div class="col-xl-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Tom Clancy's The Division</h5>
+                            <p class="card-text">Tom Clancy's The Division es la revolucionaria experiencia de nueva
+                                generación que lleva un juego de rol por primera vez a un escenario militar moderno.
+                                Una pandemia devastadora se extiende por la ciudad de Nueva York y, uno tras otro,
+                                los servicios básicos van cayendo.</p>
+                            </p>
+                            <input type="button" value="Ver Más">
                         </div>
                     </div>
-
-                    <!-- Modal footer -->
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Cerrar</button>
-                    </div>
-
                 </div>
             </div>
         </div>
-    </div>
-    <!--Tarjeta VideoJuego PHASMO-->
-    <div class="container all">
-        <div class="card mb-3" style="max-width: 1000px;">
-            <div class="row no-gutters">
-                <div class="col-md-4">
-                    <img src="/imagenes/categoriaaccion/accion2.jpg" class="card-img" alt="phasmophobia">
-                </div>
-                <div class="col-md-8">
-                    <div class="card-body">
-                        <h5 class="card-title">Battlefield 4</h5>
-                        <p class="card-text">
-                            El presidente de Electronic Arts, Frank Gibeau, confirmó la intención de la compañía de
-                            lanzar una secuela de Battlefield 3 durante un discurso en la Universidad del Sur de
-                            California, donde dijo: "Va a haber un Battlefield 4".</p>
-                        </p>
-                        <button type="button" class="btn btn-categoria" data-bs-toggle="modal"
-                            data-bs-target="#myModal2">
-                            Ver Más
-                        </button>
+        <!--Tarjeta VideoJuego Battlefield 4-->
+        <div class="container">
+            <div class="card mb-3">
+                <div class="row no-gutters">
+                    <div class="col-xl-4">
+                        <img src="/imagenes/categoriaaccion/accion2.jpg" class="card-img" alt="phasmophobia">
                     </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="modal" id="myModal2">
-            <div class="modal-dialog modal-dialog-scrollable">
-                <div class="modal-content">
-
-                    <!-- Modal Header -->
-                    <div class="modal-header">
-                        <h1>Battlefield 4</h1>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                    </div>
-
-                    <!-- Modal body -->
-
-                    <div class="modal-body">
-                        <img src="/imagenes/categoriaaccion/accion2.jpg" alt="">
-                        <h1>¿De qué trata?</h1>
-                        <h5>
-                            El presidente de Electronic Arts, Frank Gibeau, confirmó la intención de la compañía de
-                            lanzar una secuela de Battlefield 3 durante un discurso en la Universidad del Sur de
-                            California, donde dijo: "Va a haber un Battlefield 4".16​ Luego, un portavoz de EA le dijo a
-                            IGN: "Frank estaba hablando ampliamente sobre la marca Battlefield, una marca que a EA le
-                            apasiona y una comunidad de fans con la que EA se ha comprometido". </h5>
-                        <div class="row">
-                            <p>Valor Juego: $6.000</p>
-                            <div class="col">
-                            </div>
-                            <div class="col">
-                                <div class="row botonModal"><button type="button" class="btn btn-dark"
-                                        data-bs-dismiss="#">Agregar al Carrito</button></div>
-                                <div class="row botonModal"><button type="button" class="btn btn-warning"
-                                        data-bs-dismiss="#">Comprar</button>
-                                </div>
-                            </div>
-
+                    <div class="col-xl-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Battlefield 4</h5>
+                            <p class="card-text">La campaña para un jugador tiene varias diferencias con respecto al
+                                componente principal de varios jugadores. En su mayor parte, el jugador debe
+                                atravesar niveles estilo mini caja de arena, en algunos casos utilizando vehículos,
+                                como tanques y botes, para atravesar el entorno.</p>
+                            </p>
+                            <input type="button" value="Ver Más">
                         </div>
                     </div>
-
-                    <!-- Modal footer -->
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+        <!--Tarjeta VideoJuego Call of Duty: Black Ops 3-->
+        <div class="container">
+            <div class="card mb-3">
+                <div class="row no-gutters">
+                    <div class="col-xl-4">
+                        <img src="/imagenes/categoriaaccion/accion3.jpg" class="card-img" alt="dbd">
                     </div>
-
+                    <div class="col-xl-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Call of Duty: Black Ops 3</h5>
+                            <p class="card-text">El 27 de octubre de 2065, el Acuerdo Winslow inicia una misión
+                                exitosa en Etiopía para rescatar rehenes de la tiránica Coalición del Río Nilo (NRC,
+                                por sus siglas en inglés). Sin embargo, el jugador es herido de gravedad por un
+                                robot de combate, al arrancarle sus brazos y su pierna derecha.
+                            </p>
+                            <input type="button" value="Ver Más">
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <!--Tarjeta VideoJuego DBD-->
-    <div class="container all">
-        <div class="card mb-3" style="max-width: 1000px;">
-            <div class="row no-gutters">
-                <div class="col-md-4">
-                    <img src="/imagenes/categoriaaccion/accion3.jpg" class="card-img" alt="dbd">
-                </div>
-                <div class="col-md-8">
-                    <div class="card-body">
-                        <h5 class="card-title">Call of Duty: Black Ops 3</h5>
-                        <p class="card-text">
-                            El 27 de octubre de 2065, el Acuerdo Winslow inicia una misión exitosa en Etiopía para
-                            rescatar rehenes de la tiránica Coalición del Río Nilo (NRC, por sus siglas en inglés). Sin
-                            embargo, el jugador es herido de gravedad por un robot de combate, al arrancarle sus brazos
-                            y su pierna derecha.
-                        </p>
-                        <button type="button" class="btn btn-categoria" data-bs-toggle="modal"
-                            data-bs-target="#myModal3">
-                            Ver Más
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="modal" id="myModal3">
-            <div class="modal-dialog modal-dialog-scrollable">
-                <div class="modal-content">
-
-                    <!-- Modal Header -->
-                    <div class="modal-header">
-                        <h1>Call of Duty: Black Ops 3</h1>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                    </div>
-
-                    <!-- Modal body -->
-
-                    <div class="modal-body">
-                        <img src="/imagenes/categoriaaccion/accion3.jpg" alt="">
-                        <h1>¿De qué trata?</h1>
-                        <h5>
-                            El 27 de octubre de 2065, el Acuerdo Winslow inicia una misión exitosa en Etiopía para
-                            rescatar rehenes de la tiránica Coalición del Río Nilo (NRC, por sus siglas en inglés). Sin
-                            embargo, el jugador es herido de gravedad por un robot de combate, al arrancarle sus brazos
-                            y su pierna derecha. Rescatado por el equipo de Taylor, el jugador atraviesa una cirugía
-                            cibernética para salvar su vida. Durante la misma, se le instala una Interfaz Neuronal
-                            Directa (DNI por sus siglas en inglés) y recibe entrenamiento virtual de Taylor y su equipo.
-                            <div class="row">
-                                <p>Valor Juego: $8.000</p>
-                                <div class="col">
-                                </div>
-                                <div class="col">
-                                    <div class="row botonModal"><button type="button" class="btn btn-dark"
-                                            data-bs-dismiss="#">Agregar al Carrito</button></div>
-                                    <div class="row botonModal"><button type="button" class="btn btn-warning"
-                                            data-bs-dismiss="#">Comprar</button>
-                                    </div>
-                                </div>
-
-                            </div>
-                    </div>
-
-                    <!-- Modal footer -->
-                    <div class="modal-footer">
-
-                        <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Cerrar</button>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </div>
-
 
 
 
@@ -461,8 +348,6 @@
             </div>
             <!-- Copyright -->
         </footer>
-    </div>
-
     </div>
 </body>
 

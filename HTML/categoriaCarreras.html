@@ -31,19 +31,20 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <!-- LINKS/TEXTO -->
+            <!-- OPCIONES DEL NAVBAR -->
             <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
                 <form class="d-flex input-group w-auto">
+                    <!-- AQUI ES DONDE SE PONEN LAS OPCIONES -->
                     <ul class="navbar-nav">
                         <li class="nav-item">
                             <a href="iniciarSesion.html" class="nav-link"><i class="fa-solid fa-right-to-bracket"></i>
                                 Iniciar
-                                Sesión</a>
+                                Sesion</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="registrarse.html"><i
                                     class="fa-solid fa-arrow-up-right-from-square"></i> Registrarse</a>
-                        </li>                        
+                        </li>
                         <li class="nav-item">
                             <a href="index.html" class="nav-link"><i class="fa-solid fa-backward"></i>
                                 Volver</a>
@@ -54,159 +55,193 @@
         </div>
     </nav>
 
-
-    <div class="container-fluid contenedor-carrera">
-
+    <!-- EL TITULO DE LA PAGINA -->
+    <div class="contenedor-carrera">
         <div class="contenedor-info-carrera">
-            <div class="container">
-                <h1>Juegos de Carreras</h1>
+            <h1>Juegos de Carreras</h1>
             <p>Un videojuego de carreras es un videojuego en el que se imitan competencias<br>
-                entre vehículos. Usualmente el objetivo es recorrer cierta distancia o ir de<br> 
+                entre vehículos. Usualmente el objetivo es recorrer cierta distancia o ir de<br>
                 un sitio hacia otro en el menor tiempo posible, como en el automovilismo y el<br>
                 motociclismo (los que generalmente son imitados).</p>
-            </div>
         </div>
     </div>
 
 
 
-    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <!-- CARRUSEL -->
+    <div id="carouselIndicators" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+            <!-- VISTA CARRUSEL 1 -->
+            <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="0" class="active"
                 aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+            <!-- VISTA CARRUSEL 2 -->
+            <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="1"
                 aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+            <!-- VISTA CARRUSEL 3 -->
+            <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="2"
                 aria-label="Slide 3"></button>
         </div>
+
+        <!-- LO QUE CONTIENE EL CARRUSEL -->
         <div class="carousel-inner">
+            <!-- CARRUSEL 1 -->
             <div class="carousel-item active">
                 <div class="row">
+                    <!-- CARD 1 -->
                     <div class="col-md-4 col-sm-12 d-flex d-md-flex justify-content-evenly">
                         <div class="card" style="width: 18rem;">
                             <img src="/imagenes/categoriaCarrera/carrera1.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">Grid Legends</h5>
-                                <p class="card-text">¡Nuevo Auto!<br>
-                                    ¿Tu corazón podrá soportarlo? </p>
-                                <button type="button" class="btn btn-categoria" data-bs-toggle="modal"
-                                    data-bs-target="#myModal1">
-                                    ¡Comprar Ahora!
-                                </button>
+                                <p class="card-text">GRID Legends te ofrece una competición automovilística trepidante y
+                                    acción emocionante por todo el mundo. Crea tus eventos de ensueño, participa en
+                                    carreras multijugador en directo, sumérgete en el drama de una historia de
+                                    producción virtual inmersiva y disfruta de la sensación de las carreras con acción
+                                    espectacular.</p>
+                                <!-- !!!!PONER REDIRECCION A PAGINA DEL JUEGO!!!! -->
+                                <input type="button" value="¡Comprar Ahora!">
                             </div>
                         </div>
                     </div>
+                    <!-- CARD 2 -->
                     <div class="col-md-4 col-sm-12 d-flex d-none d-md-flex justify-content-evenly">
                         <div class="card" style="width: 18rem;">
                             <img src="/imagenes/categoriaCarrera/carrera2.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
-                                <h5 class="card-title">Proyect Cars</h5>
-                                <p class="card-text">Con Proyect Cars, ¡Ahora puedes ser un Corredor de Nascar!</p>
-                                <button type="button" class="btn btn-categoria" data-bs-toggle="modal"
-                                    data-bs-target="#myModal2">
-                                    ¡Comprar Ahora!
-                                </button>
+                                <h5 class="card-title">Project Cars 3</h5>
+                                <p class="card-text">Project CARS 3 es la tercera entrega de la exitosa saga de juegos
+                                    de carreras que transmite intensas sensaciones y emociones y toda la diversión del
+                                    vibrante mundo del motor. Los jugadores se enfrentarán al desafío de un apasionante
+                                    modo trayectoria para pasar de aficionados de fin de semana a pilotos de leyenda.
+                                </p>
+                                <!-- !!!!PONER REDIRECCION A PAGINA DEL JUEGO!!!! -->
+                                <input type="button" value="¡Comprar Ahora!">
                             </div>
                         </div>
                     </div>
+                    <!-- CARD 3 -->
                     <div class="col-md-4 col-sm-12 d-flex d-none d-md-flex justify-content-evenly">
                         <div class="card" style="width: 18rem;">
                             <img src="/imagenes/categoriaCarrera/carrera3.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">DIRT Rally 2.0</h5>
-                                <p class="card-text">¿Serás de los que aceleran, de los que frenan, de los que
-                                    hacen drift o de los que chocan?</p>
-                                <button type="button" class="btn btn-categoria" data-bs-toggle="modal"
-                                    data-bs-target="#myModal3">
-                                    ¡Comprar Ahora!
-                                </button>
+                                <p class="card-text">DIRT Rally 2.0 es una nueva entrega de la famosa saga de conducción
+                                    de rally DIRT Rally 2.0 contará con seis localizaciones ubicadas en diferentes
+                                    lugares del mundo, y con una amplia selección de vehículos pertenecientes a
+                                    diferentes épocas.</p>
+                                <!-- !!!!PONER REDIRECCION A PAGINA DEL JUEGO!!!! -->
+                                <input type="button" value="¡Comprar Ahora!">
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <!-- CARRUSEL 2 -->
             <div class="carousel-item">
                 <div class="row">
+                    <!-- CARD 4 -->
                     <div class="col-md-4 col-sm-12 d-flex d-md-flex justify-content-evenly">
                         <div class="card" style="width: 18rem;">
                             <img src="/imagenes/categoriaCarrera/carrera4.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
-                                <h5 class="card-title">Mira pa' delante Cristian</h5>
-                                <p class="card-text">Entras a un coche intentando no chocar, no
-                                    sabes manejar, vas con tu tio, cada que fallas un wate...</p>
-                                <a  class="btn btn-categoria">¡Proximamente!</a>
+                                <h5 class="card-title">Need for Speed Payback</h5>
+                                <p class="card-text">Need for Speed Payback es un título de conducción arcade y
+                                    desenfadada en un mundo abierto, que en esta ocasión, cuenta con un pretexto
+                                    argumental y una historia que irá narrándose poco a poco a lo largo de una aventura
+                                    con persecuciones, ladrones de coches y otros avatares propios del género y la serie
+                                    de videojuegos.</p>
+                                <input type="button" value="¡Próximamente!">
                             </div>
                         </div>
                     </div>
+                    <!-- CARD 5 -->
                     <div class="col-md-4 col-sm-12 d-flex d-none d-md-flex justify-content-evenly">
                         <div class="card" style="width: 18rem;">
                             <img src="/imagenes/categoriaCarrera/carrera5.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
-                                <h5 class="card-title">Acelera'</h5>
-                                <p class="card-text">Meté la primera, acelerá, dalé acelerá!
-                                    Nuevo titulo Argentino
+                                <h5 class="card-title">WRC 10</h5>
+                                <p class="card-text">WRC 10 ofrece una nueva edición Aniversario, repleta de nuevos
+                                    contenidos y sensaciones. ¡Revive los momentos más intensos desde 1973 hasta hoy!
+                                    El modo Historia de WRC 10 pone a prueba tus habilidades como piloto a través de 19
+                                    eventos históricos que requieren una adaptación a las condiciones de la competición
+                                    en cada periodo histórico.
                                 </p>
-                                <a  class="btn btn-categoria">¡Próximamente!</a>
+                                <input type="button" value="¡Próximamente!">
                             </div>
                         </div>
                     </div>
+                    <!-- CARD 6 -->
                     <div class="col-md-4 col-sm-12 d-flex d-none d-md-flex justify-content-evenly">
                         <div class="card" style="width: 18rem;">
                             <img src="/imagenes/categoriaCarrera/carrera6.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
-                                <h5 class="card-title">Fuerte y derecho</h5>
-                                <p class="card-text">Fuerte y derecho o derecho y fuerte? Descubrelo en este juego!</p>
-                                <a  class="btn btn-categoria">¡Próximamente!</a>
+                                <h5 class="card-title">Cars</h5>
+                                <p class="card-text">El juego está ambientado dentro de la ciudad de Radiador Springs
+                                    (en su mayoría), el jugador debe completar las 5 carreras (que se obtienen ganando
+                                    misiones y carreras de Radiador Springs) para ayudar a Rayo McQueen a ganar la Copa
+                                    Pistón.</p>
+                                <input type="button" value="¡Próximamente!">
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <!-- CARRUSEL 3 -->
             <div class="carousel-item">
                 <div class="row">
+                    <!-- CARD 7 -->
                     <div class="col-md-4 col-sm-12 d-flex d-md-flex justify-content-evenly">
                         <div class="card" style="width: 18rem;">
                             <img src="/imagenes/categoriaCarrera/carrera7.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
-                                <h5 class="card-title">Need For Speed</h5>
-                                <p class="card-text">Autos, gente mamadisima, calvos y muchas carreras, pero
-                                    mucha exageración con los drifts!</p>
-                                <a  class="btn btn-categoria">¡Proximamente!</a>
+                                <h5 class="card-title">Xenon Racer</h5>
+                                <p class="card-text">Xenon Racer es un juego de carreras arcade futuristas que nos
+                                    llevará al año 2030, cuando los vehículos voladores han copado la atención del
+                                    respetable. En un mundo en el que las competiciones de motor ya suelen olvidar su
+                                    apego al suelo, el último campeonato de vehículos con ruedas sigue vigente.</p>
+                                <input type="button" value="¡Próximamente!">
                             </div>
                         </div>
                     </div>
+                    <!-- CARD 8 -->
                     <div class="col-md-4 col-sm-12 d-flex d-none d-md-flex justify-content-evenly">
                         <div class="card" style="width: 18rem;">
                             <img src="/imagenes/categoriacarrera/carrera8.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
-                                <h5 class="card-title">Cuchauuu!!!</h5>
-                                <p class="card-text">Franchesssco, Virgoliniiiii Fiuuummm.....
-                                    Se parte de este carrera a nivel mundial!
+                                <h5 class="card-title">Forza Horizon 3</h5>
+                                <p class="card-text">Explora Australia, El mundo HORIZON más grande jamás visto. Conduce
+                                    a través de un inmenso desierto y cañones rocosos en el Outback, pasa por
+                                    exuberantes y salvajes bosques tropicales, y llega a las arenosas playas y
+                                    relucientes rascacielos en la Costa Dorada de Australia.
                                 </p>
-                                <a  class="btn btn-categoria">¡Próximamente!</a>
+                                <input type="button" value="¡Próximamente!">
                             </div>
                         </div>
                     </div>
+                    <!-- CARD 9 -->
                     <div class="col-md-4 col-sm-12 d-flex d-none d-md-flex justify-content-evenly">
                         <div class="card" style="width: 18rem;">
-                            <img src="/imagenes/categoriacarrera/carrera9.jpg"class="card-img-top" alt="...">
+                            <img src="/imagenes/categoriacarrera/carrera9.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
-                                <h5 class="card-title">Need For Speed II</h5>
-                                <p class="card-text">Need For Speed, pero la segunda parte.</p>
-                                <a  class="btn btn-categoria">¡Próximamente!</a>
+                                <h5 class="card-title">Crash Team Racing</h5>
+                                <p class="card-text">La historia del juego gira en torno a un malvado extraterrestre
+                                    llamado Nitrous Oxide, el cual ha viajado por toda la galaxia pregonándose a sí
+                                    mismo como el corredor más rápido.</p>
+                                <input type="button" value="¡Próximamente!">
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="prev">
+        <!-- BOTONES DEL CARRUSEL -->
+        <!-- BOTON HACIA LA IZQUIERDA -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselIndicators" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="next">
+        <!-- BOTON HACIA LA DERECHA -->
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselIndicators" data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
         </button>
@@ -215,202 +250,76 @@
 
 
     <!--Titulo-->
-    <div class="container-fluid">
-    <h1 class="titulo">Catálogo de Juegos</h1>
-</div>
-    <!--Tarjeta VideoJuego FNAF-->
     <div class="container all">
-        <div class="card mb-3" style="max-width: 1000px;">
-            <div class="row no-gutters">
-                <div class="col-md-4">
-                    <img src="/imagenes/categoriacarrera/carrera1.jpg" class="card-img" alt="fnaf">
-                </div>
-                <div class="col-md-8">
-                    <div class="card-body">
-                        <h5 class="card-title">Grid Legends</h5>
-                        <p class="card-text">Eres un piloto de carrearas, lo unico que se interponte entre tu y la victoria son tus 12 contrincantes.</p>
-                        </p>
-                        <button type="button" class="btn btn-categoria" data-bs-toggle="modal"
-                            data-bs-target="#myModal1">
-                            Ver Más
-                        </button>
+        <h1 class="titulo">Catálogo de Juegos</h1>
+
+        <!--Tarjeta VideoJuego FNAF-->
+        <div class="container">
+            <div class="card mb-3">
+                <div class="row no-gutters">
+                    <div class="col-xl-4">
+                        <img src="/imagenes/categoriacarrera/carrera1.jpg" class="card-img" alt="fnaf">
                     </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="modal" id="myModal1">
-            <div class="modal-dialog modal-dialog-scrollable">
-                <div class="modal-content">
-
-                    <!-- Modal Header -->
-                    <div class="modal-header">
-                        <h1>Grid Legends</h1>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                    </div>
-
-                    <!-- Modal body -->
-
-                    <div class="modal-body">
-                        <img src="/imagenes/categoriacarrera/carrera1.jpg" alt="">
-                        <h1>¿De qué trata?</h1>
-                        <h5>GRID Legends ofrece acción emocionante, una variedad increíble y nuevas formas de disfrutar de la emoción del automovilismo con amigos y contra el mundo </h5>
-                        <div class="row">
-                            <p>Valor Juego: $2.000</p>
-                            <div class="col">
-                            </div>
-                            <div class="col">
-                                <div class="row botonModal"><button type="button" class="btn btn-dark"
-                                        data-bs-dismiss="#">Agregar al Carrito</button></div>
-                                <div class="row botonModal"><button type="button" class="btn btn-warning"
-                                        data-bs-dismiss="#">Comprar</button>
-                                </div>
-                            </div>
-
+                    <div class="col-xl-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Grid Legends</h5>
+                            <p class="card-text">GRID Legends te ofrece una competición automovilística trepidante y
+                                acción emocionante por todo el mundo. Crea tus eventos de ensueño, participa en
+                                carreras multijugador en directo, sumérgete en el drama de una historia de
+                                producción virtual inmersiva y disfruta de la sensación de las carreras con acción
+                                espectacular.
+                            </p>
+                            <input type="button" value="Ver Más">
                         </div>
                     </div>
-
-                    <!-- Modal footer -->
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Cerrar</button>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--Tarjeta VideoJuego PHASMO-->
-    <div class="container all">
-        <div class="card mb-3" style="max-width: 1000px;">
-            <div class="row no-gutters">
-                <div class="col-md-4">
-                    <img src="/imagenes/categoriacarrera/carrera2.jpg" class="card-img" alt="phasmophobia">
-                </div>
-                <div class="col-md-8">
-                    <div class="card-body">
-                        <h5 class="card-title">Proyect Cars</h5>
-                        <p class="card-text">
-                            Tienes ganas de unas carreritas de chill con tus amigos? 
-                            Este juego es para ti</p>
-                        </p>
-                        <button type="button" class="btn btn-categoria" data-bs-toggle="modal"
-                            data-bs-target="#myModal2">
-                            Ver Más
-                        </button>
-                    </div>
                 </div>
             </div>
         </div>
 
-        <div class="modal" id="myModal2">
-            <div class="modal-dialog modal-dialog-scrollable">
-                <div class="modal-content">
-
-                    <!-- Modal Header -->
-                    <div class="modal-header">
-                        <h1>Proyect Cars</h1>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        <!--Tarjeta VideoJuego PHASMO-->
+        <div class="container">
+            <div class="card mb-3">
+                <div class="row no-gutters">
+                    <div class="col-xl-4">
+                        <img src="/imagenes/categoriacarrera/carrera2.jpg" class="card-img" alt="phasmophobia">
                     </div>
-
-                    <!-- Modal body -->
-
-                    <div class="modal-body">
-                        <img src="/imagenes/categoriacarrera/carrera2.jpg" alt="">
-                        <h1>¿De qué trata?</h1>
-                        <h5>
-                            Proyect Cars en un juego de carrera y supervivencia en primera persona, pero también una
-                            especie de simulador de pilotos en la vida real. </h5>
-                        <div class="row">
-                            <p>Valor Juego: $1.000</p>
-                            <div class="col">
-                            </div>
-                            <div class="col">
-                                <div class="row botonModal"><button type="button" class="btn btn-dark"
-                                        data-bs-dismiss="#">Agregar al Carrito</button></div>
-                                <div class="row botonModal"><button type="button" class="btn btn-warning"
-                                        data-bs-dismiss="#">Comprar</button>
-                                </div>
-                            </div>
-
+                    <div class="col-xl-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Proyect Cars</h5>
+                            <p class="card-text">Project CARS 3 es la tercera entrega de la exitosa saga de juegos
+                                de carreras que transmite intensas sensaciones y emociones y toda la diversión del
+                                vibrante mundo del motor. Los jugadores se enfrentarán al desafío de un apasionante
+                                modo trayectoria para pasar de aficionados de fin de semana a pilotos de leyenda./p>
+                            </p>
+                            <input type="button" value="Ver Más">
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
 
-                    <!-- Modal footer -->
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Cerrar</button>
+        <!--Tarjeta VideoJuego DBD-->
+        <div class="container">
+            <div class="card mb-3">
+                <div class="row no-gutters">
+                    <div class="col-xl-4">
+                        <img src="/imagenes/categoriacarrera/carrera3.jpg" class="card-img" alt="dbd">
                     </div>
-
+                    <div class="col-xl-8">
+                        <div class="card-body">
+                            <h5 class="card-title">DIRT Rally 2.0</h5>
+                            <p class="card-text">DIRT Rally 2.0 es una nueva entrega de la famosa saga de conducción
+                                de rally DIRT Rally 2.0 contará con seis localizaciones ubicadas en diferentes
+                                lugares del mundo, y con una amplia selección de vehículos pertenecientes a
+                                diferentes épocas.
+                            </p>
+                            <input type="button" value="Ver Más">
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <!--Tarjeta VideoJuego DBD-->
-    <div class="container all">
-        <div class="card mb-3" style="max-width: 1000px;">
-            <div class="row no-gutters">
-                <div class="col-md-4">
-                    <img src="/imagenes/categoriacarrera/carrera3.jpg" class="card-img" alt="dbd">
-                </div>
-                <div class="col-md-8">
-                    <div class="card-body">
-                        <h5 class="card-title">DIRT Rally 2.0</h5>
-                        <p class="card-text">
-                            Juega con el vehiculo que desees e intenta ganar a toda costa el oro en esta carrera brutal repleta de barro!
-                        <p>¿Tienes lo necesario para ganar?</p>
-                        </p>
-                        <button type="button" class="btn btn-categoria" data-bs-toggle="modal"
-                            data-bs-target="#myModal3">
-                            Ver Más
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="modal" id="myModal3">
-            <div class="modal-dialog modal-dialog-scrollable">
-                <div class="modal-content">
-
-                    <!-- Modal Header -->
-                    <div class="modal-header">
-                        <h1>DIRT Rally 2.0</h1>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                    </div>
-
-                    <!-- Modal body -->
-
-                    <div class="modal-body">
-                        <img src="/imagenes/categoriacarrera/carrera3.jpg" alt="">
-                        <h1>¿De qué trata?</h1>
-                        <h5>
-                            Contarás con seis localizaciones ubicadas en diferentes lugares del mundo, y con una amplia selección de vehículos pertenecientes a diferentes épocas.
-                            <div class="row">
-                                <p>Valor Juego: $4.000</p>
-                                <div class="col">
-                                </div>
-                                <div class="col">
-                                    <div class="row botonModal"><button type="button" class="btn btn-dark"
-                                            data-bs-dismiss="#">Agregar al Carrito</button></div>
-                                    <div class="row botonModal"><button type="button" class="btn btn-warning"
-                                            data-bs-dismiss="#">Comprar</button>
-                                    </div>
-                                </div>
-
-                            </div>
-                    </div>
-
-                    <!-- Modal footer -->
-                    <div class="modal-footer">
-
-                        <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Cerrar</button>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </div>
-
-
 
 
     <!-- FOOTER -->
@@ -440,8 +349,6 @@
             </div>
             <!-- Copyright -->
         </footer>
-    </div>
-
     </div>
 </body>
 
