@@ -10,6 +10,10 @@ $(document).ready(function(){
         let mensajeNombre = "";
         let entrarMensajeNombre = false;
 
+        var numeroEnNombre = $("#nombre").val();
+        let mensajeNumeroEnNombre = "";
+        let entrarMensajeNumeroEnNombre = false;
+
         var usuario = $("#usuario").val();
         let mensajeUsuario = "";
         let entrarMensajeUsuario = false;
@@ -34,16 +38,29 @@ $(document).ready(function(){
         let mensajeClave = "";
         let entrarMensajeClave = false;
 
-        let espacioEnClave = clave.indexOf(" ");
+        var espacioEnClave = clave.indexOf(" ");
         let mensajeEspacioEnClave = "";
         let entrarMensajeEspacioEnClave = false;
 
-
-
+        var puntoEnClave = clave.indexOf(".");
+        let mensajePuntoEnClave = "";
+        let entrarMensajePuntoEnClave = false;
 
         var claveRepetida = $("#claveRepetida").val();
         let mensajeClaveRepetida = "";
         let entrarMensajeClaveRepetida = false;
+        
+        var numeroEnClave = $("#clave");
+        let mensajeNumeroEnClave = "";
+        let entrarMensajeNumeroEnClave = false;
+
+        var mayusculaEnClave = $("#clave");
+        let mensajeMayusculaEnClave = "";
+        let entrarMayusculaEnClave = false;
+
+        var minusculaEnClave = $("#clave");
+        let mensajeMinusculaEnClave = "";
+        let entrarMensajeMinusculaEnClave = false;
 
         //VALIDACION INPUT NOMBRE
         function esMayuscula(primeraLetra){
@@ -56,12 +73,23 @@ $(document).ready(function(){
             entrarMensajeNombre = true;
         }
 
-
         if(entrarMensajeNombre){
             $("#mensajeNombre").html(mensajeNombre);
         }
         else{
             $("#mensajeNombre").html(mensajeNombre);
+        }
+
+        if ( /\d/.test($("#nombre").val().trim()) ) {
+            mensajeNumeroEnNombre += "No se permiten números en el nombre."
+            entrarMensajeNumeroEnNombre = true;
+        }
+
+        if(entrarMensajeNumeroEnNombre){
+            $("#mensajeNumeroEnNombre").html(mensajeNumeroEnNombre);
+        }
+        else{
+            $("#mensajeNumeroEnNombre").html(mensajeNumeroEnNombre);
         }
         //FIN VALIDACION INPUT NOMBRE
 
@@ -121,6 +149,47 @@ $(document).ready(function(){
         }
         else{
             $("#mensajeEspacioEnClave").html(mensajeEspacioEnClave);
+        }
+
+        //VALIDACION PARA QUE LA CLAVE CONTENGA AL MENOS UN NUMERO
+        if ( /\d/.test($("#clave").val().trim()) == false ) {
+            mensajeNumeroEnClave += "Su cotraseña debe contener al menos un número."
+            entrarMensajeNumeroEnClave = true;
+        }
+
+        if(entrarMensajeNumeroEnClave){
+            $("#mensajeNumeroEnClave").html(mensajeNumeroEnClave);
+        }
+        else{
+            $("#mensajeNumeroEnClave").html(mensajeNumeroEnClave);
+        }
+
+
+        //VALIDANIO PARA QUE LA CONTRASEÑA CONTENGA AL MENOS UNA LETRA MAYUSCULA 
+        if ( /[A-Z]+/.test($("#clave").val().trim()) == false ) {
+            mensajeMayusculaEnClave += "Su cotraseña debe contener al menos una letra en mayúsculas."
+            entrarMensajeMayusculaEnClave = true;
+        }
+
+        if(entrarMensajeMayusculaEnClave){
+            $("#mensajeMayusculaEnClave").html(mensajeMayusculaEnClave);
+        }
+        else{
+            $("#mensajeMayusculaEnClave").html(mensajeMayusculaEnClave);
+        }
+
+
+        //VALIDACION PARA QUE LA CONTRASEÑA TENGA A MENOS UNA MINUSCULA
+        if ( /[a-z]+/.test($("#clave").val().trim()) == false ) {
+            mensajeMinusculaEnClave += "Su cotraseña debe contener al menos una letra en minúscula."
+            entrarMensajeMinusculaEnClave = true;
+        }
+
+        if(entrarMensajeMinusculaEnClave){
+            $("#mensajeMinusculaEnClave").html(mensajeMinusculaEnClave);
+        }
+        else{
+            $("#mensajeMinusculaEnClave").html(mensajeMinusculaEnClave);
         }
         //FIN VALIDACION INPUT CONTRASEÑA
 
