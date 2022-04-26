@@ -75,13 +75,13 @@ body{
 /* datos del juego*/
 .datos{
     text-align: center;
-    color: antiquewhite;
+    color: #faebd7;
 }
 
 /*para editar el carrito*/
 .carrito{
     text-align: right;
-    color: aliceblue;
+    color: #f0f8ff;
 }
 
 img.card-img-top{
@@ -92,8 +92,8 @@ img.card-img-top{
 
 .juegos h4{
     text-align: center;
-    border-color: aliceblue;
-    color: white;
+    border-color: #f0f8ff;
+    color: #ffffff;
 }
 
 
@@ -115,11 +115,22 @@ img.card-img-top{
   }
   .juegos p {
     font-size: 20px;
-    font-weight: 300;
+    font-weight: 300%;
     margin-top: 28%;
     color: #fff;
   }
+  .juegos a{
+    font-size: 20px;
+    font-weight: 300;
+    margin-top: 28%;
+    margin-bottom: 50px;
+    color: #fff;
+    text-decoration: none;
+  }
 
+  .linkJuegoDis{
+      margin-top: 13%;
+  }
 /*Termino de ingreso de borde*/
 /*
 .separacion{
@@ -128,10 +139,14 @@ img.card-img-top{
 }
 */
 .datos p{
-    font-size: 13px;
-    
+    font-size: 13px;  
 }
 
+.datos a{
+    font-size: 13px;  
+    color: #FAEBD7;
+    text-decoration: none;
+}
 .datos h2{
     border: solid rgb(255, 165, 0);
     
