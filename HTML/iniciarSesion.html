@@ -12,6 +12,11 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- ICONOS DE FONTAWSOME -->
     <script src="https://kit.fontawesome.com/1bb0c0c4bd.js" crossorigin="anonymous"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <link rel="stylesheet" href="/CSS/estilosIniciarSesion.css">
 </head>
 
@@ -67,18 +72,20 @@
 
 
                     <!-- El method lo agregamos despues, ya que no deja ir a la pagina correspondiente-->
-                    <form action="VistaUser.html" enctype="application/x-www-form-urlencoded" name="iniciarSesion">
+                    <form action="VistaUser.html" enctype="application/x-www-form-urlencoded" name="iniciarSesion"
+                        id="formIniciarSesion">
 
                         <!-- Input Nombre de Usuario -->
                         <label for="usuario"><b>Nombre de Usuario</b></label>
-                        <input name="usuario" type="text" placeholder="Usuario" required>
+                        <input name="usuario" type="text" placeholder="Usuario" id="usuario" required>
 
                         <!-- Input Contraseña -->
                         <label for="psw"><b>Contraseña</b></label>
-                        <input name="psw" type="password" placeholder="Contraseña" required>
+                        <input name="psw" type="password" placeholder="Contraseña" id="clave" required>
 
                         <!-- BOTON DE INGRESAR -->
                         <input type="submit" class="ingresar" value="Ingresar">
+                        <p id="mensajeUsuario"></p>
                     </form>
 
 
@@ -125,6 +132,7 @@
             <!-- Copyright -->
         </footer>
     </div>
+    <script src="/JS/IniciarSesion.js"></script>
 </body>
 
 </html>
