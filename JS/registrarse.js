@@ -34,6 +34,13 @@ $(document).ready(function(){
         let mensajeClave = "";
         let entrarMensajeClave = false;
 
+        let espacioEnClave = clave.indexOf(" ");
+        let mensajeEspacioEnClave = "";
+        let entrarMensajeEspacioEnClave = false;
+
+
+
+
         var claveRepetida = $("#claveRepetida").val();
         let mensajeClaveRepetida = "";
         let entrarMensajeClaveRepetida = false;
@@ -77,6 +84,7 @@ $(document).ready(function(){
 
 
         //VALIDACION INPUT CONTRASEÑA
+        //VALIDACION PARA QUE LAS DOS CLAVES SEAN IGUALES
         if(clave != claveRepetida){
             mensajeClave += "Las contraseñas deben coincidir."
             entrarMensajeClave = true;
@@ -89,6 +97,31 @@ $(document).ready(function(){
             $("#mensajeClave").html(mensajeClave);
         }
 
+        //VALIDACION PARA QUE LAS CLAVES CUMPLAN CON UN RANGE DE CARACTERES
+        if((clave.trim().length < 8 || clave.trim().length > 12) && (claveRepetida.trim().length < 8 || claveRepetida.trim().length > 12)){
+            mensajeClaveRepetida += "Las contraseñas deben tener un mínimo de 8 caracteres y máximo de 12.";
+            entrarMensajeClaveRepetida = true;
+        }
+
+        if(entrarMensajeClaveRepetida){
+            $("#mensajeClaveRepetida").html(mensajeClaveRepetida);
+        }
+        else{
+            $("#mensajeClaveRepetida").html(mensajeClaveRepetida);
+        }
+
+        //VALIDACION PARA QUE LA CLAVE NO CONTENGA ESPACIOS EN BLANCO
+        if(espacioEnClave > -1){
+            mensajeEspacioEnClave += "La contaseña no puede tener un espacio en blanco."
+            entrarMensajeEspacioEnClave = true;
+        }
+
+        if(entrarMensajeEspacioEnClave){
+            $("#mensajeEspacioEnClave").html(mensajeEspacioEnClave);
+        }
+        else{
+            $("#mensajeEspacioEnClave").html(mensajeEspacioEnClave);
+        }
         //FIN VALIDACION INPUT CONTRASEÑA
 
 
