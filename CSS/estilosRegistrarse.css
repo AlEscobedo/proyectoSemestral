@@ -1,3 +1,14 @@
+/* PALETA DE COLORES 
+BODY                        rgb(40, 40, 40)
+TRANSPARECIA PARA IMAGENES  rgba(34, 34, 34, 0.7)
+LETRAS PARA TITULOS         rgb(255, 165, 0)
+LETRAS PARA SUBTITULOS      rgb(226, 148, 0)
+LETRAS EN GENERAL           rgb(255, 255, 255)
+CONTENEDORES                rgb(46, 46, 46)
+2° CONTENEDORES             rgb(70,70,70)
+BORDES DE TARJETAS          rgb(255, 166, 0)
+*/
+
 /* CAMBIOS GENERALES */
 * {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -6,18 +17,6 @@
 body {
   background-color: rgb(40, 40, 40);
 }
-
-.top {
-  background-color: rgb(36, 36, 36);
-  border-bottom: solid rgb(105, 105, 105);
-}
-
-.bottom {
-  background-color: rgb(36, 36, 36);
-  border-top: solid rgb(105, 105, 105);
-}
-
-
 
 /* IMAGEN DE FONDO */
 .fondo-inicio {
@@ -162,16 +161,15 @@ span.psw {
   margin-bottom: 10px;
 }
 
+
 /****** INICIA FOOTER ******/
-.tamaño {
-  width: 40px;
-  height: auto;
-  margin: 1%;
+hr {
+  background: white;
 }
 
-.text-footer {
-  color: rgb(255, 255, 255);
-  font-size: small;
+/* TAMAÑO DEL LOGO EN FOOTER */
+.tamaño {
+  width: 40px;
 }
 
 .btn-footer {
@@ -191,4 +189,9 @@ span.psw {
 
 .padding-down {
   padding: 40px;
+}
+
+.text-footer {
+  color: rgb(255, 255, 255);
+  font-size: small;
 }
