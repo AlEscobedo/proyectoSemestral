@@ -1,0 +1,187 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+body{
+    background-color: rgb(40, 40, 40);
+}
+
+
+/****** TITULO *******/
+.contenedor-cover{
+    width: 100%;
+    height:  100%;
+    position: relative;
+    margin: auto;
+    background-image: url(../imagenes/iniciarSesion/fondo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.contenedor-cover:before{
+    content: " ";
+    width: 100%;
+    height: 100%;
+    background: rgba(34, 34, 34, 0.8);
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+}
+.contenedor-info-cover{
+    width: auto;
+    height: 500px;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+.contenedor-info-cover h1{
+    font-size: 60px;
+    font-weight: 500;
+    color: rgb(255, 165, 0);
+}
+.contenedor-info-cover p{
+    color: rgb(226, 148, 3);
+    font-size: 20px;
+    font-weight: 300px;
+}
+
+/*revisar para futuro lo de arriba*/
+
+
+/*LO NUEVO AÑADIDO*/
+.container-caracteristicas{
+    text-align: left;
+}
+
+
+
+/*Juegos Similares*/
+
+
+
+/*TERMINAN LOS JUEGOS SIMILARES*/
+
+
+/*TERMINA LO NUEVO AÑADIDO*/
+
+/* datos del juego*/
+.datos{
+    text-align: center;
+    color: #faebd7;
+}
+
+/*para editar el carrito*/
+.carrito{
+    text-align: right;
+    color: #f0f8ff;
+}
+
+img.card-img-top{
+    width: 600px;
+    max-width: 100%;
+    height: 350px;
+}
+
+.juegos h4{
+    text-align: center;
+    border-color: #f0f8ff;
+    color: #ffffff;
+}
+
+
+/*Inicio de ingreso de borde*/
+.juegos img {
+    float: left;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    position: relative;
+    max-width: 200px;
+  }
+  
+  .juegos {
+    background-color: rgb(73, 73, 73);
+    margin-top: 5px;
+    border-radius: 5px;
+    border: solid orange;
+    border-width: 1px;
+  }
+  .juegos p {
+    font-size: 20px;
+    font-weight: 300%;
+    margin-top: 28%;
+    color: #fff;
+  }
+  .juegos a{
+    font-size: 20px;
+    font-weight: 300;
+    margin-top: 28%;
+    margin-bottom: 50px;
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .linkJuegoDis{
+      margin-top: 13%;
+  }
+/*Termino de ingreso de borde*/
+/*
+.separacion{
+    border: solid;
+    border-color: aliceblue;
+}
+*/
+.datos p{
+    font-size: 13px;  
+}
+
+.datos a{
+    font-size: 13px;  
+    color: #FAEBD7;
+    text-decoration: none;
+}
+.datos h2{
+    border: solid rgb(255, 165, 0);
+    
+    margin-left: 30%;
+    margin-right: 30%;
+    
+}
+
+
+
+/****** INICIA FOOTER ******/
+.tamaño{
+    width: 40px;
+    height: auto;
+    margin: 1%;
+}
+.text-footer {
+    color: rgb(255, 255, 255);
+    font-size: small;
+}
+.btn-footer{
+    color: rgb(255, 255, 255);
+    border-radius: 100%;
+    border-color: rgb(255, 255, 255);
+    margin: 1%;
+}
+.margin-botton{
+    margin-bottom: 4px
+}
+.padding-up{
+    padding: 20px;
+}
+.padding-down{
+    padding: 40px;
+}
+.todo{
+    margin-top: 35px;
+}
