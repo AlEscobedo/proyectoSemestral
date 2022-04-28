@@ -62,42 +62,45 @@
         <div class="container all ">
             <!-- IMAGEN DE BOX -->
             <div class="row">
-                <div class="imgcontainer">
-                    <img src="/imagenes/menuPrincipal/iconoPagFondo.jpg" alt="Avatar" class="avatar">
-                </div>
-            </div>
-            <!-- FORMULARIO -->
-            <div class="row">
-                <div class="container">
-
-
-                    <!-- El method lo agregamos despues, ya que no deja ir a la pagina correspondiente-->
-                    <form action="VistaUser.html" enctype="application/x-www-form-urlencoded" name="iniciarSesion"
-                        id="formIniciarSesion">
-
-                        <!-- Input Nombre de Usuario -->
-                        <label for="usuario"><b>Nombre de Usuario</b></label>
-                        <input name="usuario" type="text" placeholder="Usuario" id="usuario" required>
-
-                        <!-- Input Contraseña -->
-                        <label for="psw"><b>Contraseña</b></label>
-                        <input name="psw" type="password" placeholder="Contraseña" id="clave" required>
-
-                        <!-- BOTON DE INGRESAR -->
-                        <input type="submit" class="ingresar" value="Ingresar">
-                        <p id="mensajeUsuario"></p>
-                    </form>
-
-
-
-                    <!-- CONTENEDOR REDIRECCION TEXTO -->
-                    <div class="row contenedor">
-                        <div class="row"><span class="psw">Olvidaste la<a href="recuperarContrasena.html">
-                                    Contraseña?</a></span></div>
-                        <div class="row"><span class="psw">¿No tienes una cuenta? <a href="registrarse.html">
-                                    Registrate</a></span></div>
+                <div class="col-xl-6">
+                    <div class="imgcontainer">
+                        <img src="/imagenes/menuPrincipal/iconoPagOk.png" alt="Avatar" class="avatar">
                     </div>
+                </div>
 
+                <!-- FORMULARIO -->
+                <div class="col-xl-6">
+                    <div class="container ">
+
+
+                        <!-- El method lo agregamos despues, ya que no deja ir a la pagina correspondiente-->
+                        <form action="VistaUser.html" enctype="application/x-www-form-urlencoded" name="iniciarSesion"
+                            id="formIniciarSesion">
+
+                            <!-- Input Nombre de Usuario -->
+                            <label for="usuario"><b>Nombre de Usuario</b></label>
+                            <input name="usuario" type="text" placeholder="Usuario" id="usuario" required>
+
+                            <!-- Input Contraseña -->
+                            <label for="psw"><b>Contraseña</b></label>
+                            <input name="psw" type="password" placeholder="Contraseña" id="clave" required>
+
+                            <!-- BOTON DE INGRESAR -->
+                            <input type="submit" class="boton" value="Ingresar">
+                            <p id="mensajeUsuario"></p>
+                        </form>
+
+
+
+                        <!-- CONTENEDOR REDIRECCION TEXTO -->
+                        <div class="row contenedor">
+                            <div class="row"><span class="psw">Olvidaste la<a href="recuperarContrasena.html">
+                                        Contraseña?</a></span></div>
+                            <div class="row"><span class="psw">¿No tienes una cuenta? <a href="registrarse.html">
+                                        Registrate</a></span></div>
+                        </div>
+
+                    </div>
                 </div>
             </div>
         </div>

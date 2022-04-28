@@ -1,165 +1,170 @@
+/* PALETA DE COLORES 
+BODY                        rgb(40, 40, 40)
+TRANSPARECIA PARA IMAGENES  rgba(34, 34, 34, 0.7)
+LETRAS PARA TITULOS         rgb(255, 165, 0)
+LETRAS PARA SUBTITULOS      rgb(226, 148, 0)
+LETRAS EN GENERAL           rgb(255, 255, 255)
+CONTENEDORES                rgb(46, 46, 46)
+2° CONTENEDORES             rgb(70,70,70)
+BORDES DE TARJETAS          rgb(255, 166, 0)
+*/
+
 /* CAMBIOS GENERALES */
 * {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 body {
-  background-color: rgb(40, 40, 40);
+	background-color: rgb(40, 40, 40);
 }
-
-.top {
-  background-color: rgb(36, 36, 36);
-  border-bottom: solid rgb(105, 105, 105);
-}
-
-.bottom {
-  background-color: rgb(36, 36, 36);
-  border-top: solid rgb(105, 105, 105);
-}
-
-
 
 /* IMAGEN DE FONDO */
 .fondo-inicio {
-  width: 100%;
-  height: 100%;
-  position: relative;
-  margin: auto;
-  background-image: url(../imagenes/iniciarSesion/fondo.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  padding-top: 100px;
-  padding-bottom: 100px;
+	width: 100%;
+	height: 100%;
+	position: relative;
+	margin: auto;
+	background-image: url(../imagenes/iniciarSesion/fondo.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding-top: 100px;
+	padding-bottom: 100px;
 }
 
+/* TRANSPARENSIA PARA LA IMAGEN DEL FONDO */
 .fondo-inicio:before {
-  content: " ";
-  width: 100%;
-  height: 100%;
-  background: rgba(34, 34, 34, 0.767);
-  position: absolute;
-  top: 0;
-  left: 0;
+	content: " ";
+	width: 100%;
+	height: 100%;
+	background: rgba(34, 34, 34, 0.7);
+	position: absolute;
+	top: 0;
+	left: 0;
 }
 
-
-
-/* BOX */
+/* CONTENEDOR DEL BOX */
 .all {
-  border: 3px solid hsl(39, 100%, 50%);
-  background-color: #000000;
-  color: #ffffff;
-  width: 100%;
-  max-width: 400px;
-  height: auto;
-  margin: auto;
-  border-radius: 20px;
-  position: relative;
+	border: 3px solid rgb(255, 166, 0);
+	background-color: rgb(46, 46, 46);
+	color: rgb(255, 255, 255);
+	width: 100%;
+	height: auto;
+	margin: auto;
+	border-radius: 20px;
+	position: relative;
 }
 
-/* BOTONES */
-input[type=text],
-input[type=password] {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid orange;
-  box-sizing: border-box;
-  background-color: transparent;
-  color: white;
-}
-
-/* ESTILO DE BOTON */
-input[type=submit]{
-  background-color: hsl(39, 100%, 50%);
-  color: #ffffff;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  width: 100%;
-  transition: all 0.2s;
-}
-input[type=submit]:hover{
-  background-color: hsl(0, 0%, 0%);
-  border: solid orange;
-  font-weight: bold;
-}
-
-/* CONTRASENIA */
-.psw a {
-  color: white;
-  text-decoration: none;
-  transition: all 0.2s;
-}
-
-.psw a:hover {
-  font-weight: bold;
-}
-
-/* EFECTO A LOS BOTONES */
-button:hover {
-  font-weight: bold;
-  color: white;
-  background-color: transparent;
-  border: solid orange;
-}
-
-
-/* Center the avatar image inside this container */
+/* IMAGEN DEL BOX */
 .imgcontainer {
-  text-align: center;
-  margin: 24px 0 12px 0;
+	text-align: center;
+	margin: 24px 0 12px 0;
 }
 
 /* Avatar image */
 img.avatar {
-  width: 30%;
-  height: auto;
-  border-radius: 5px;
+	width: 60%;
+	height: auto;
+	border-radius: 5px;
 }
 
-
-/* The "Forgot password" text */
-span.psw {
-  float: right;
-  color: white;
+/* COLOR PARA FECHA DE NACIMIENTO */
+.form-group input {
+	background-color: rgb(255, 165, 0);
 }
 
-.contenedor {
-  margin-top: 10px;
-  margin-bottom: 10px;
+/* COLOR PARA PREGUNTA */
+.form-group select {
+	background-color: rgb(255, 165, 0);
 }
 
+/* COLOR PARA EL SELECT ABIERTO DE PREGUNTA */
+.form-group option {
+	background-color: rgb(255, 255, 255);
+}
+
+/* INPUTS DEL FORMULARIO */
+input[type=text],
+input[type=password],
+input[type=email] {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid orange;
+	box-sizing: border-box;
+	background-color: transparent;
+	color: white;
+}
+
+.psw {
+	color: white;
+}
+
+/* BOTON DE DESCRIPCION DE CATEGORIA */
+.boton {
+	margin-top: 10px;
+	width: 100%;
+	padding: 12px 20px;
+	background: rgb(255, 165, 0);
+	color: rgb(0, 0, 0);
+	font-weight: 800;
+	border: none;
+	border-radius: 5px;
+	transition: box-shadow 300ms;
+}
+
+/* BRILLITO DEL BOTON UWU */
+.boton:hover {
+	box-shadow: 1px 1px 22px -5px rgb(255, 165, 0);
+}
+
+/* INICIO LINK PARA IR A REGISTRARSE */
+.psw {
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+.psw a {
+	color: white;
+	text-decoration: none;
+	transition: all 0.2s;
+}
+
+.psw a:hover {
+	font-weight: bold;
+}
+/* FIN DE LINK PARA IR A REGISTRARSE */
 
 
 /****** INICIA FOOTER ******/
-.tamaño {
-  width: 40px;
-  height: auto;
-  margin: 1%;
+hr {
+	background: white;
 }
 
-.text-footer {
-  color: rgb(255, 255, 255);
-  font-size: small;
+/* TAMAÑO DEL LOGO EN FOOTER */
+.tamaño {
+	width: 40px;
 }
 
 .btn-footer {
-  color: rgb(255, 255, 255);
-  border-radius: 100%;
-  border-color: rgb(255, 255, 255);
-  margin: 1%;
+	color: rgb(255, 255, 255);
+	border-radius: 100%;
+	border-color: rgb(255, 255, 255);
+	margin: 1%;
 }
 
 .margin-botton {
-  margin-bottom: 4px
+	margin-bottom: 4px
 }
 
 .padding-up {
-  padding: 20px;
+	padding: 20px;
 }
 
 .padding-down {
-  padding: 40px;
+	padding: 40px;
+}
+
+.text-footer {
+	color: rgb(255, 255, 255);
+	font-size: small;
 }
