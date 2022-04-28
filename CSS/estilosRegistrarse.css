@@ -31,65 +31,58 @@ body {
   padding-bottom: 100px;
 }
 
+/* TRANSPARENSIA PARA LA IMAGEN DEL FONDO */
 .fondo-inicio:before {
   content: " ";
   width: 100%;
   height: 100%;
-  background: rgba(34, 34, 34, 0.767);
+  background: rgba(34, 34, 34, 0.7);
   position: absolute;
   top: 0;
   left: 0;
 }
 
-
-
-/* BOX */
-
-.form-group optgroup{
-  margin-top: 15px;
-  margin-bottom: 15px;
-  background-color: orange;
-}
-
-.form-group input {
-  background-color: orange;
-  color: black;
-  border-color: black;
-}
-
-.form-group select {
-  background-color: orange;
-  color: black;
-}
-
-.form-group select::before {
-  background-color: orange;
-  color: black;
-}
-
-.form-group option {
-  background-color: orange;
-  color: black;
-}
-
-
+/* CONTENEDOR DEL BOX */
 .all {
-  border: 3px solid hsl(39, 100%, 50%);
-  background-color: #000000;
-  color: #ffffff;
+  border: 3px solid rgb(255, 166, 0);
+  background-color: rgb(46, 46, 46);
+  color: rgb(255, 255, 255);
   width: 100%;
-  max-width: 400px;
   height: auto;
   margin: auto;
   border-radius: 20px;
   position: relative;
 }
 
-.separador {
-  margin-top: 100px;
+/* IMAGEN DEL BOX */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
 }
 
-/* Full-width inputs */
+/* Avatar image */
+img.avatar {
+  width: 30%;
+  height: auto;
+  border-radius: 5px;
+}
+
+/* COLOR PARA FECHA DE NACIMIENTO */
+.form-group input {
+  background-color: rgb(255, 165, 0);
+}
+
+/* COLOR PARA PREGUNTA */
+.form-group select {
+  background-color: rgb(255, 165, 0);
+}
+
+/* COLOR PARA EL SELECT ABIERTO DE PREGUNTA */
+.form-group option {
+  background-color: rgb(255, 255, 255);
+}
+
+/* INPUTS DEL FORMULARIO */
 input[type=text],
 input[type=password],
 input[type=email] {
@@ -103,63 +96,24 @@ input[type=email] {
   color: white;
 }
 
-/* Set a style for all buttons */
-.ingresar {
-  background-color: hsl(39, 100%, 50%);
-  color: #000000;
-  font-weight: bold;
-  border-color: solid #000000;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  cursor: pointer;
-  width: 100%;
-  transition: all 0.2s;
-}
-
-.psw a {
-  color: white;
-  text-decoration: none;
-  transition: all 0.2s;
-}
-
-.psw a:hover {
-  font-weight: bold;
-}
-
-/* Add a hover effect for buttons */
-button:hover {
-  font-weight: bold;
-  color: white;
-  background-color: transparent;
-  border: solid orange;
-}
-
-
-/* Center the avatar image inside this container */
-.imgcontainer {
-  text-align: center;
-  margin: 24px 0 12px 0;
-}
-
-/* Avatar image */
-img.avatar {
-  width: 30%;
-  height: auto;
-  border-radius: 5px;
-}
-
-
-/* The "Forgot password" text */
-span.psw {
-  float: right;
-  color: white;
-}
-
-.contenedor {
+/* BOTON DE DESCRIPCION DE CATEGORIA */
+.boton {
   margin-top: 10px;
-  margin-bottom: 10px;
+  width: 100%;
+  padding: 12px 20px;
+  background: rgb(255, 165, 0);
+  color: rgb(0, 0, 0);
+  font-weight: 800;
+  border: none;
+  border-radius: 5px;
+  transition: box-shadow 300ms;
 }
+
+/* BRILLITO DEL BOTON UWU */
+.boton:hover {
+  box-shadow: 1px 1px 22px -5px rgb(255, 165, 0);
+}
+
 
 
 /****** INICIA FOOTER ******/

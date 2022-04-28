@@ -13,9 +13,12 @@
     <!-- ICONOS DE FONTAWSOME -->
     <script src="https://kit.fontawesome.com/1bb0c0c4bd.js" crossorigin="anonymous"></script>
     <!-- CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <!-- JavaScript Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <link rel="stylesheet" href="/CSS/estilosRegistrarse.css">
 </head>
@@ -64,7 +67,7 @@
         <div class="container all ">
             <!-- IMAGEN DE BOX -->
             <div class="imgcontainer">
-                <img src="/imagenes/menuPrincipal/iconoPagFondo.jpg" alt="Avatar" class="avatar">
+                <img src="/imagenes/menuPrincipal/iconoPagOk.png" alt="Avatar" class="avatar">
             </div>
 
             <!-- FORMULARIO -->
@@ -72,62 +75,70 @@
                 <div class="container">
 
                     <!-- El method lo agregamos despues, ya que no deja ir a la pagina correspondiente-->
-                    <form name="registrarUsuario" action="VistaUser.html" enctype="application/x-www-form-urlencoded" id="formRegistrarse">
+                    <form name="registrarUsuario" action="VistaUser.html" enctype="application/x-www-form-urlencoded"
+                        id="formRegistrarse">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="nombre"><b>Nombre Completo</b></label>
+                                    <input type="text" placeholder="Ej: Juanito Perez" name="nombre" required
+                                        id="nombre">
+                                </div>
 
-                        <div class="form-group">
-                            <label for="nombre"><b>Nombre Completo</b></label>
-                            <input type="text" placeholder="Ej: Juanito Perez" name="nombre" required id="nombre">
+                                <div class="form-group">
+                                    <label for="usuario"><b>Usuario</b></label>
+                                    <input type="text" placeholder="Ej: VicRos86" name="usuario" required id="usuario">
+                                </div>
+
+                                <div class="from-group">
+                                    <label for="direccion"><b>Dirección</b></label>
+                                    <input type="text" placeholder="Ej: Av.Pajaritos 877" name="direccion" required
+                                        id="direccion">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="email"><b>Correo Electrónico</b></label>
+                                    <input type="email" placeholder="Ej:jean_doe@gmail.com" name="email" required
+                                        id="correo">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="fecha"><b>Fecha de Nacimiento</b></label>
+                                    <input type="date" name="fecha" id="fecha" value="0000-00-00" min="1922-01-01"
+                                        max="2022-00-00" tabindex="2" class="form-control"
+                                        placeholder="Fecha de Nacimiento" required>
+                                    <!-- Cuando veamos js, agregar la fecha actual del sistema en "max"-->
+                                </div>
+
+                                <div class="form-group" required>
+                                    <label for="preguntasecreta"><b>Pregunta Secreta</b></label>
+                                    <select name="preguntasecreta" class="form-control">
+                                        <option label="Seleccione una pregunta" required>
+                                        <option value="1">Primera Mascota </option>
+                                        <option value="2"> Personaje Favorito </option>
+                                        <option value="3">Actividad Favorita </option>
+                                    </select>
+
+                                    <input name="respuestaSecreta" type="text" placeholder="Respuesta Secreta" required
+                                        id="respuestaSecreta">
+                                </div>
+
+                                <!-- Con js validamos si ambas contraseñas son iguales -->
+                                <div class="form-group">
+                                    <label for="psw"><b>Contraseña</b></label>
+                                    <input type="password" placeholder="Contraseña" name="psw" required id="clave">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="pswC"><b>Repetir Contraseña</b></label>
+                                    <input type="password" placeholder="Repetir Contraseña" name="pswC" required
+                                        id="claveRepetida">
+                                </div>
+                            </div>
                         </div>
-
-                        <div class="form-group">
-                            <label for="usuario"><b>Usuario</b></label>
-                            <input type="text" placeholder="Ej: VicRos86" name="usuario" required id="usuario">
-                        </div>
-
-                        <div class="from-group">
-                            <label for="direccion"><b>Dirección</b></label>
-                            <input type="text" placeholder="Ej: Av.Pajaritos 877" name="direccion" required id="direccion">
-                        </div>
-
-                        <div class="form-group">
-                            <label for="email"><b>Correo Electrónico</b></label>
-                            <input type="email" placeholder="Ej:jean_doe@gmail.com" name="email" required id="correo">
-                        </div>
-
-                        <div class="form-group">
-                            <label for="fecha"><b>Fecha de Nacimiento</b></label>
-                            <input type="date" name="fecha" id="fecha" value="0000-00-00" min="1922-01-01"
-                                max="2022-00-00" tabindex="2" class="form-control" placeholder="Fecha de Nacimiento"
-                                required>
-                            <!-- Cuando veamos js, agregar la fecha actual del sistema en "max"-->
-                        </div>
-
-                        <div class="form-group" required>
-                            <label for="preguntasecreta"><b>Pregunta Secreta</b></label>
-                            <select name="preguntasecreta" class="form-control">
-                                <option label="Seleccione una pregunta" required>
-                                    <option value="1">Primera Mascota </option>
-                                    <option value="2"> Personaje Favorito </option>
-                                    <option value="3">Actividad Favorita </option>
-                                </optgroup>
-                            </select>
-
-                            <input name="respuestaSecreta" type="text" placeholder="Respuesta Secreta" required id="respuestaSecreta">
-                        </div>
-
-                        <!-- Con js validamos si ambas contraseñas son iguales -->
-                        <div class="form-group">
-                            <label for="psw"><b>Contraseña</b></label>
-                            <input type="password" placeholder="Contraseña" name="psw" required id="clave">
-                        </div>
-
-                        <div class="form-group">
-                            <label for="pswC"><b>Repetir Contraseña</b></label>
-                            <input type="password" placeholder="Repetir Contraseña" name="pswC" required id="claveRepetida">
-                        </div>
-
                         <!-- BOTON DE REGISTRARSE -->
-                        <button class="ingresar" type="submit">Registrarse</button>
+                        <button class="boton" type="submit">Registrarse</button>
 
                         <p id="mensajeNombre"></p>
                         <p id="mensajeNumeroEnNombre"></p>
@@ -142,7 +153,7 @@
                         <p id="mensajeNumeroEnClave"></p>
                         <p id="mensajeMayusculaEnClave"></p>
                         <p id="mensajeNumeroEnClave"></p>
-                        
+
 
                     </form>
 
@@ -180,7 +191,7 @@
             <!-- Copyright -->
         </footer>
     </div>
-    
+
     <script src="/JS/registrarse.js"></script>
 </body>
 
