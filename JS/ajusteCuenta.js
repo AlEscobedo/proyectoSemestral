@@ -76,23 +76,64 @@ $(document).ready(function () {
         //Validar Contra nueva no sea igual a la actual
         var passActual = $("#passA").val();
         var passNueva = $("#passO").val();
+        var espacioEnClave = passNueva.indexOf(" ");
+        var num = /[0-9]/;
+        var mayus = /[A-Z]/;
+        var minus = /[a-z]/;
+        var especial = /[@#$%^&-+=()]/;
         var mensajeContra = $("#mensajePass").val();
         let validarContra = false;
 
-        if (!validarPass(passActual, passNueva)) {
-            mensajeContra += "Datos Correctos<br>"
-            let validarContra = true;
-        } else {
+        if (validarPass(passActual, passNueva)) {
             mensajeContra += "La contraseña nueva no puede ser la misma que Actual<br>"
             let validarContra = false;
+            $("#mensajePass").html(mensajeContra);
+        } else {
+            if (validarLongitudContra(passNueva)) {
+                mensajeContra += "La contraseña debe tener una longitud entre 8 y 12<br>"
+                let validarContra = false;
+                $("#mensajePass").html(mensajeContra);
+            } else {
+                if (espacioEnClave > -1) {
+                    mensajeContra += "La contaseña no puede tener un espacio en blanco."
+                    let validarContra = false;
+                    $("#mensajePass").html(mensajeContra);
+                }
+                else {
+                    if (!num.test(passNueva)) {
+                        mensajeContra += "Su contraseña debe contener al menos un número."
+                        let validarContra = false;
+                        $("#mensajePass").html(mensajeContra);
+                    }
+                    else {
+                        if (!mayus.test(passNueva)) {
+                            mensajeContra += "Su contraseña debe contener al menos una mayúscula."
+                            let validarContra = false;
+                            $("#mensajePass").html(mensajeContra);
+                        }
+                        else {
+                            if (!minus.test(passNueva)) {
+                                mensajeContra += "Su contraseña debe contener al menos una minuscula."
+                                let validarContra = false;
+                                $("#mensajePass").html(mensajeContra);
+                            }
+                            else {
+                                if (!especial.test(passNueva)) {
+                                    mensajeContra += "Su contraseña debe contener al menos un caracter especial."
+                                    let validarContra = false;
+                                    $("#mensajePass").html(mensajeContra);
+                                } else {
+                                    mensajeContra += "Datos Correctos."
+                                    let validarContra = true;
+                                    $("#mensajePass").html(mensajeContra);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
         }
 
-        if (validarContra) {
-            $("#mensajePass").html(mensajeContra);
-        }
-        else {
-            $("#mensajePass").html(mensajeContra);
-        }
 
     });
 
@@ -153,6 +194,15 @@ $(document).ready(function () {
     // Validar que las contras no sean iguales
     function validarPass(pass1, pass2) {
         if (pass1 == pass2) {
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
+
+    function validarLongitudContra(pass) {
+        if (pass.trim().length < 8 || pass.trim().length > 12) {
             return true;
         }
         else {
