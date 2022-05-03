@@ -22,7 +22,7 @@ $(document).ready(function(){
         let mensajeDireccion = "";
         let entrarMensajeDireccion = false;
 
-        var correo = $("#correo").val();
+        var correo = $("#email").val();
         let mensajeCorreo = "";
         let entrarMensajeCorreo = false;
 
@@ -109,7 +109,33 @@ $(document).ready(function(){
         }
         //FIN VALIDACION INPUT USUARIO
 
+        //Validar correo
+        var correo = $("#email").val();
+        let validarCorreo = false;
+        var mensajeEmail = $("#mensajeEmail").val();
 
+        // Validar que el email este en el formato correcto
+        function validarEmail(email) {
+            if (/^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i.test(email)) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+
+        if (validarEmail(correo)) {
+            validarCorreo = true;
+        } else {
+            mensajeEmail += "El formato del correo no es el correcto Ej: asd@asd.cl<br>";
+            validarCorreo = false;
+        }
+
+        if (validarCorreo) {
+            $("#mensajeEmail").html(mensajeEmail);
+        }
+        else {
+            $("#mensajeEmail").html(mensajeEmail);
+        }
 
         //VALIDACION INPUT CONTRASEÑA
         //VALIDACION PARA QUE LAS DOS CLAVES SEAN IGUALES
