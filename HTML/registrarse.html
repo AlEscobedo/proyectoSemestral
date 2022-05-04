@@ -83,23 +83,28 @@
                                     <label for="nombre"><b>Nombre Completo</b></label>
                                     <input type="text" placeholder="Ej: Juanito Perez" name="nombre" required
                                         id="nombre">
+                                    <p id="mensajeNombre"></p>
+                                    <p id="mensajeNumeroEnNombre"></p>
                                 </div>
 
                                 <div class="form-group">
                                     <label for="usuario"><b>Usuario</b></label>
                                     <input type="text" placeholder="Ej: VicRos86" name="usuario" required id="usuario">
+                                    <p id="mensajeUsuario"></p>
                                 </div>
 
                                 <div class="from-group">
                                     <label for="direccion"><b>Dirección</b></label>
                                     <input type="text" placeholder="Ej: Av.Pajaritos 877" name="direccion" required
                                         id="direccion">
+                                    <p id="mensajeDireccion"></p>
                                 </div>
 
                                 <div class="form-group">
                                     <label for="email"><b>Correo Electrónico</b></label>
                                     <input type="email" placeholder="Ej:jean_doe@gmail.com" name="email" required
                                         id="email">
+                                    <p id="mensajeEmail"></p>
                                 </div>
                             </div>
                             <div class="col-md-6">
@@ -108,7 +113,7 @@
                                     <input type="date" name="fecha" id="fecha" value="0000-00-00" min="1922-01-01"
                                         max="2009-12-31" tabindex="2" class="form-control"
                                         placeholder="Fecha de Nacimiento" required>
-                                    <!-- Cuando veamos js, agregar la fecha actual del sistema en "max"-->
+                                    <p id="mensajeFecha"></p>
                                 </div>
 
                                 <div class="form-group" required>
@@ -122,6 +127,7 @@
 
                                     <input name="respuestaSecreta" type="text" placeholder="Respuesta Secreta" required
                                         id="respuestaSecreta">
+                                    <p id="mensajeRespuestaSecreta"></p>
                                 </div>
 
                                 <!-- Con js validamos si ambas contraseñas son iguales -->
@@ -129,32 +135,22 @@
                                     <label for="psw"><b>Contraseña</b></label>
                                     <input type="password" placeholder="Contraseña" name="psw" required id="clave">
                                 </div>
+                                <p id="mensajeClave"></p>
+                                <p id="mensajeEspacioEnClave"></p>
+                                <p id="mensajeNumeroEnClave"></p>
+                                <p id="mensajeMayusculaEnClave"></p>
+                                <p id="mensajeNumeroEnClave"></p>
 
                                 <div class="form-group">
                                     <label for="pswC"><b>Repetir Contraseña</b></label>
                                     <input type="password" placeholder="Repetir Contraseña" name="pswC" required
                                         id="claveRepetida">
+                                    <p id="mensajeClaveRepetida"></p>
                                 </div>
                             </div>
                         </div>
                         <!-- BOTON DE REGISTRARSE -->
                         <button class="boton" type="submit">Registrarse</button>
-
-                        <p id="mensajeNombre"></p>
-                        <p id="mensajeNumeroEnNombre"></p>
-                        <p id="mensajeUsuario"></p>
-                        <p id="mensajeDireccion"></p>
-                        <p id="mensajeEmail"></p>
-                        <p id="mensajeFecha"></p>
-                        <p id="mensajeRespuestaSecreta"></p>
-                        <p id="mensajeClave"></p>
-                        <p id="mensajeClaveRepetida"></p>
-                        <p id="mensajeEspacioEnClave"></p>
-                        <p id="mensajeNumeroEnClave"></p>
-                        <p id="mensajeMayusculaEnClave"></p>
-                        <p id="mensajeNumeroEnClave"></p>
-
-
                     </form>
 
                 </div>
