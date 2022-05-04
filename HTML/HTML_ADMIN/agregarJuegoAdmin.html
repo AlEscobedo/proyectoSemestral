@@ -36,7 +36,8 @@
                 <form class="d-flex input-group w-auto">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a href="/HTML/HTML_ADMIN/Admin_index.html" class="nav-link"><i class="fa-solid fa-backward"></i>
+                            <a href="/HTML/HTML_ADMIN/Admin_index.html" class="nav-link"><i
+                                    class="fa-solid fa-backward"></i>
                                 Volver</a>
                         </li>
                     </ul>
@@ -54,69 +55,6 @@
                 <p>Administrador aquí podrá realizar editar, eliminar y agregar videojuegos en sus respectivas
                     categorías
                 </p>
-            </div>
-        </div>
-    </div>
-
-
-
-    <!--Tarjeta Agregar Categoria-->
-    <div class="container all">
-        <div class="card mb-3">
-            <div class="row ">
-                <h1 class="center">Agregar Categoría</h1>
-                <div class="col-md-3">
-                    <a href="#modalCategoria" data-bs-toggle="modal" data-bs-target="#modalCategoria"><img
-                            src="/imagenes/admin/MAS.png" class="card-img" alt="fnaf"></a>
-                    <p class="center">Subir Imagen Categoría</p>
-                    <div class="modal" id="modalCategoria">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-
-                                <!-- Modal Header -->
-                                <div class="modal-header">
-                                    <h4 class="modal-title">Subir Imagen Categoría</h4>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                                </div>
-
-                                <!-- Modal body -->
-                                <div class="modal-body">
-                                    <input type="file">
-                                </div>
-
-                                <!-- Modal footer -->
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-5">
-                    <div class="card-body">
-                        <div class="col">
-                            <div class="row">
-                                <label for="nomJuego" class="centerText"><b>Nombre de la Categoría</b></label><br>
-                                <input type="text" placeholder="Titulo" name="nomJuego" required><br>
-                            </div>
-                            <div class="row">
-                                <label for="descJuego" class="textarea"><b>Descripción de la Categoría</b></label><br>
-                                <input type="text" placeholder="Descripción" name="descJuego" required><br>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="col">
-                        <button type="button" class="btn btn-categoria" data-bs-toggle="modal"
-                            data-bs-target="#myModal1">
-                            Agregar Categoría
-                        </button>
-                    </div>
-                </div>
-
             </div>
         </div>
     </div>
@@ -319,7 +257,49 @@
             </div>
         </div>
     </div>
+    <!--Tarjeta Eliminar Juego-->
+    <div class="container all">
+        <div class="card mb-3">
+            <div class="row no-gutters">
+                <h1 class="center">Eliminar Juego</h1>
+                <div class="col-md-4"></div>
+                <div class="col-md-5 center">
 
+                    <div class="row ">
+                        <div class="form-group">
+                            <label for="uname"><h5>Juego</h5></label>
+                            <select name="preguntasecreta" id="preguntasecreta" tabindex="1" class="form-control"
+                                placeholder="Pregunta Secreta" value="">
+                                <option selected="true">Seleccione el Juego a Eliminar</option>
+                                <option>
+                                    Minecraft
+                                </option>
+                                <option>
+                                    Phasmophobia
+                                </option>
+                                <option>
+                                    Dead By Daylight
+                                </option>
+                                <option>
+                                    Texto de Ejemplo
+                                </option>
+                                <option>
+                                    Texto de Ejemplo
+                                </option>
+                                <option>
+                                    Texto de Ejemplo
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-categoria" data-bs-toggle="modal" data-bs-target="#myModal1">
+                        Eliminar
+                    </button>
+                </div>
+                <div class="col-md-3"></div>
+            </div>
+        </div>
+    </div>
 
 
 
