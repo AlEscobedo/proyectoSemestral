@@ -66,9 +66,9 @@
             <!-- FORMULARIO -->
             <div class="row">
                 <div class="container">
-                    <form action="iniciarSesion.html">
+                    <form method="post" enctype="application/x-www-form-urlencoded" id="formulariorc">
                         <label for="uname"><b>Correo Electrónico</b></label>
-                        <input type="text" placeholder="Correo Electrónico" name="uname" required>
+                        <input type="email" placeholder="Correo Electrónico" name="uname" id="mail" required>
 
                         <div class="form-group">
                             <label for="uname"><b>Pregunta Secreta</b></label>
@@ -85,11 +85,12 @@
                                     Actividad Favorita
                                 </option>
                             </select>
+                            <p id="mensajeselect"></p>
                             <input type="text" placeholder="Respuesta Secreta" name="uname" required>
                         </div>
 
                         <!-- BOTON DE RECUPERAR -->
-                        <button class="boton" type="submit">Recuperar Contraseña</button>
+                        <input type="submit" class="boton" value="Recuperar Contraseña">
                     </form>
                     <div class="row contenedor">
                         <!-- CONTENEDOR REDIRECCION TEXTO -->
