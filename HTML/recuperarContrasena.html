@@ -12,6 +12,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- ICONOS DE FONTAWSOME -->
     <script src="https://kit.fontawesome.com/1bb0c0c4bd.js" crossorigin="anonymous"></script>
+    <!-- LIBRERIA JQUERY -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- CSS -->
     <link rel="stylesheet" href="/CSS/estilosRecuperarContra.css">
 </head>
 
@@ -67,23 +70,18 @@
             <div class="row">
                 <div class="container">
                     <form method="post" enctype="application/x-www-form-urlencoded" id="formulariorc">
-                        <label for="uname"><b>Correo Electrónico</b></label>
-                        <input type="email" placeholder="Correo Electrónico" name="uname" id="mail" required>
-
+                        <div class="form-group">
+                            <label for="uname"><b>Correo Electrónico</b></label>
+                            <input type="email" placeholder="Correo Electrónico" name="uname" id="mail" required>
+                        </div>
                         <div class="form-group">
                             <label for="uname"><b>Pregunta Secreta</b></label>
                             <select name="preguntasecreta" id="preguntasecreta" tabindex="1" class="form-control"
                                 placeholder="Pregunta Secreta" value="">
-                                <option selected="true">Seleccione una Pregunta</option>
-                                <option>
-                                    Primera Mascota
-                                </option>
-                                <option>
-                                    Personaje Favorito
-                                </option>
-                                <option>
-                                    Actividad Favorita
-                                </option>
+                                <option value="select">Seleccione una Pregunta</option>
+                                <option value="Primera_Mascota">Primera Mascota</option>
+                                <option value="Personaje_Favorito">Personaje Favorito</option>
+                                <option value="Actividad_Favorita">Actividad Favorita</option>
                             </select>
                             <p id="mensajeselect"></p>
                             <input type="text" placeholder="Respuesta Secreta" name="uname" required>
@@ -131,6 +129,9 @@
             <!-- Copyright -->
         </footer>
     </div>
+
+    <!-- CONECXION A JS -->
+    <script src="/JS/recupContrasenia.js"></script>
 </body>
 
 </html>

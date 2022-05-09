@@ -1,16 +1,13 @@
 $(document).ready(function () {
     $("#formulariorc").submit(function (e) {
-        var mail = $("#mail").val();
-        var select = $("#").val();
+        e.preventDefault();
 
+        var pregunta = $("#preguntasecreta").val();
 
-        let mensajemail = "";
         let mensajeselect = "";
-
-        let enviarmail = false;
         let enviarselect = false;
 
-        if (select == "Seleccione una Pregunta"(select)) {
+        if (validarOpcion(pregunta)) {
             mensajeselect += "Debe elegir una opcion";
             enviarselect = true;
         } else {
@@ -23,5 +20,10 @@ $(document).ready(function () {
         } else {
             $("#mensajeselect").html(mensajeselect);
         }
+
     })
+    function validarOpcion(pregunta) {
+        return pregunta == "select";
+    }
+
 })
