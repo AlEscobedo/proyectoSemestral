@@ -8,12 +8,7 @@ $(document).ready(function(){
 
         //VARIABLES
         var usuario = $("#usuario").val();
-        let mensajeUsuario = "";
-        let entrarMensajeUsuario = false;
-
         var clave = $("#clave").val();
-        let mensajeClave = "";
-        let entrarMensajeClave = false;
 
 
        

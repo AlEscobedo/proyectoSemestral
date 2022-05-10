@@ -16,6 +16,11 @@
     <script src="https://kit.fontawesome.com/1bb0c0c4bd.js" crossorigin="anonymous"></script>
     <!-- CONEXION A CSS -->
     <link rel="stylesheet" href="/CSS/CSS_ADMIN/estiloAgregarJuegoAdmin.css">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 
 <body>
@@ -60,246 +65,258 @@
     </div>
 
     <!--Tarjeta Agregar Juego-->
-    <div class="container all">
-        <div class="card mb-3">
-            <div class="row no-gutters">
-                <h1 class="center">Agregar Juego</h1>
-                <div class="col-md-3">
-                    <a href="#modalJuego" data-bs-toggle="modal" data-bs-target="#modalJuego"><img
-                            src="/imagenes/admin/MAS.png" class="card-img" alt="fnaf"></a>
-                    <p class="center">Subir Imagen Juego</p>
-                    <div class="modal" id="modalJuego">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
+    <form action="">
+        <div class="container all">
+            <div class="card mb-3">
+                <div class="row no-gutters">
+                    <h1 class="center">Agregar Juego</h1>
+                    <div class="col-md-3">
+                        <a href="#modalJuego" data-bs-toggle="modal" data-bs-target="#modalJuego"><img
+                                src="/imagenes/admin/MAS.png" class="card-img" alt="fnaf"></a>
+                        <p class="center">Subir Imagen Juego</p>
+                        <div class="modal" id="modalJuego">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
 
-                                <!-- Modal Header -->
-                                <div class="modal-header">
-                                    <h4 class="modal-title">Subir Imagen Juego</h4>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                    <!-- Modal Header -->
+                                    <div class="modal-header">
+                                        <h4 class="modal-title">Subir Imagen Juego</h4>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                    </div>
+
+                                    <!-- Modal body -->
+                                    <div class="modal-body">
+                                        <input type="file">
+                                    </div>
+
+                                    <!-- Modal footer -->
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-danger"
+                                            data-bs-dismiss="modal">Cerrar</button>
+                                    </div>
+
                                 </div>
-
-                                <!-- Modal body -->
-                                <div class="modal-body">
-                                    <input type="file">
-                                </div>
-
-                                <!-- Modal footer -->
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
-                                </div>
-
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-5">
-                    <div class="card-body">
-                        <div class="col">
-                            <div class="row">
-                                <label for="nomJuego" class="centerText"><b>Nombre del Juego</b></label><br>
-                                <input type="text" placeholder="Titulo" name="nomJuego" required><br>
-                            </div>
-                            <div class="row">
-                                <label for="descJuego" class="textarea"><b>Descripción del Juego</b></label><br>
-                                <input type="text" placeholder="Descripción" name="descJuego" required><br>
-                            </div>
-                            <label for="valJuego"><b>Valor del Juego</b></label><br>
-                            <input type="number" placeholder="$000.000" name="valJuego" required min="0"><br>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="form-group">
-                        <label for="uname"><b>Categoria</b></label>
-                        <select name="preguntasecreta" id="preguntasecreta" tabindex="1" class="form-control"
-                            placeholder="Pregunta Secreta" value="">
-                            <option selected="true">Seleccione una Categoría</option>
-                            <option>
-                                Terror
-                            </option>
-                            <option>
-                                Acción
-                            </option>
-                            <option>
-                                Carreras
-                            </option>
-                            <option>
-                                Mundo Abierto
-                            </option>
-                            <option>
-                                Free To Play
-                            </option>
-                            <option>
-                                Supervivencia
-                            </option>
-                        </select>
-                    </div>
-                    <div class="col">
-                        <button type="button" class="btn btn-categoria" data-bs-toggle="modal"
-                            data-bs-target="#myModal1">
-                            Agregar Juego
-                        </button>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </div>
-
-    <!--Tarjeta Modificar Juego-->
-    <div class="container all">
-        <div class="card mb-3">
-            <div class="row no-gutters">
-                <h1 class="center">Modificar Juego</h1>
-                <div class="col-md-3">
-                    <a href="#modalModificar" data-bs-toggle="modal" data-bs-target="#modalModificar"><img
-                            src="/imagenes/admin/MAS.png" class="card-img" alt="fnaf"></a>
-                    <p class="center">Cambiar Imagen Juego</p>
-                    <div class="modal" id="modalModificar">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-
-                                <!-- Modal Header -->
-                                <div class="modal-header">
-                                    <h4 class="modal-title">Cambiar Imagen Juego</h4>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    <div class="col-md-5">
+                        <div class="card-body">
+                            <div class="col">
+                                <div class="row">
+                                    <label for="nomJuego" class="centerText"><b>Nombre del Juego</b></label><br>
+                                    <input type="text" placeholder="Titulo" name="nomJuego" required><br>
                                 </div>
-
-                                <!-- Modal body -->
-                                <div class="modal-body">
-                                    <input type="file">
+                                <div class="row">
+                                    <label for="descJuego" class="textarea"><b>Descripción del Juego</b></label><br>
+                                    <input type="text" placeholder="Descripción" name="descJuego" required><br>
                                 </div>
-
-                                <!-- Modal footer -->
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
-                                </div>
-
+                                <label for="valJuego"><b>Valor del Juego</b></label><br>
+                                <input type="number" placeholder="$000.000" name="valJuego" required min="0"><br>
                             </div>
+
                         </div>
                     </div>
-                </div>
-                <div class="col-md-5">
-                    <div class="card-body">
-                        <div class="col">
-                            <div class="row">
-                                <div class="form-group">
-                                    <label for="uname"><b>Juego</b></label>
-                                    <select name="preguntasecreta" id="preguntasecreta" tabindex="1"
-                                        class="form-control" placeholder="Pregunta Secreta" value="">
-                                        <option selected="true">Seleccione el Juego</option>
-                                        <option>
-                                            Minecraft
-                                        </option>
-                                        <option>
-                                            Phasmophobia
-                                        </option>
-                                        <option>
-                                            Dead By Daylight
-                                        </option>
-                                        <option>
-                                            Texto de Ejemplo
-                                        </option>
-                                        <option>
-                                            Texto de Ejemplo
-                                        </option>
-                                        <option>
-                                            Texto de Ejemplo
-                                        </option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <label for="descJuego" class="textarea"><b>Descripción del Juego</b></label><br>
-                                <input type="text" placeholder="Descripción" name="descJuego" required><br>
-                            </div>
-                            <label for="valJuego"><b>Valor del Juego</b></label><br>
-                            <input type="number" placeholder="$000.000" name="valJuego" required min="0"><br>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="form-group">
-                        <label for="uname"><b>Categoria</b></label>
-                        <select name="preguntasecreta" id="preguntasecreta" tabindex="1" class="form-control"
-                            placeholder="Pregunta Secreta" value="">
-                            <option selected="true">Seleccione una Categoría</option>
-                            <option>
-                                Terror
-                            </option>
-                            <option>
-                                Acción
-                            </option>
-                            <option>
-                                Carreras
-                            </option>
-                            <option>
-                                Mundo Abierto
-                            </option>
-                            <option>
-                                Free To Play
-                            </option>
-                            <option>
-                                Supervivencia
-                            </option>
-                        </select>
-                    </div>
-                    <div class="col">
-                        <button type="button" class="btn btn-categoria" data-bs-toggle="modal"
-                            data-bs-target="#myModal1">
-                            Modificar
-                        </button>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </div>
-    <!--Tarjeta Eliminar Juego-->
-    <div class="container all">
-        <div class="card mb-3">
-            <div class="row no-gutters">
-                <h1 class="center">Eliminar Juego</h1>
-                <div class="col-md-4"></div>
-                <div class="col-md-5 center">
-
-                    <div class="row ">
+                    <div class="col-md-4">
                         <div class="form-group">
-                            <label for="uname"><h5>Juego</h5></label>
+                            <label for="uname"><b>Categoria</b></label>
                             <select name="preguntasecreta" id="preguntasecreta" tabindex="1" class="form-control"
                                 placeholder="Pregunta Secreta" value="">
-                                <option selected="true">Seleccione el Juego a Eliminar</option>
-                                <option>
-                                    Minecraft
+                                <option selected="true" value="0">Seleccione una Categoría</option>
+                                <option value="1">
+                                    Terror
                                 </option>
-                                <option>
-                                    Phasmophobia
+                                <option value="2">
+                                    Acción
                                 </option>
-                                <option>
-                                    Dead By Daylight
+                                <option value="3">
+                                    Carreras
                                 </option>
-                                <option>
-                                    Texto de Ejemplo
+                                <option value="4">
+                                    Mundo Abierto
                                 </option>
-                                <option>
-                                    Texto de Ejemplo
+                                <option value="5">
+                                    Free To Play
                                 </option>
-                                <option>
-                                    Texto de Ejemplo
+                                <option value="6">
+                                    Supervivencia
                                 </option>
                             </select>
                         </div>
+                        <div class="col">
+                            <button type="button" class="btn btn-categoria" data-bs-toggle="modal"
+                                data-bs-target="#myModal1">
+                                Agregar Juego
+                            </button>
+                        </div>
                     </div>
-                    <button type="button" class="btn btn-categoria" data-bs-toggle="modal" data-bs-target="#myModal1">
-                        Eliminar
-                    </button>
+
                 </div>
-                <div class="col-md-3"></div>
             </div>
         </div>
-    </div>
+    </form>
+
+    <!--Tarjeta Modificar Juego-->
+    <form action="">
+        <div class="container all">
+            <div class="card mb-3">
+                <div class="row no-gutters">
+                    <h1 class="center">Modificar Juego</h1>
+                    <div class="col-md-3">
+                        <a href="#modalModificar" data-bs-toggle="modal" data-bs-target="#modalModificar"><img
+                                src="/imagenes/admin/MAS.png" class="card-img" alt="fnaf"></a>
+                        <p class="center">Cambiar Imagen Juego</p>
+                        <div class="modal" id="modalModificar">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+
+                                    <!-- Modal Header -->
+                                    <div class="modal-header">
+                                        <h4 class="modal-title">Cambiar Imagen Juego</h4>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                    </div>
+
+                                    <!-- Modal body -->
+                                    <div class="modal-body">
+                                        <input type="file">
+                                    </div>
+
+                                    <!-- Modal footer -->
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-danger"
+                                            data-bs-dismiss="modal">Cerrar</button>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="card-body">
+                            <div class="col">
+                                <div class="row">
+                                    <div class="form-group">
+                                        <label for="uname"><b>Juego</b></label>
+                                        <select name="preguntasecreta" id="preguntasecreta" tabindex="1"
+                                            class="form-control" placeholder="Pregunta Secreta" value="">
+                                            <option selected="true" value="0">Seleccione el Juego</option>
+                                            <option value="1">
+                                                Minecraft
+                                            </option>
+                                            <option value="2">
+                                                Phasmophobia
+                                            </option>
+                                            <option value="3">
+                                                Dead By Daylight
+                                            </option>
+                                            <option value="4">
+                                                Texto de Ejemplo
+                                            </option>
+                                            <option value="5">
+                                                Texto de Ejemplo
+                                            </option>
+                                            <option value="6">
+                                                Texto de Ejemplo
+                                            </option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <label for="descJuego" class="textarea"><b>Descripción del Juego</b></label><br>
+                                    <input type="text" placeholder="Descripción" name="descJuego" required><br>
+                                </div>
+                                <label for="valJuego"><b>Valor del Juego</b></label><br>
+                                <input type="number" placeholder="$000.000" name="valJuego" required min="0"><br>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label for="uname"><b>Categoria</b></label>
+                            <select name="preguntasecreta" id="preguntasecreta" tabindex="1" class="form-control"
+                                placeholder="Pregunta Secreta" value="">
+                                <option selected="true" value="0">Seleccione una Categoría</option>
+                                <option value="1">
+                                    Terror
+                                </option>
+                                <option value="2">
+                                    Acción
+                                </option>
+                                <option value="3">
+                                    Carreras
+                                </option>
+                                <option value="4">
+                                    Mundo Abierto
+                                </option>
+                                <option value="5">
+                                    Free To Play
+                                </option>
+                                <option value="6">
+                                    Supervivencia
+                                </option>
+                            </select>
+                        </div>
+                        <div class="col">
+                            <button type="button" class="btn btn-categoria" data-bs-toggle="modal"
+                                data-bs-target="#myModal1">
+                                Modificar
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </form>
+
+    <!--Tarjeta Eliminar Juego-->
+    <form action="">
+        <div class="container all">
+            <div class="card mb-3">
+                <div class="row no-gutters">
+                    <h1 class="center">Eliminar Juego</h1>
+                    <div class="col-md-4"></div>
+                    <div class="col-md-5 center">
+
+                        <div class="row ">
+                            <div class="form-group">
+                                <label for="uname">
+                                    <h5>Juego</h5>
+                                </label>
+                                <select name="preguntasecreta" id="preguntasecreta" tabindex="1" class="form-control"
+                                    placeholder="Pregunta Secreta" value="">
+                                    <option selected="true" value="0">Seleccione el Juego a Eliminar</option>
+                                    <option value="1">
+                                        Minecraft
+                                    </option>
+                                    <option value="2">
+                                        Phasmophobia
+                                    </option>
+                                    <option value="3">
+                                        Dead By Daylight
+                                    </option>
+                                    <option value="4">
+                                        Texto de Ejemplo
+                                    </option>
+                                    <option value="5">
+                                        Texto de Ejemplo
+                                    </option>
+                                    <option value="6">
+                                        Texto de Ejemplo
+                                    </option>
+                                </select>
+                            </div>
+                        </div>
+                        <button type="button" class="btn btn-categoria" data-bs-toggle="modal"
+                            data-bs-target="#myModal1">
+                            Eliminar
+                        </button>
+                    </div>
+                    <div class="col-md-3"></div>
+                </div>
+            </div>
+        </div>
+    </form>
 
 
 
@@ -334,6 +351,7 @@
     </div>
 
     </div>
+    <script src="/JS/agregarJuegosAdmin.js"></script>
 </body>
 
 </html>

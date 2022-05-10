@@ -62,6 +62,8 @@ $(document).ready(function(){
         let mensajeMinusculaEnClave = "";
         let entrarMensajeMinusculaEnClave = false;
 
+
+        
         //VALIDACION INPUT NOMBRE
         function esMayuscula(primeraLetra){
             return primeraLetra == primeraLetra.toUpperCase();
