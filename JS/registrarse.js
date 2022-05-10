@@ -30,9 +30,9 @@ $(document).ready(function(){
         let mensajeFecha = "";
         let entrarMensajeFecha = false;
 
-        var respuestaSecreta = $("#respuestaSecreta").val();
-        let mensajeRespuestaSecreta = "";
-        let entrarMensajeRespuestaSecreta = false;
+        var preguntaSecreta = $("#preguntaSeleccionada").val();
+        var mensajePreguntaSecreta = "";
+        var entrarMensajePreguntaSecreta = false;
 
         var clave = $("#clave").val();
         let mensajeClave = "";
@@ -110,6 +110,22 @@ $(document).ready(function(){
             $("#mensajeUsuario").html(mensajeUsuario);
         }
         //FIN VALIDACION INPUT USUARIO
+
+        //VALIDACION PREGUNTA SECRETA
+
+        if(preguntaSecreta == "0"){
+            mensajePreguntaSecreta += "Debe seleccionar una opción diferente de la predeterminada."; 
+            entrarMensajePreguntaSecreta = true;
+            console.log(preguntaSeleccionada);
+        }
+
+        if(entrarMensajePreguntaSecreta == true ){
+            $("#mensajePreguntaSecreta").html(mensajePreguntaSecreta);
+        }else{
+            $("#mensajePreguntaSecreta").html(mensajePreguntaSecreta);
+        }
+        // FIN VALIDACIÓN PREGUNTA SECRETA
+
 
         //Validar correo
         var correo = $("#email").val();

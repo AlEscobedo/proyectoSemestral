@@ -118,8 +118,8 @@
 
                                 <div class="form-group" required>
                                     <label for="preguntasecreta"><b>Pregunta Secreta</b></label>
-                                    <select name="preguntasecreta" class="form-control">
-                                        <option label="Seleccione una pregunta" required>
+                                    <select name="preguntasecreta" class="form-control" id="preguntaSeleccionada">
+                                        <option value="0" label="Seleccione una pregunta" required selected>
                                         <option value="1">Primera Mascota </option>
                                         <option value="2"> Personaje Favorito </option>
                                         <option value="3">Actividad Favorita </option>
@@ -127,7 +127,7 @@
 
                                     <input name="respuestaSecreta" type="text" placeholder="Respuesta Secreta" required
                                         id="respuestaSecreta">
-                                    <p id="mensajeRespuestaSecreta"></p>
+                                    <p id="mensajePreguntaSecreta"></p>
                                 </div>
 
                                 <!-- Con js validamos si ambas contraseñas son iguales -->
