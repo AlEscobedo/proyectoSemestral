@@ -94,26 +94,34 @@
                                 </div>
 
                                 <div class="from-group">
+                                    <label for="region"><b>Region</b></label>
+                                    <select name="region" id="region" class="form-control">
+                                        <option value="opcionregion">Seleccione una Region</option>
+                                    </select>
+                                </div>
+                                <div class="from-group">
+                                    <label for="comuna"><b>Comuna</b></label>
+                                    <select name="comuna" id="comuna" class="form-control">
+                                        <option value="opcioncomuna">Seleccione una Comuna</option>
+                                    </select>
+                                </div>
+
+                                <div class="from-group">
                                     <label for="direccion"><b>Dirección</b></label>
                                     <input type="text" placeholder="Ej: Av.Pajaritos 877" name="direccion" required
                                         id="direccion">
                                     <p id="mensajeDireccion"></p>
                                 </div>
 
+
+                            </div>
+                            <div class="col-md-6">
+
                                 <div class="form-group">
                                     <label for="email"><b>Correo Electrónico</b></label>
                                     <input type="email" placeholder="Ej:jean_doe@gmail.com" name="email" required
                                         id="email">
                                     <p id="mensajeEmail"></p>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label for="fecha"><b>Fecha de Nacimiento</b></label>
-                                    <input type="date" name="fecha" id="fecha" value="0000-00-00" min="1922-01-01"
-                                        max="2009-12-31" tabindex="2" class="form-control"
-                                        placeholder="Fecha de Nacimiento" required>
-                                    <p id="mensajeFecha"></p>
                                 </div>
 
                                 <div class="form-group" required>

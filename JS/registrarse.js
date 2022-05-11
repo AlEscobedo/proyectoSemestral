@@ -1,10 +1,10 @@
-$(document).ready(function(){
+$(document).ready(function () {
 
-    $("#formRegistrarse").submit(function(validacion){
+    $("#formRegistrarse").submit(function (validacion) {
 
         validacion.preventDefault();
 
-        
+
 
         var nombre = $("#nombre").val();
         let mensajeNombre = "";
@@ -17,7 +17,7 @@ $(document).ready(function(){
         var usuario = $("#usuario").val();
         let mensajeUsuario = "";
         let entrarMensajeUsuario = false;
-        
+
         var direccion = $("#direccion").val();
         let mensajeDireccion = "";
         let entrarMensajeDireccion = false;
@@ -25,10 +25,6 @@ $(document).ready(function(){
         var correo = $("#email").val();
         let mensajeCorreo = "";
         let entrarMensajeCorreo = false;
-
-        var fecha = $("#fecha").val();
-        let mensajeFecha = "";
-        let entrarMensajeFecha = false;
 
         var preguntaSecreta = $("#preguntaSeleccionada").val();
         var mensajePreguntaSecreta = "";
@@ -49,7 +45,7 @@ $(document).ready(function(){
         var claveRepetida = $("#claveRepetida").val();
         let mensajeClaveRepetida = "";
         let entrarMensajeClaveRepetida = false;
-        
+
         var numeroEnClave = $("#clave");
         let mensajeNumeroEnClave = "";
         let entrarMensajeNumeroEnClave = false;
@@ -63,34 +59,34 @@ $(document).ready(function(){
         let entrarMensajeMinusculaEnClave = false;
 
 
-        
+
         //VALIDACION INPUT NOMBRE
-        function esMayuscula(primeraLetra){
+        function esMayuscula(primeraLetra) {
             return primeraLetra == primeraLetra.toUpperCase();
         }
 
         var primeraLetra = nombre.charAt(0);
-        if(!esMayuscula(primeraLetra)){
+        if (!esMayuscula(primeraLetra)) {
             mensajeNombre += "Su nombre debe comenzar con mayúscula.";
             entrarMensajeNombre = true;
         }
 
-        if(entrarMensajeNombre){
+        if (entrarMensajeNombre) {
             $("#mensajeNombre").html(mensajeNombre);
         }
-        else{
+        else {
             $("#mensajeNombre").html(mensajeNombre);
         }
 
-        if ( /\d/.test($("#nombre").val().trim()) ) {
+        if (/\d/.test($("#nombre").val().trim())) {
             mensajeNumeroEnNombre += "No se permiten números en el nombre."
             entrarMensajeNumeroEnNombre = true;
         }
 
-        if(entrarMensajeNumeroEnNombre){
+        if (entrarMensajeNumeroEnNombre) {
             $("#mensajeNumeroEnNombre").html(mensajeNumeroEnNombre);
         }
-        else{
+        else {
             $("#mensajeNumeroEnNombre").html(mensajeNumeroEnNombre);
         }
         //FIN VALIDACION INPUT NOMBRE
@@ -98,30 +94,30 @@ $(document).ready(function(){
 
 
         //VALIDACION INPUT USUARIO
-        if(usuario.trim().length < 4 || usuario.trim().length > 10){
+        if (usuario.trim().length < 4 || usuario.trim().length > 10) {
             mensajeUsuario += "El nombre de usuario debe tener entre 4 y 10 caracteres.";
             entrarMensajeUsuario = true;
         }
 
-        if(entrarMensajeUsuario){
+        if (entrarMensajeUsuario) {
             $("#mensajeUsuario").html(mensajeUsuario);
         }
-        else{
+        else {
             $("#mensajeUsuario").html(mensajeUsuario);
         }
         //FIN VALIDACION INPUT USUARIO
 
         //VALIDACION PREGUNTA SECRETA
 
-        if(preguntaSecreta == "0"){
-            mensajePreguntaSecreta += "Debe seleccionar una opción diferente de la predeterminada."; 
+        if (preguntaSecreta == "0") {
+            mensajePreguntaSecreta += "Debe seleccionar una opción diferente de la predeterminada.";
             entrarMensajePreguntaSecreta = true;
             console.log(preguntaSeleccionada);
         }
 
-        if(entrarMensajePreguntaSecreta == true ){
+        if (entrarMensajePreguntaSecreta == true) {
             $("#mensajePreguntaSecreta").html(mensajePreguntaSecreta);
-        }else{
+        } else {
             $("#mensajePreguntaSecreta").html(mensajePreguntaSecreta);
         }
         // FIN VALIDACIÓN PREGUNTA SECRETA
@@ -157,88 +153,105 @@ $(document).ready(function(){
 
         //VALIDACION INPUT CONTRASEÑA
         //VALIDACION PARA QUE LAS DOS CLAVES SEAN IGUALES
-        if(clave != claveRepetida){
+        if (clave != claveRepetida) {
             mensajeClave += "Las contraseñas deben coincidir."
             entrarMensajeClave = true;
         }
 
-        if(entrarMensajeClave){
+        if (entrarMensajeClave) {
             $("#mensajeClave").html(mensajeClave);
         }
-        else{
+        else {
             $("#mensajeClave").html(mensajeClave);
         }
 
         //VALIDACION PARA QUE LAS CLAVES CUMPLAN CON UN RANGE DE CARACTERES
-        if((clave.trim().length < 8 || clave.trim().length > 12) && (claveRepetida.trim().length < 8 || claveRepetida.trim().length > 12)){
+        if ((clave.trim().length < 8 || clave.trim().length > 12) && (claveRepetida.trim().length < 8 || claveRepetida.trim().length > 12)) {
             mensajeClaveRepetida += "Las contraseñas deben tener un mínimo de 8 caracteres y máximo de 12.";
             entrarMensajeClaveRepetida = true;
         }
 
-        if(entrarMensajeClaveRepetida){
+        if (entrarMensajeClaveRepetida) {
             $("#mensajeClaveRepetida").html(mensajeClaveRepetida);
         }
-        else{
+        else {
             $("#mensajeClaveRepetida").html(mensajeClaveRepetida);
         }
 
         //VALIDACION PARA QUE LA CLAVE NO CONTENGA ESPACIOS EN BLANCO
-        if(espacioEnClave > -1){
+        if (espacioEnClave > -1) {
             mensajeEspacioEnClave += "La contaseña no puede tener un espacio en blanco."
             entrarMensajeEspacioEnClave = true;
         }
 
-        if(entrarMensajeEspacioEnClave){
+        if (entrarMensajeEspacioEnClave) {
             $("#mensajeEspacioEnClave").html(mensajeEspacioEnClave);
         }
-        else{
+        else {
             $("#mensajeEspacioEnClave").html(mensajeEspacioEnClave);
         }
 
         //VALIDACION PARA QUE LA CLAVE CONTENGA AL MENOS UN NUMERO
-        if ( /\d/.test($("#clave").val().trim()) == false ) {
+        if (/\d/.test($("#clave").val().trim()) == false) {
             mensajeNumeroEnClave += "Su cotraseña debe contener al menos un número."
             entrarMensajeNumeroEnClave = true;
         }
 
-        if(entrarMensajeNumeroEnClave){
+        if (entrarMensajeNumeroEnClave) {
             $("#mensajeNumeroEnClave").html(mensajeNumeroEnClave);
         }
-        else{
+        else {
             $("#mensajeNumeroEnClave").html(mensajeNumeroEnClave);
         }
 
 
         //VALIDANIO PARA QUE LA CONTRASEÑA CONTENGA AL MENOS UNA LETRA MAYUSCULA 
-        if ( /[A-Z]+/.test($("#clave").val().trim()) == false ) {
+        if (/[A-Z]+/.test($("#clave").val().trim()) == false) {
             mensajeMayusculaEnClave += "Su cotraseña debe contener al menos una letra en mayúsculas."
             entrarMensajeMayusculaEnClave = true;
         }
 
-        if(entrarMensajeMayusculaEnClave){
+        if (entrarMensajeMayusculaEnClave) {
             $("#mensajeMayusculaEnClave").html(mensajeMayusculaEnClave);
         }
-        else{
+        else {
             $("#mensajeMayusculaEnClave").html(mensajeMayusculaEnClave);
         }
 
 
         //VALIDACION PARA QUE LA CONTRASEÑA TENGA A MENOS UNA MINUSCULA
-        if ( /[a-z]+/.test($("#clave").val().trim()) == false ) {
+        if (/[a-z]+/.test($("#clave").val().trim()) == false) {
             mensajeMinusculaEnClave += "Su cotraseña debe contener al menos una letra en minúscula."
             entrarMensajeMinusculaEnClave = true;
         }
 
-        if(entrarMensajeMinusculaEnClave){
+        if (entrarMensajeMinusculaEnClave) {
             $("#mensajeMinusculaEnClave").html(mensajeMinusculaEnClave);
         }
-        else{
+        else {
             $("#mensajeMinusculaEnClave").html(mensajeMinusculaEnClave);
         }
         //FIN VALIDACION INPUT CONTRASEÑA
 
+        //APIS
+
 
     })
 
-
+    $("#region").click(function () {
+        $.get("https://apis.digital.gob.cl/dpa/regiones",
+            function (data) {
+                $.each(data, function (i, item) {
+                    $("#region").append('<option>'+item.nombre+'</option>');
+                })
+            })
+    })
+    $("#comuna").click(function () {
+        $.get("https://apis.digital.gob.cl/dpa/comunas",
+            function (data) {
+                $.each(data, function (i, item) {
+                    $("#comuna").append('<option>'+item.nombre+'</option>');
+                })
+            })
+    })
 })
