@@ -71,34 +71,35 @@ body {
 
 /* FORMULARIO */
 
-.tituloAjuste{
-text-align: center;
-margin: 10px;
-color: rgb(255, 255, 255);
+.tituloAjuste {
+  text-align: center;
+  margin: 10px;
+  color: rgb(255, 255, 255);
 }
 
-.fondo-inicio{
+.fondo-inicio {
   background: rgb(46, 46, 46);
   padding-top: 20px;
   padding-bottom: 20px;
 }
 
-.all{
+.all {
   border: 1px solid rgb(255, 166, 0);
   background-color: rgb(34, 34, 34);
   color: rgb(255, 255, 255);
   border-radius: 20px;
 }
-.margen{
+
+.margen {
   margin: 20px;
 }
 
-.imgcontainer{
+.imgcontainer {
   align-items: center;
   align-content: center;
 }
 
-.imgcontainer img{
+.imgcontainer img {
   text-align: center;
   align-items: center;
   margin: 24px 0 24px 0;
@@ -109,38 +110,24 @@ color: rgb(255, 255, 255);
   width: 100%;
   height: auto;
   border-radius: 500px;
-  
-}
-.select-nac {
-  margin-top: 15px;
-  margin-bottom: 15px;
+
 }
 
-.select-nac input {
+/* COLOR PARA PREGUNTA */
+.form-group select {
   background-color: rgb(255, 165, 0);
-  color: rgb(0, 0, 0);
-  border-color: rgb(0, 0, 0);
 }
 
-.select-nac select {
-  background-color: rgb(255, 165, 0);
-  color: rgb(0, 0, 0);
-}
-
-.select-nac select::before {
-  background-color: rgb(255, 165, 0);
-  color: rgb(0, 0, 0);
-}
-
-.select-nac option {
-  background-color: rgb(255, 165, 0);
-  color: rgb(0, 0, 0);
+/* COLOR PARA EL SELECT ABIERTO DE PREGUNTA */
+.form-group option {
+  background-color: rgb(255, 255, 255);
 }
 
 input[type=file] {
   display: none;
 }
-.botonAvatar{
+
+.botonAvatar {
   text-align: center;
   background-color: rgb(40, 40, 40);
   color: rgb(255, 255, 255);
@@ -153,11 +140,11 @@ input[type=file] {
   border-radius: 10px;
 }
 
-.botonAvatar:hover{
-font-weight: bold;
-color: rgb(255, 255, 255);
-background-color: transparent;
-border: solid rgb(255, 165, 0);
+.botonAvatar:hover {
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  background-color: transparent;
+  border: solid rgb(255, 165, 0);
 }
 
 input[type=text],
@@ -191,6 +178,23 @@ button:hover {
   color: rgb(255, 255, 255);
   background-color: transparent;
   border: solid rgb(255, 165, 0);
+}
+
+/* BOTON DE DESCRIPCION DE CATEGORIA */
+.boton {
+  width: 40%;
+  padding: 12px 20px;
+  background: rgb(255, 165, 0);
+  color: rgb(0, 0, 0);
+  font-weight: 800;
+  border: none;
+  border-radius: 5px;
+  transition: box-shadow 300ms;
+}
+
+/* BRILLITO DEL BOTON UWU */
+.boton:hover {
+  box-shadow: 1px 1px 22px -5px rgb(255, 165, 0);
 }
 
 
