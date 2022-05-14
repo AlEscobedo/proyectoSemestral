@@ -69,6 +69,8 @@ $(document).ready(function() {
 
     });
 
+
+    ///JQUERY PARA EL FORMULARIO DE MEDIFICAR JUEGOS
     $("#formularioModificarJuego").submit(function(validacion) {
         validacion.preventDefault();
 
@@ -150,6 +152,9 @@ $(document).ready(function() {
         /////// FIN VALIDACION PARA EL FORMULARIO MODIFICAR JUEGO
     });
 
+
+
+    //JQUERY PARA FORMULARIO ELIMINAR JUEGOS
     $("#formularioEliminarJuego").submit(function(validacion){
         validacion.preventDefault();
 
