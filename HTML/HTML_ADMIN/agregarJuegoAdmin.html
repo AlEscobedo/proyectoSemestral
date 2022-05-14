@@ -65,7 +65,7 @@
     </div>
 
     <!--Tarjeta Agregar Juego-->
-    <form action="">
+    <form action="" method="post" enctype="multipart/form-data" id="formularioAgregarJuego">
         <div class="container all">
             <div class="card mb-3">
                 <div class="row no-gutters">
@@ -101,26 +101,41 @@
                     </div>
                     <div class="col-md-5">
                         <div class="card-body">
+
                             <div class="col">
-                                <div class="row">
-                                    <label for="nomJuego" class="centerText"><b>Nombre del Juego</b></label><br>
-                                    <input type="text" placeholder="Titulo" name="nomJuego" required><br>
+
+                                <div class="form-group">
+                                    <div class="row">
+                                        <label for="nomJuego" class="centerText"><b>Nombre del Juego</b></label><br>
+                                        <input type="text" placeholder="Titulo" name="nomJuego" required id="nomJuego"><br>
+                                        <p id="mensajeNomJuego"></p>
+                                    </div>
                                 </div>
-                                <div class="row">
-                                    <label for="descJuego" class="textarea"><b>Descripción del Juego</b></label><br>
-                                    <input type="text" placeholder="Descripción" name="descJuego" required><br>
+
+                                <div class="form-group">
+                                    <div class="row">
+                                        <label for="descJuego" class="textarea"><b>Descripción del Juego</b></label><br>
+                                        <input type="text" placeholder="Descripción" name="descJuego" required id="descJuego"><br>
+                                        <p id="mensajeDescJuego"></p>
+                                    </div>
                                 </div>
-                                <label for="valJuego"><b>Valor del Juego</b></label><br>
-                                <input type="number" placeholder="$000.000" name="valJuego" required min="0"><br>
+
+                                <div class="form-group">
+                                    <div class="row">
+                                        <label for="valJuego"><b>Valor del Juego</b></label><br>
+                                        <input type="number" placeholder="$000.000" name="valJuego" required min="0" id="valJuego"><br>
+                                        <p id="mensajeValJuego"></p>
+                                    </div>
+                                </div>
+
                             </div>
 
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="form-group">
-                            <label for="uname"><b>Categoria</b></label>
-                            <select name="preguntasecreta" id="preguntasecreta" tabindex="1" class="form-control"
-                                placeholder="Pregunta Secreta" value="">
+                            <label for="seleccionarCategoria"><b>Categoria</b></label>
+                            <select name="seleccionarCategoria" id="seleccionarCategoria" tabindex="1" class="form-control">
                                 <option selected="true" value="0">Seleccione una Categoría</option>
                                 <option value="1">
                                     Terror
@@ -141,12 +156,10 @@
                                     Supervivencia
                                 </option>
                             </select>
+                            <p id="mensajeSeleccionarCategoria"></p>
                         </div>
                         <div class="col">
-                            <button type="button" class="btn btn-categoria" data-bs-toggle="modal"
-                                data-bs-target="#myModal1">
-                                Agregar Juego
-                            </button>
+                            <input type="submit" value="Agregar Juego" class="btn btn-categoria" name="" id="">
                         </div>
                     </div>
 
@@ -154,9 +167,12 @@
             </div>
         </div>
     </form>
+<!-------------------------------------------------------------------------------->
+<!----------------------SEGUNDO FORMULARIO---------------------------------------->
+<!-------------------------------------------------------------------------------->
 
     <!--Tarjeta Modificar Juego-->
-    <form action="">
+    <form action="" method="post" enctype="application/x-www-form-urlencoded" id="formularioModificarJuego">
         <div class="container all">
             <div class="card mb-3">
                 <div class="row no-gutters">
@@ -194,10 +210,10 @@
                         <div class="card-body">
                             <div class="col">
                                 <div class="row">
+
                                     <div class="form-group">
-                                        <label for="uname"><b>Juego</b></label>
-                                        <select name="preguntasecreta" id="preguntasecreta" tabindex="1"
-                                            class="form-control" placeholder="Pregunta Secreta" value="">
+                                        <label for="seleccionarJuego"><b>Juego</b></label>
+                                        <select name="seleccionarJuego" id="seleccionarJuego" tabindex="1" class="form-control" value="">
                                             <option selected="true" value="0">Seleccione el Juego</option>
                                             <option value="1">
                                                 Minecraft
@@ -218,23 +234,34 @@
                                                 Texto de Ejemplo
                                             </option>
                                         </select>
+                                        <p id="mensajeSeleccionarJuego"></p>
                                     </div>
                                 </div>
-                                <div class="row">
-                                    <label for="descJuego" class="textarea"><b>Descripción del Juego</b></label><br>
-                                    <input type="text" placeholder="Descripción" name="descJuego" required><br>
+
+                                <div class="form-group">
+                                    <div class="row">
+                                        <label for="descJuego" class="textarea"><b>Descripción del Juego</b></label><br>
+                                        <input type="text" placeholder="Descripción" name="descJuego" required id="descJuego2"><br>
+                                        <p id="mensajeDescJuego2"></p>
+                                    </div>
                                 </div>
-                                <label for="valJuego"><b>Valor del Juego</b></label><br>
-                                <input type="number" placeholder="$000.000" name="valJuego" required min="0"><br>
+
+                                <div class="form-group">
+                                    <div class="row">
+                                        <label for="valJuego"><b>Valor del Juego</b></label><br>
+                                        <input type="number" placeholder="$000.000" name="valJuego" required min="0" id="valJuego2"><br>
+                                        <p id="mensajeValJuego2"></p>
+                                    </div>
+                                </div>
+
                             </div>
 
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="form-group">
-                            <label for="uname"><b>Categoria</b></label>
-                            <select name="preguntasecreta" id="preguntasecreta" tabindex="1" class="form-control"
-                                placeholder="Pregunta Secreta" value="">
+                            <label for="seleccionarCategoria2"><b>Categoria</b></label>
+                            <select name="seleccionarCategoria2" id="seleccionarCategoria2" tabindex="1" class="form-control" value="">
                                 <option selected="true" value="0">Seleccione una Categoría</option>
                                 <option value="1">
                                     Terror
@@ -255,12 +282,10 @@
                                     Supervivencia
                                 </option>
                             </select>
+                            <p id="mensajeSeleccionarCategoria2"></p>
                         </div>
                         <div class="col">
-                            <button type="button" class="btn btn-categoria" data-bs-toggle="modal"
-                                data-bs-target="#myModal1">
-                                Modificar
-                            </button>
+                            <input type="submit" value="Modificar Juego" class="btn btn-categoria" name="" id="">
                         </div>
                     </div>
 
@@ -270,7 +295,7 @@
     </form>
 
     <!--Tarjeta Eliminar Juego-->
-    <form action="">
+    <form action="" method="post" enctype="application/x-www-form-urlencoded" id="formularioEliminarJuego">
         <div class="container all">
             <div class="card mb-3">
                 <div class="row no-gutters">
@@ -280,11 +305,10 @@
 
                         <div class="row ">
                             <div class="form-group">
-                                <label for="uname">
+                                <label for="seleccionarEliminar">
                                     <h5>Juego</h5>
                                 </label>
-                                <select name="preguntasecreta" id="preguntasecreta" tabindex="1" class="form-control"
-                                    placeholder="Pregunta Secreta" value="">
+                                <select name="seleccionarEliminar" id="seleccionarEliminar" tabindex="1" class="form-control" value="">
                                     <option selected="true" value="0">Seleccione el Juego a Eliminar</option>
                                     <option value="1">
                                         Minecraft
@@ -305,12 +329,10 @@
                                         Texto de Ejemplo
                                     </option>
                                 </select>
+                                <P id="mensajeSeleccionarEliminar"></P>
                             </div>
                         </div>
-                        <button type="button" class="btn btn-categoria" data-bs-toggle="modal"
-                            data-bs-target="#myModal1">
-                            Eliminar
-                        </button>
+                        <input type="submit" value="Eliminar Juego" class="btn btn-categoria" name="" id="">
                     </div>
                     <div class="col-md-3"></div>
                 </div>
