@@ -4,6 +4,25 @@ $(document).ready(function () {
     $("#formAjuste").submit(function (e) {
         e.preventDefault();
 
+        //Validar Nombre
+        var nombre = $("#nombre").val();
+        var mensajeNombre = $("#mensajeNombre").val();
+        var primeraLetra = nombre.charAt(0);
+
+        if (!validarCaracteres(nombre)) {
+            mensajeNombre += "EL nombre no puede contener numeros";
+            $("#mensajeNombre").html(mensajeNombre);
+        } else {
+            if (!esMayuscula(primeraLetra)) {
+                mensajeNombre += "EL nombre debe empezar con mayúscula";
+                $("#mensajeNombre").html(mensajeNombre);
+            }else{
+                mensajeNombre += "Datos Correctos";
+                $("#mensajeNombre").html(mensajeNombre);
+            }
+        }
+
+
         //Validar correo
         var correo = $("#email").val();
         let validarCorreo = false;
@@ -58,7 +77,7 @@ $(document).ready(function () {
         }
 
     });
-    
+
     // Previsualizar la foto de perfil
     function init() {
         var inputFile = document.getElementById('Avatar');
@@ -85,7 +104,6 @@ $(document).ready(function () {
             return true;
         }
         else {
-
             return false;
         }
     }
@@ -94,6 +112,7 @@ $(document).ready(function () {
         return primeraLetra == primeraLetra.toUpperCase();
     }
 
+    /*
     // Validar que el nombre de ususario tenga una longitud entre 4 y 10 caracteres
     function validarLongitud(usuario) {
         if (usuario.trim().length < 4 || usuario.trim().length > 10) {
@@ -102,6 +121,7 @@ $(document).ready(function () {
             return false;
         }
     }
+    */
 
 
     // Validar que el email este en el formato correcto
@@ -134,30 +154,38 @@ $(document).ready(function () {
         })
     })
 
+    // Habilitar y deshabilitar eleccion de nombre
+    $("#habilitarNombre").click(function () {
+        $("#nombre").prop("disabled", false);
+    });
+    $("#deshabilitarNombre").click(function () {
+        $("#nombre").prop("disabled", true);
+    });
+
     // Habilitar y deshabilitar eleccion de region y comuna
-    $("#habilitarComuna").click(function(){
-        $("#region").prop("disabled",false);
-        $("#comuna").prop("disabled",false);
+    $("#habilitarComuna").click(function () {
+        $("#region").prop("disabled", false);
+        $("#comuna").prop("disabled", false);
     });
-    $("#deshabilitarComuna").click(function(){
-        $("#region").prop("disabled",true);
-        $("#comuna").prop("disabled",true);
+    $("#deshabilitarComuna").click(function () {
+        $("#region").prop("disabled", true);
+        $("#comuna").prop("disabled", true);
     });
-    
+
     // Habilitar y deshabilitar direccion
-    $("#habilitarDireccion").click(function(){
-        $("#dir").prop("disabled",false);
+    $("#habilitarDireccion").click(function () {
+        $("#dir").prop("disabled", false);
     });
-    $("#deshabilitarDireccion").click(function(){
-        $("#dir").prop("disabled",true);
+    $("#deshabilitarDireccion").click(function () {
+        $("#dir").prop("disabled", true);
     });
 
     // Habilitar y deshabilitar email
-    $("#habilitarEmail").click(function(){
-        $("#email").prop("disabled",false);
+    $("#habilitarEmail").click(function () {
+        $("#email").prop("disabled", false);
     });
-    $("#deshabilitarEmail").click(function(){
-        $("#email").prop("disabled",true);
+    $("#deshabilitarEmail").click(function () {
+        $("#email").prop("disabled", true);
     });
 })
 // Nada de codigo fuera
