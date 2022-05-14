@@ -4,55 +4,6 @@ $(document).ready(function () {
     $("#formAjuste").submit(function (e) {
         e.preventDefault();
 
-        // Validar nombre
-        var nom = $("#nombre").val();
-        var primeraLetra = nom.charAt(0);
-        let validarNom = false;
-        let mensajeNom = "";
-
-        if (validarCaracteres(nom)) {
-            if (!esMayuscula(primeraLetra)) {
-                mensajeNom += "El nombre debe comenzar con mayúscula<br>";
-                validarNom = false;
-            } else {
-                mensajeNom += "Datos Correctos<br>";
-                validarNom = true;
-            }
-
-        } else {
-            mensajeNom += "El nombre debe contener solo caracteres<br>";
-            validarNom = false;
-        }
-
-        if (validarNom) {
-            $("#mensajeNomb").html(mensajeNom);
-        }
-        else {
-            $("#mensajeNomb").html(mensajeNom);
-        }
-
-
-        //Validar Longitud Nombre Usuario
-        var usu = $("#userName").val();
-        let validarLongUsu = false;
-        let mensajeUsu = "";
-
-        if (validarLongitud(usu)) {
-            mensajeUsu += "El nombre de usuario debe tener una longitud entre 4 y 10 caracteres<br>";
-            validarLongUsu = false;
-        } else {
-            mensajeUsu += "Datos Correctos<br>";
-            validarLongUsu = true;
-        }
-
-        if (validarLongUsu) {
-            $("#mensajeUsu").html(mensajeUsu);
-        } else {
-            $("#mensajeUsu").html(mensajeUsu);
-        }
-
-
-
         //Validar correo
         var correo = $("#email").val();
         let validarCorreo = false;
@@ -84,7 +35,7 @@ $(document).ready(function () {
 
         //Region
         if (selectRegion == "0") {
-            mensajeRegion += "Debe seleccionar una opción diferente de la predeterminada.";
+            mensajeRegion += "Debe seleccionar una opción diferente de la predeterminada.<br>";
             entrarRegion = true;
         }
 
@@ -96,7 +47,7 @@ $(document).ready(function () {
 
         //Comuna
         if (selectComuna == "0") {
-            mensajeComuna += "Debe seleccionar una opción diferente de la predeterminada.";
+            mensajeComuna += "<br>Debe seleccionar una opción diferente de la predeterminada.<br>";
             entrarComuna = true;
         }
 
@@ -107,7 +58,7 @@ $(document).ready(function () {
         }
 
     });
-
+    
     // Previsualizar la foto de perfil
     function init() {
         var inputFile = document.getElementById('Avatar');
@@ -183,11 +134,30 @@ $(document).ready(function () {
         })
     })
 
-    $("#desabilitar").click(function(){
-        $("#nombre").prop("disabled",false);
+    // Habilitar y deshabilitar eleccion de region y comuna
+    $("#habilitarComuna").click(function(){
+        $("#region").prop("disabled",false);
+        $("#comuna").prop("disabled",false);
     });
-    $("#abilitar").click(function(){
-        $("#nombre").prop("disabled",true);
+    $("#deshabilitarComuna").click(function(){
+        $("#region").prop("disabled",true);
+        $("#comuna").prop("disabled",true);
+    });
+    
+    // Habilitar y deshabilitar direccion
+    $("#habilitarDireccion").click(function(){
+        $("#dir").prop("disabled",false);
+    });
+    $("#deshabilitarDireccion").click(function(){
+        $("#dir").prop("disabled",true);
+    });
+
+    // Habilitar y deshabilitar email
+    $("#habilitarEmail").click(function(){
+        $("#email").prop("disabled",false);
+    });
+    $("#deshabilitarEmail").click(function(){
+        $("#email").prop("disabled",true);
     });
 })
 // Nada de codigo fuera

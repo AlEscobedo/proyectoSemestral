@@ -86,7 +86,7 @@
 
                         <div class="imgcontainer">
                             <label class="botonAvatar">
-                                <img class="imgAvatar" id="fotoPerfil" src="/imagenes/admin/vr.jpg">
+                                <img class="imgAvatar" id="fotoPerfil" src="/imagenes/admin/vr.png">
                                 <input type="file" id="Avatar">
                                 <hr>
                                 Cambiar Foto de Perfil
@@ -99,52 +99,92 @@
                             <div class="container">
 
                                 <div class="form-group">
-                                    <label for="nombre"><b>Nombre</b></label>
-                                    <input type="text" placeholder="Victor Rosendo" id="nombre" class="form-control">
-                                    <input type="button" value="activar " class="boton" id="activarnombre">
-                                    <input type="button" value="desactivar " class="boton" id="desactivarnombre">
-                                    <p id="mensajeNomb"></p>
+                                    <div class="row">
+                                        <label for="nombre"><b>Nombre</b></label>
+                                        <div class="col-10">
+                                            <input name="nombre" type="text" placeholder="Victor Rosendo" id="nombre"
+                                                disabled="">
+                                        </div>
+                                    </div>
                                 </div>
-
                                 <div class="form-group">
-                                    <label for="region"><b>Region</b></label>
-                                    <select name="region" id="region" class="form-control">
-                                        <option value="0">Seleccione una Region</option>
-                                    </select>
-                                    <p id="mensajeRegion"></p>
-                                </div>
+                                    <div class="row">
+                                        <label for="region"><b>Region</b></label>
+                                        <div class="col-10">
+                                            <select name="region" id="region" class="form-group" disabled="">
+                                                <option value="0">Seleccione una Region</option>
+                                            </select>
+                                        </div>                                        
+                                    </div>
+                                    <div class="separador"></div>
+                                    <div class="row">
+                                        <label for="comuna"><b>Comuna</b></label>
+                                        <div class="col-10">
+                                            <select name="comuna" id="comuna" class="form-group" disabled="">
+                                                <option value="0">Seleccione una Comuna</option>
+                                            </select>
+                                        </div>
 
-                                <div class="form-group">
-                                    <label for="comuna"><b>Comuna</b></label>
-                                    <select name="comuna" id="comuna" class="form-control">
-                                        <option value="0">Seleccione una Comuna</option>
-                                    </select>
-                                    <p id="mensajeComuna"></p>
+                                        <div class="col-1">
+                                            <a class="btn btn-secondary" id="habilitarComuna"><i
+                                                    class="fa-solid fa-pen"></i></a>
+                                        </div>
+                                        <div class="col-1">
+                                            <a class="btn btn-secondary" id="deshabilitarComuna"><i
+                                                    class="fa-solid fa-floppy-disk"></i></a>
+                                        </div>
+                                    </div>
                                 </div>
-
-                                <div class="form-group">
-                                    <label for="dir"><b>Dirección</b></label>
-                                    <input type="text" placeholder="Olimpo 1234" id="dir" id="form-control">
-                                    <input type="button" value="activar " class="boton" id="activarnombre">
-                                    <input type="button" value="desactivar " class="boton" id="desactivarnombre">
-                                </div>
-
-                                <div class="form-group">
-                                    <label for="email"><b>Correo Electrónico</b></label>
-                                    <input type="text" placeholder="v.rosendo@profesor.duoc.cl" id="email" class="form-control">
-                                    <p id="mensajeEmail"></p>
-                                    <input type="button" value="activar " class="boton" id="activarnombre">
-                                    <input type="button" value="desactivar " class="boton" id="desactivarnombre">
-                                </div>
-
-                                <button class="ingresar" type="submit">Guardar Cambios</button>
+                                <p id="mensajeComuna"></p>
                             </div>
+
+                            <div class="form-group">
+                                <label for="dir"><b>Dirección</b></label>
+                                <div class="row">
+                                    <div class="col-10">
+                                        <input type="text" placeholder="Olimpo 1234" id="dir" disabled>
+                                    </div>
+                                    <div class="col-1">
+                                        <a class="btn btn-secondary" id="habilitarDireccion"><i
+                                                class="fa-solid fa-pen"></i></a>
+                                    </div>
+                                    <div class="col-1">
+                                        <a class="btn btn-secondary" id="deshabilitarDireccion"><i
+                                                class="fa-solid fa-floppy-disk"></i></a>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email"><b>Correo Electrónico</b></label>
+                                <div class="row">
+                                    <div class="col-10">
+                                        <input type="text" placeholder="v.rosendo@profesor.duoc.cl" id="email"
+                                            disabled="">
+                                    </div>
+                                    <div class="col-1">
+                                        <a class="btn btn-secondary" id="habilitarEmail"><i
+                                                class="fa-solid fa-pen"></i></a>
+                                    </div>
+                                    <div class="col-1">
+                                        <a class="btn btn-secondary" id="deshabilitarEmail"><i
+                                                class="fa-solid fa-floppy-disk"></i></a>
+                                    </div>
+
+                                </div>
+                                <p id="mensajeEmail"></p>
+
+                            </div>
+
+                            <button class="ingresar" type="submit">Guardar Cambios</button>
                         </div>
                     </div>
                 </div>
-
-            </form>
         </div>
+
+        </form>
+    </div>
     </div>
 
 

@@ -115,12 +115,19 @@ body {
 
 /* COLOR PARA PREGUNTA */
 .form-group select {
-  background-color: rgb(255, 165, 0);
+  background-color: rgb(40, 40, 40);
+  border: solid rgb(255, 165, 0);
+  border-width: 1px;
+  width: 100%;
+  height: 120%;
+  color: rgb(255, 255, 255);
+  padding: 6px;
 }
 
 /* COLOR PARA EL SELECT ABIERTO DE PREGUNTA */
 .form-group option {
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(255, 165, 0);
+  color: rgb(0, 0, 0);
 }
 
 input[type=file] {
