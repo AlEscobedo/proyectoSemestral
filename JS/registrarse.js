@@ -234,7 +234,37 @@ $(document).ready(function () {
         //FIN VALIDACION INPUT CONTRASEÑA
 
         //APIS
+        var selectRegion = $("#region").val();
+        let mensajeRegion = "";
+        let entrarRegion = false;
 
+        var selectComuna = $("#comuna").val();
+        let mensajeComuna = "";
+        let entrarComuna = false;
+
+        //Region
+        if (selectRegion == "0") {
+            mensajeRegion += "Debe seleccionar una opción diferente de la predeterminada.";
+            entrarRegion = true;
+        }
+
+        if (entrarRegion == true) {
+            $("#mensajeRegion").html(mensajeRegion);
+        } else {
+            $("#mensajeRegion").html(mensajeRegion);
+        }
+
+        //Comuna
+        if (selectComuna == "0") {
+            mensajeComuna += "Debe seleccionar una opción diferente de la predeterminada.";
+            entrarComuna = true;
+        }
+
+        if (entrarComuna == true) {
+            $("#mensajeComuna").html(mensajeComuna);
+        } else {
+            $("#mensajeComuna").html(mensajeComuna);
+        }
 
     })
 
@@ -248,7 +278,7 @@ $(document).ready(function () {
         var reg = $("#region").val();
 
         $("#comuna").empty();
-        $("#comuna").append('<option value="opcioncomuna">Seleccione una Comuna</option>');
+        $("#comuna").append('<option value="0">Seleccione una Comuna</option>');
 
         $("#comuna").each(function () {
             $.get("https://apis.digital.gob.cl/dpa/regiones/" + reg + "/comunas", function (data) {
