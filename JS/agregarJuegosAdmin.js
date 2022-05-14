@@ -49,7 +49,7 @@ $(document).ready(function() {
 
         //VALIDACION PARA QUE LA CATEGORÍA NO QUEDE CON LA OPCIÓN PREDETERMINADA
         if(seleccionarCategoria == "0"){
-            mensajeSeleccionarCategoria += "Debe selecciona una Categoría.";
+            mensajeSeleccionarCategoria += "Debe seleccionar una Categoría.";
             entrarMensajeSeleccionarCategoria = true;
         }
         
@@ -124,7 +124,7 @@ $(document).ready(function() {
 
         //VALIDACION PARA QUE LA CATEGORÍA NO QUEDE CON LA OPCIÓN PREDETERMINADA
         if(seleccionarCategoria2 == "0"){
-            mensajeSeleccionarCategoria2 += "Debe selecciona una Categoría.";
+            mensajeSeleccionarCategoria2 += "Debe seleccionar una Categoría.";
             entrarMensajeSeleccionarCategoria2 = true;
         }
         
@@ -164,7 +164,7 @@ $(document).ready(function() {
 
         //VALIDACION PARA OPCION PREDETERMINADA
         if(seleccionarEliminar == "0"){
-            mensajeSeleccionarEliminar += "Debe selecciona un Juego.";
+            mensajeSeleccionarEliminar += "Debe seleccionar un Juego.";
             entrarMensajeSeleccionarEliminar = true;
         }
 
