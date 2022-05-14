@@ -238,20 +238,24 @@ $(document).ready(function () {
 
     })
 
-    $("#region").click(function () {
-        $.get("https://apis.digital.gob.cl/dpa/regiones",
-            function (data) {
-                $.each(data, function (i, item) {
-                    $("#region").append('<option>'+item.nombre+'</option>');
-                })
-            })
+    $.get("https://apis.digital.gob.cl/dpa/regiones", function (data) {
+        $.each(data, function (i, item) {
+            $("#region").append('<option value= "'+item.codigo+'">' + item.nombre + '</option>');
+        })
     })
-    $("#comuna").click(function () {
-        $.get("https://apis.digital.gob.cl/dpa/comunas",
-            function (data) {
-                $.each(data, function (i, item) {
-                    $("#comuna").append('<option>'+item.nombre+'</option>');
+    $("#region").change(function () {
+
+        var reg = $("#region").val();
+
+        $("#comuna").empty();
+        $("#comuna").append('<option value="opcioncomuna">Seleccione una Comuna</option>');
+
+        $("#comuna").each(function () {
+            $.get("https://apis.digital.gob.cl/dpa/regiones/" + reg + "/comunas", function (data) {
+                    $.each(data, function (e, objet) {
+                        $("#comuna").append('<option>' + objet.nombre + '</option>');
+                    })
                 })
-            })
+        })
     })
 })
